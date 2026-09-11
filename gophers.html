@@ -105,9 +105,9 @@
     <section class="space-y-4" id="starting-lineup-section">
       <div class="flex items-center justify-between border-b border-slate-800 pb-3">
         <h2 class="text-xl md:text-2xl font-serif-header font-bold text-[#FFCC33] flex items-center gap-2">
-          <i class="fa-solid fa-star text-amber-400"></i> Projected Starters & Hometowns
+          <i class="fa-solid fa-star text-amber-400"></i> Projected Starters Spotlight
         </h2>
-        <span class="text-[11px] md:text-xs text-slate-400" id="lineup-subtitle">Minnesota Golden Gophers Starters</span>
+        <span class="text-[11px] md:text-xs text-slate-400" id="lineup-subtitle">Full 12-Offense & 11-Defense Starters</span>
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-6" id="starters-container">
@@ -168,7 +168,7 @@
         btnOpponent.className = "flex-1 py-2.5 px-4 rounded-xl font-bold text-xs transition flex items-center justify-center gap-2 bg-slate-800 text-slate-300 hover:text-white";
         document.getElementById("roster-view-title").textContent = "Minnesota Roster & Hometown Guide";
         document.getElementById("roster-table-heading").innerHTML = `<i class="fa-solid fa-list-ol text-amber-400"></i> Minnesota Full Roster (100 Players)`;
-        document.getElementById("lineup-subtitle").textContent = "Minnesota Golden Gophers Starters";
+        document.getElementById("lineup-subtitle").textContent = "Full 12-Offense & 11-Defense Starters";
         document.getElementById("starting-lineup-section").style.display = "block";
         renderTable(gophersData);
       } else {
@@ -183,140 +183,53 @@
 
     function renderStarters() {
       const startersHTML = `
+        <!-- Starting Offense (12 Players) -->
         <div class="gopher-card rounded-2xl p-4 md:p-6 border-l-4 border-l-[#FFCC33]">
           <h3 class="text-base md:text-lg font-bold text-white mb-4 flex items-center justify-between">
-            <span><i class="fa-solid fa-football mr-2 text-[#FFCC33]"></i> Starting Offense</span>
+            <span><i class="fa-solid fa-football mr-2 text-[#FFCC33]"></i> Starting Offense (12 Starters)</span>
             <span class="text-xs font-normal text-slate-400">P.J. Fleck System</span>
           </h3>
           <div class="space-y-3">
-            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
-              <div class="flex items-center gap-3">
-                <span class="font-black text-[#FFCC33] text-sm w-12 shrink-0">QB #5</span>
-                <div>
-                  <div class="font-bold text-white text-sm">Drake Lindsey</div>
-                  <div class="text-[11px] text-slate-400">6'5" • 230 lbs • Jr. • <span class="text-slate-300">Fayetteville, AR</span></div>
-                </div>
-              </div>
-              <span class="px-2.5 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 font-semibold text-[11px] border border-emerald-500/20 shrink-0">Gopher Recruit</span>
-            </div>
-
-            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
-              <div class="flex items-center gap-3">
-                <span class="font-black text-[#FFCC33] text-sm w-12 shrink-0">RB #1</span>
-                <div>
-                  <div class="font-bold text-white text-sm">Darius Taylor</div>
-                  <div class="text-[11px] text-slate-400">6'0" • 215 lbs • Sr. • <span class="text-slate-300">Detroit, MI</span></div>
-                </div>
-              </div>
-              <span class="px-2.5 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 font-semibold text-[11px] border border-emerald-500/20 shrink-0">Gopher Recruit</span>
-            </div>
-
-            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
-              <div class="flex items-center gap-3">
-                <span class="font-black text-[#FFCC33] text-sm w-12 shrink-0">WR #11</span>
-                <div>
-                  <div class="font-bold text-white text-sm">Javon Tracy</div>
-                  <div class="text-[11px] text-slate-400">6'0" • 205 lbs • Sr. • <span class="text-slate-300">Indianapolis, IN</span></div>
-                </div>
-              </div>
-              <span class="px-2.5 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 font-semibold text-[11px] border border-emerald-500/20 shrink-0">Gopher Recruit</span>
-            </div>
-
-            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
-              <div class="flex items-center gap-3">
-                <span class="font-black text-[#FFCC33] text-sm w-12 shrink-0">WR #13</span>
-                <div>
-                  <div class="font-bold text-white text-sm">Noah Jennings</div>
-                  <div class="text-[11px] text-slate-400">6'0" • 190 lbs • Sr. • <span class="text-slate-300">Cincinnati, OH</span></div>
-                </div>
-              </div>
-              <span class="px-2.5 py-1 rounded-lg bg-amber-500/20 text-amber-300 font-bold text-[11px] border border-amber-500/40 shrink-0"><i class="fa-solid fa-right-left mr-1"></i> Transfer (Cincinnati)</span>
-            </div>
-
-            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
-              <div class="flex items-center gap-3">
-                <span class="font-black text-[#FFCC33] text-sm w-12 shrink-0">WR #3</span>
-                <div>
-                  <div class="font-bold text-white text-sm">Perry Thompson</div>
-                  <div class="text-[11px] text-slate-400">6'3" • 220 lbs • Jr. • <span class="text-slate-300">Foley, AL</span></div>
-                </div>
-              </div>
-              <span class="px-2.5 py-1 rounded-lg bg-amber-500/20 text-amber-300 font-bold text-[11px] border border-amber-500/40 shrink-0"><i class="fa-solid fa-right-left mr-1"></i> Transfer (Auburn)</span>
-            </div>
-
-            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
-              <div class="flex items-center gap-3">
-                <span class="font-black text-[#FFCC33] text-sm w-12 shrink-0">OL #65</span>
-                <div>
-                  <div class="font-bold text-white text-sm">Greg Johnson (LT)</div>
-                  <div class="text-[11px] text-slate-400">6'6" • 325 lbs • Sr. • <span class="text-emerald-400 font-semibold">Prior Lake, MN 🌲</span></div>
-                </div>
-              </div>
-              <span class="px-2.5 py-1 rounded-lg bg-emerald-500/20 text-emerald-300 font-bold text-[11px] border border-emerald-500/40 shrink-0">MN Native 🌲</span>
-            </div>
+            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2"><div class="flex items-center gap-3"><span class="font-black text-[#FFCC33] text-sm w-12 shrink-0">QB #5</span><div><div class="font-bold text-white text-sm">Drake Lindsey</div><div class="text-[11px] text-slate-400">6'5" • 230 lbs • Jr. • <span class="text-slate-300">Fayetteville, AR</span></div></div></div><span class="px-2.5 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 font-semibold text-[11px] border border-emerald-500/20 shrink-0">Gopher Recruit</span></div>
+            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2"><div class="flex items-center gap-3"><span class="font-black text-[#FFCC33] text-sm w-12 shrink-0">RB1 #1</span><div><div class="font-bold text-white text-sm">Darius Taylor</div><div class="text-[11px] text-slate-400">6'0" • 215 lbs • Sr. • <span class="text-slate-300">Detroit, MI</span></div></div></div><span class="px-2.5 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 font-semibold text-[11px] border border-emerald-500/20 shrink-0">Gopher Recruit</span></div>
+            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2"><div class="flex items-center gap-3"><span class="font-black text-[#FFCC33] text-sm w-12 shrink-0">RB2 #23</span><div><div class="font-bold text-white text-sm">TJ Thomas Jr.</div><div class="text-[11px] text-slate-400">5'8" • 190 lbs • Jr. • <span class="text-slate-300">Burlington, NC</span></div></div></div><span class="px-2.5 py-1 rounded-lg bg-amber-500/20 text-amber-300 font-bold text-[11px] border border-amber-500/40 shrink-0"><i class="fa-solid fa-right-left mr-1"></i> Transfer (Elon)</span></div>
+            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2"><div class="flex items-center gap-3"><span class="font-black text-[#FFCC33] text-sm w-12 shrink-0">WR1 #11</span><div><div class="font-bold text-white text-sm">Javon Tracy</div><div class="text-[11px] text-slate-400">6'0" • 205 lbs • Sr. • <span class="text-slate-300">Indianapolis, IN</span></div></div></div><span class="px-2.5 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 font-semibold text-[11px] border border-emerald-500/20 shrink-0">Gopher Recruit</span></div>
+            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2"><div class="flex items-center gap-3"><span class="font-black text-[#FFCC33] text-sm w-12 shrink-0">WR2 #13</span><div><div class="font-bold text-white text-sm">Noah Jennings</div><div class="text-[11px] text-slate-400">6'0" • 190 lbs • Sr. • <span class="text-slate-300">Cincinnati, OH</span></div></div></div><span class="px-2.5 py-1 rounded-lg bg-amber-500/20 text-amber-300 font-bold text-[11px] border border-amber-500/40 shrink-0"><i class="fa-solid fa-right-left mr-1"></i> Transfer (Cincinnati)</span></div>
+            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2"><div class="flex items-center gap-3"><span class="font-black text-[#FFCC33] text-sm w-12 shrink-0">WR3 #3</span><div><div class="font-bold text-white text-sm">Perry Thompson</div><div class="text-[11px] text-slate-400">6'3" • 220 lbs • Jr. • <span class="text-slate-300">Foley, AL</span></div></div></div><span class="px-2.5 py-1 rounded-lg bg-amber-500/20 text-amber-300 font-bold text-[11px] border border-amber-500/40 shrink-0"><i class="fa-solid fa-right-left mr-1"></i> Transfer (Auburn)</span></div>
+            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2"><div class="flex items-center gap-3"><span class="font-black text-[#FFCC33] text-sm w-12 shrink-0">TE1 #87</span><div><div class="font-bold text-white text-sm">Kaden Helms</div><div class="text-[11px] text-slate-400">6'4" • 240 lbs • Sr. • <span class="text-slate-300">Bellevue, NE</span></div></div></div><span class="px-2.5 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 font-semibold text-[11px] border border-emerald-500/20 shrink-0">Gopher Recruit</span></div>
+            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2"><div class="flex items-center gap-3"><span class="font-black text-[#FFCC33] text-sm w-12 shrink-0">TE2 #82</span><div><div class="font-bold text-white text-sm">Julian Johnson</div><div class="text-[11px] text-slate-400">6'6" • 260 lbs • Jr. • <span class="text-slate-300">Aurora, IL</span></div></div></div><span class="px-2.5 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 font-semibold text-[11px] border border-emerald-500/20 shrink-0">Gopher Recruit</span></div>
+            
+            <!-- Offensive Line (LT, LG, C, RG, RT) -->
+            <div class="pt-2 border-t border-slate-800 text-[11px] font-bold text-[#FFCC33] uppercase">Offensive Line Lineup</div>
+            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2"><div class="flex items-center gap-3"><span class="font-black text-[#FFCC33] text-sm w-12 shrink-0">LT #65</span><div><div class="font-bold text-white text-sm">Greg Johnson</div><div class="text-[11px] text-slate-400">6'6" • 325 lbs • Sr. • <span class="text-emerald-400 font-semibold">Prior Lake, MN 🌲</span></div></div></div><span class="px-2.5 py-1 rounded-lg bg-emerald-500/20 text-emerald-300 font-bold text-[11px] border border-emerald-500/40 shrink-0">MN Native 🌲</span></div>
+            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2"><div class="flex items-center gap-3"><span class="font-black text-[#FFCC33] text-sm w-12 shrink-0">LG #50</span><div><div class="font-bold text-white text-sm">Nathan Roy</div><div class="text-[11px] text-slate-400">6'5" • 305 lbs • Jr. • <span class="text-slate-300">Mukwonago, WI</span></div></div></div><span class="px-2.5 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 font-semibold text-[11px] border border-emerald-500/20 shrink-0">Gopher Recruit</span></div>
+            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2"><div class="flex items-center gap-3"><span class="font-black text-[#FFCC33] text-sm w-12 shrink-0">C #78</span><div><div class="font-bold text-white text-sm">Ashton Beers</div><div class="text-[11px] text-slate-400">6'6" • 320 lbs • Sr. • <span class="text-[#FFCC33] font-semibold">Slinger, WI</span></div></div></div><span class="px-2.5 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 font-semibold text-[11px] border border-emerald-500/20 shrink-0">Gopher Recruit</span></div>
+            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2"><div class="flex items-center gap-3"><span class="font-black text-[#FFCC33] text-sm w-12 shrink-0">RG #59</span><div><div class="font-bold text-white text-sm">Tony Nelson</div><div class="text-[11px] text-slate-400">6'6" • 325 lbs • Sr. • <span class="text-emerald-400 font-semibold">Tracy, MN 🌲</span></div></div></div><span class="px-2.5 py-1 rounded-lg bg-emerald-500/20 text-emerald-300 font-bold text-[11px] border border-emerald-500/40 shrink-0">MN Native 🌲</span></div>
+            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2"><div class="flex items-center gap-3"><span class="font-black text-[#FFCC33] text-sm w-12 shrink-0">RT #77</span><div><div class="font-bold text-white text-sm">Nick Spence</div><div class="text-[11px] text-slate-400">6'6" • 300 lbs • So. • <span class="text-slate-300">Liberty, MO</span></div></div></div><span class="px-2.5 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 font-semibold text-[11px] border border-emerald-500/20 shrink-0">Gopher Recruit</span></div>
           </div>
         </div>
 
+        <!-- Starting Defense (11 Players) -->
         <div class="gopher-card rounded-2xl p-4 md:p-6 border-l-4 border-l-[#7A0019]">
           <h3 class="text-base md:text-lg font-bold text-white mb-4 flex items-center justify-between">
-            <span><i class="fa-solid fa-shield-halved mr-2 text-rose-400"></i> Starting Defense</span>
+            <span><i class="fa-solid fa-shield-halved mr-2 text-rose-400"></i> Starting Defense (Full 11 Starters)</span>
             <span class="text-xs font-normal text-slate-400">Front 7 & Secondary</span>
           </h3>
           <div class="space-y-3">
-            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
-              <div class="flex items-center gap-3">
-                <span class="font-black text-[#FFCC33] text-sm w-12 shrink-0">DL #0</span>
-                <div>
-                  <div class="font-bold text-white text-sm">Anthony Smith (DE)</div>
-                  <div class="text-[11px] text-slate-400">6'6" • 280 lbs • Sr. • <span class="text-slate-300">Shippensburg, PA</span></div>
-                </div>
-              </div>
-              <span class="px-2.5 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 font-semibold text-[11px] border border-emerald-500/20 shrink-0">Gopher Recruit</span>
-            </div>
-
-            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
-              <div class="flex items-center gap-3">
-                <span class="font-black text-[#FFCC33] text-sm w-12 shrink-0">DL #90</span>
-                <div>
-                  <div class="font-bold text-white text-sm">Xion Chapman (DT)</div>
-                  <div class="text-[11px] text-slate-400">6'3" • 305 lbs • Sr. • <span class="text-slate-300">Hollywood, FL</span></div>
-                </div>
-              </div>
-              <span class="px-2.5 py-1 rounded-lg bg-amber-500/20 text-amber-300 font-bold text-[11px] border border-amber-500/40 shrink-0"><i class="fa-solid fa-right-left mr-1"></i> Transfer (FIU)</span>
-            </div>
-
-            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
-              <div class="flex items-center gap-3">
-                <span class="font-black text-[#FFCC33] text-sm w-12 shrink-0">LB #6</span>
-                <div>
-                  <div class="font-bold text-white text-sm">Maverick Baranowski</div>
-                  <div class="text-[11px] text-slate-400">6'2" • 230 lbs • Sr. • <span class="text-slate-300">Ponce Inlet, FL</span></div>
-                </div>
-              </div>
-              <span class="px-2.5 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 font-semibold text-[11px] border border-emerald-500/20 shrink-0">Gopher Recruit</span>
-            </div>
-
-            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
-              <div class="flex items-center gap-3">
-                <span class="font-black text-[#FFCC33] text-sm w-12 shrink-0">DB #14</span>
-                <div>
-                  <div class="font-bold text-white text-sm">Kerry Brown (S)</div>
-                  <div class="text-[11px] text-slate-400">5'10" • 190 lbs • Sr. • <span class="text-slate-300">Naples, FL</span></div>
-                </div>
-              </div>
-              <span class="px-2.5 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 font-semibold text-[11px] border border-emerald-500/20 shrink-0">Gopher Recruit</span>
-            </div>
-
-            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
-              <div class="flex items-center gap-3">
-                <span class="font-black text-[#FFCC33] text-sm w-12 shrink-0">DB #7</span>
-                <div>
-                  <div class="font-bold text-white text-sm">Aidan Gousby (CB)</div>
-                  <div class="text-[11px] text-slate-400">6'0" • 190 lbs • Sr. • <span class="text-slate-300">Lehigh Acres, FL</span></div>
-                </div>
-              </div>
-              <span class="px-2.5 py-1 rounded-lg bg-amber-500/20 text-amber-300 font-bold text-[11px] border border-amber-500/40 shrink-0"><i class="fa-solid fa-right-left mr-1"></i> Transfer (Louisville)</span>
-            </div>
+            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2"><div class="flex items-center gap-3"><span class="font-black text-[#FFCC33] text-sm w-12 shrink-0">DE #0</span><div><div class="font-bold text-white text-sm">Anthony Smith</div><div class="text-[11px] text-slate-400">6'6" • 280 lbs • Sr. • <span class="text-slate-300">Shippensburg, PA</span></div></div></div><span class="px-2.5 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 font-semibold text-[11px] border border-emerald-500/20 shrink-0">Gopher Recruit</span></div>
+            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2"><div class="flex items-center gap-3"><span class="font-black text-[#FFCC33] text-sm w-12 shrink-0">DT #90</span><div><div class="font-bold text-white text-sm">Xion Chapman</div><div class="text-[11px] text-slate-400">6'3" • 305 lbs • Sr. • <span class="text-slate-300">Hollywood, FL</span></div></div></div><span class="px-2.5 py-1 rounded-lg bg-amber-500/20 text-amber-300 font-bold text-[11px] border border-amber-500/40 shrink-0"><i class="fa-solid fa-right-left mr-1"></i> Transfer (FIU)</span></div>
+            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2"><div class="flex items-center gap-3"><span class="font-black text-[#FFCC33] text-sm w-12 shrink-0">DT #70</span><div><div class="font-bold text-white text-sm">Naquan Crowder</div><div class="text-[11px] text-slate-400">6'2" • 330 lbs • Sr. • <span class="text-slate-300">Eatonville, FL</span></div></div></div><span class="px-2.5 py-1 rounded-lg bg-amber-500/20 text-amber-300 font-bold text-[11px] border border-amber-500/40 shrink-0"><i class="fa-solid fa-right-left mr-1"></i> Transfer (Marshall)</span></div>
+            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2"><div class="flex items-center gap-3"><span class="font-black text-[#FFCC33] text-sm w-12 shrink-0">DE #11</span><div><div class="font-bold text-white text-sm">Karter Menz</div><div class="text-[11px] text-slate-400">6'5" • 240 lbs • Sr. • <span class="text-slate-300">Horace, ND</span></div></div></div><span class="px-2.5 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 font-semibold text-[11px] border border-emerald-500/20 shrink-0">Gopher Recruit</span></div>
+            
+            <div class="pt-2 border-t border-slate-800 text-[11px] font-bold text-[#FFCC33] uppercase">Linebackers & Secondary</div>
+            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2"><div class="flex items-center gap-3"><span class="font-black text-[#FFCC33] text-sm w-12 shrink-0">LB #6</span><div><div class="font-bold text-white text-sm">Maverick Baranowski (MIKE)</div><div class="text-[11px] text-slate-400">6'2" • 230 lbs • Sr. • <span class="text-slate-300">Ponce Inlet, FL</span></div></div></div><span class="px-2.5 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 font-semibold text-[11px] border border-emerald-500/20 shrink-0">Gopher Recruit</span></div>
+            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2"><div class="flex items-center gap-3"><span class="font-black text-[#FFCC33] text-sm w-12 shrink-0">LB #19</span><div><div class="font-bold text-white text-sm">Joey Gerlach (WILL)</div><div class="text-[11px] text-slate-400">6'3" • 225 lbs • Sr. • <span class="text-emerald-400 font-semibold">Woodbury, MN 🌲</span></div></div></div><span class="px-2.5 py-1 rounded-lg bg-emerald-500/20 text-emerald-300 font-bold text-[11px] border border-emerald-500/40 shrink-0">MN Native 🌲</span></div>
+            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2"><div class="flex items-center gap-3"><span class="font-black text-[#FFCC33] text-sm w-12 shrink-0">LB #2</span><div><div class="font-bold text-white text-sm">Emmanuel Karmo (SAM)</div><div class="text-[11px] text-slate-400">6'2" • 235 lbs • So. • <span class="text-emerald-400 font-semibold">Robbinsdale, MN 🌲</span></div></div></div><span class="px-2.5 py-1 rounded-lg bg-emerald-500/20 text-emerald-300 font-bold text-[11px] border border-emerald-500/40 shrink-0">MN Native 🌲</span></div>
+            
+            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2"><div class="flex items-center gap-3"><span class="font-black text-[#FFCC33] text-sm w-12 shrink-0">CB #17</span><div><div class="font-bold text-white text-sm">John Nestor</div><div class="text-[11px] text-slate-400">6'1" • 210 lbs • Sr. • <span class="text-slate-300">Chicago, IL</span></div></div></div><span class="px-2.5 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 font-semibold text-[11px] border border-emerald-500/20 shrink-0">Gopher Recruit</span></div>
+            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2"><div class="flex items-center gap-3"><span class="font-black text-[#FFCC33] text-sm w-12 shrink-0">CB #7</span><div><div class="font-bold text-white text-sm">Aidan Gousby</div><div class="text-[11px] text-slate-400">6'0" • 190 lbs • Sr. • <span class="text-slate-300">Lehigh Acres, FL</span></div></div></div><span class="px-2.5 py-1 rounded-lg bg-amber-500/20 text-amber-300 font-bold text-[11px] border border-amber-500/40 shrink-0"><i class="fa-solid fa-right-left mr-1"></i> Transfer (Louisville)</span></div>
+            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2"><div class="flex items-center gap-3"><span class="font-black text-[#FFCC33] text-sm w-12 shrink-0">SS #14</span><div><div class="font-bold text-white text-sm">Kerry Brown</div><div class="text-[11px] text-slate-400">5'10" • 190 lbs • Sr. • <span class="text-slate-300">Naples, FL</span></div></div></div><span class="px-2.5 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 font-semibold text-[11px] border border-emerald-500/20 shrink-0">Gopher Recruit</span></div>
+            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2"><div class="flex items-center gap-3"><span class="font-black text-[#FFCC33] text-sm w-12 shrink-0">FS #9</span><div><div class="font-bold text-white text-sm">Garrison Monroe</div><div class="text-[11px] text-slate-400">6'0" • 205 lbs • Sr. • <span class="text-emerald-400 font-semibold">Shakopee, MN 🌲</span></div></div></div><span class="px-2.5 py-1 rounded-lg bg-emerald-500/20 text-emerald-300 font-bold text-[11px] border border-emerald-500/40 shrink-0">MN Native 🌲</span></div>
           </div>
         </div>
       `;
