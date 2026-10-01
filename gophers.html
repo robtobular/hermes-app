@@ -227,10 +227,12 @@
         return `<span class="px-2.5 py-1 rounded-lg bg-amber-500/20 text-amber-300 font-bold text-[11px] border border-amber-500/40 inline-flex items-center gap-1"><i class="fa-solid fa-right-left" aria-hidden="true"></i> Transfer (${escapeHTML(p.prev_school || 'Portal')})</span>`;
       } else if (activeTeam === 'gophers' && p.is_mn_native) {
         return `<span class="px-2.5 py-1 rounded-lg bg-emerald-500/20 text-emerald-300 font-bold text-[11px] border border-emerald-500/40 inline-flex items-center gap-1"><i class="fa-solid fa-house" aria-hidden="true"></i> MN Native</span>`;
-      } else if (activeTeam === 'opponent') {
-        return `<span class="px-2.5 py-1 rounded-lg bg-blue-500/20 text-blue-300 font-bold text-[11px] border border-blue-500/40 inline-flex items-center gap-1"><i class="fa-solid fa-paw" aria-hidden="true"></i> Wolverine Recruit</span>`;
       }
-      return `<span class="px-2.5 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 font-semibold text-[11px] border border-emerald-500/20 inline-flex items-center gap-1"><i class="fa-solid fa-house" aria-hidden="true"></i> Gopher Recruit</span>`;
+      // No generic "Recruit" badge here: the data only distinguishes
+      // transfers and MN-native hometowns. Labeling every other roster
+      // player (including upperclassmen who've been there for years) as
+      // a "Recruit" would be a factual claim the data doesn't support.
+      return '';
     }
 
     function starterRow(p) {
