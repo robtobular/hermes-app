@@ -81,21 +81,67 @@
       <div class="flex items-center gap-2 mb-3">
         <i class="fa-solid fa-money-bill-trend-up text-emerald-400" aria-hidden="true"></i>
         <h2 class="font-bold text-sm text-white">Consensus Betting Odds</h2>
-        <span class="text-[10px] text-slate-500 ml-auto" id="odds-updated">Not yet verified (2026-10-01)</span>
+        <span class="text-[10px] text-slate-500 ml-auto" id="odds-updated">Updated Oct 01, 2026 ~3:56 AM CT (DraftKings via ESPN)</span>
       </div>
       <div class="grid grid-cols-3 gap-3 text-center">
         <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-3">
           <p class="text-[10px] uppercase tracking-wider text-slate-400 mb-1">Spread</p>
-          <p class="text-lg font-black text-[#FFCC33]" id="odds-spread">TBD</p>
+          <p class="text-lg font-black text-[#FFCC33]" id="odds-spread">MINN +5.5 (-110)</p>
         </div>
         <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-3">
           <p class="text-[10px] uppercase tracking-wider text-slate-400 mb-1">Over / Under</p>
-          <p class="text-lg font-black text-[#FFCC33]" id="odds-total">TBD</p>
+          <p class="text-lg font-black text-[#FFCC33]" id="odds-total">43.5</p>
         </div>
         <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-3">
           <p class="text-[10px] uppercase tracking-wider text-slate-400 mb-1">Moneyline</p>
-          <p class="text-sm font-black text-[#FFCC33]" id="odds-moneyline">TBD</p>
+          <p class="text-sm font-black text-[#FFCC33]" id="odds-moneyline">MICH -225 / MINN +185</p>
         </div>
+      </div>
+
+      <!-- Line Movement Breakdown -->
+      <div class="mt-4 pt-4 border-t border-slate-800">
+        <div class="flex items-center gap-2 mb-3">
+          <i class="fa-solid fa-chart-line text-amber-400" aria-hidden="true"></i>
+          <h3 class="font-bold text-xs text-white uppercase tracking-wider">Line Movement: Open &rarr; Now</h3>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-xs text-left">
+            <thead>
+              <tr class="text-slate-400 uppercase tracking-wider text-[10px]">
+                <th class="py-1 pr-3">Market</th>
+                <th class="py-1 pr-3">Opened</th>
+                <th class="py-1 pr-3">Now</th>
+                <th class="py-1">Shift</th>
+              </tr>
+            </thead>
+            <tbody class="text-slate-200">
+              <tr class="border-t border-slate-800/60">
+                <td class="py-1.5 pr-3 font-semibold">Spread</td>
+                <td class="py-1.5 pr-3">MICH -8.5 (-110)</td>
+                <td class="py-1.5 pr-3 text-[#FFCC33] font-bold">MICH -5.5 (-110)</td>
+                <td class="py-1.5 text-emerald-400 font-bold">-3.0 pts toward MINN</td>
+              </tr>
+              <tr class="border-t border-slate-800/60">
+                <td class="py-1.5 pr-3 font-semibold">Total (O/U)</td>
+                <td class="py-1.5 pr-3">44.5</td>
+                <td class="py-1.5 pr-3 text-[#FFCC33] font-bold">43.5</td>
+                <td class="py-1.5 text-emerald-400 font-bold">-1.0 pt</td>
+              </tr>
+              <tr class="border-t border-slate-800/60">
+                <td class="py-1.5 pr-3 font-semibold">Moneyline</td>
+                <td class="py-1.5 pr-3">Not posted at open</td>
+                <td class="py-1.5 pr-3 text-[#FFCC33] font-bold">MICH -225 / MINN +185</td>
+                <td class="py-1.5 text-slate-400">N/A (no open to compare)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-[11px] text-slate-400 mt-3 leading-relaxed">
+          The market has moved <span class="text-emerald-400 font-semibold">3 full points off Michigan</span> since the line opened &mdash;
+          the Wolverines fell from a -8.5 favorite to -5.5, with the total ticking down a point to 43.5.
+          Money and/or injury news is clearly flowing toward Minnesota keeping this one closer than initially expected,
+          though Michigan remains the favorite heading into Saturday's 12:00 PM CT kickoff at Huntington Bank Stadium.
+        </p>
       </div>
     </div>
 
