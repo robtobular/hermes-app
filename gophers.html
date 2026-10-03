@@ -233,12 +233,12 @@
           <i class="fa-solid fa-money-bill-trend-up text-emerald-400" aria-hidden="true"></i>
           <h2 class="font-bold text-sm text-white">Consensus Betting Odds</h2>
         </div>
-        <span class="text-[10px] text-slate-500 sm:ml-auto" id="odds-updated">Updated Oct 01, 2026 ~3:56 AM CT (DraftKings via ESPN)</span>
+        <span class="text-[10px] text-slate-500 sm:ml-auto" id="odds-updated">Updated Oct 03, 2026 ~8:03 AM CT (ESPN Gamecast — DraftKings consensus, gameday)</span>
       </div>
       <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-center">
         <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-3">
           <p class="text-[10px] uppercase tracking-wider text-slate-400 mb-1">Spread</p>
-          <p class="text-base sm:text-lg font-black text-[#FFCC33] break-words" id="odds-spread">MINN +5.5 (-110)</p>
+          <p class="text-base sm:text-lg font-black text-[#FFCC33] break-words" id="odds-spread">MINN +6.5 (-112)</p>
         </div>
         <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-3">
           <p class="text-[10px] uppercase tracking-wider text-slate-400 mb-1">Over / Under</p>
@@ -246,8 +246,52 @@
         </div>
         <div class="col-span-2 sm:col-span-1 bg-slate-900/80 border border-slate-800 rounded-xl p-3">
           <p class="text-[10px] uppercase tracking-wider text-slate-400 mb-1">Moneyline</p>
-          <p class="text-sm sm:text-sm font-black text-[#FFCC33] break-words leading-snug" id="odds-moneyline">MICH -225 / MINN +185</p>
+          <p class="text-sm sm:text-sm font-black text-[#FFCC33] break-words leading-snug" id="odds-moneyline">MICH -238 / MINN +195</p>
         </div>
+      </div>
+
+      <!-- Line Movement: Open -> Now -->
+      <div class="mt-4 pt-4 border-t border-slate-800">
+        <div class="flex items-center gap-2 mb-2">
+          <i class="fa-solid fa-chart-line text-sky-400" aria-hidden="true"></i>
+          <h3 class="font-bold text-xs uppercase tracking-wider text-white">Line Movement: Open &rarr; Now</h3>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-xs sm:text-sm">
+            <thead>
+              <tr class="text-slate-400 uppercase text-[10px] tracking-wider border-b border-slate-800">
+                <th class="text-left py-2 px-2">Market</th>
+                <th class="text-left py-2 px-2">Opened (Thu)</th>
+                <th class="text-left py-2 px-2">Now (Sat Gameday)</th>
+                <th class="text-left py-2 px-2">Shift</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-slate-800/60">
+                <td class="py-2 px-2 text-slate-400">Spread</td>
+                <td class="py-2 px-2 text-slate-300">MICH -8.5 (-110)</td>
+                <td class="py-2 px-2 font-bold text-[#FFCC33]">MICH -6.5 (-108)</td>
+                <td class="py-2 px-2 font-bold text-emerald-400">-2.0 pts toward Minnesota</td>
+              </tr>
+              <tr class="border-b border-slate-800/60">
+                <td class="py-2 px-2 text-slate-400">Total (O/U)</td>
+                <td class="py-2 px-2 text-slate-300">44.5</td>
+                <td class="py-2 px-2 font-bold text-[#FFCC33]">43.5</td>
+                <td class="py-2 px-2 font-bold text-emerald-400">-1.0 pt</td>
+              </tr>
+              <tr>
+                <td class="py-2 px-2 text-slate-400">Moneyline</td>
+                <td class="py-2 px-2 text-slate-300">not posted at open</td>
+                <td class="py-2 px-2 font-bold text-[#FFCC33]">MICH -238 / MINN +195</td>
+                <td class="py-2 px-2 text-slate-500">N/A</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-[11px] sm:text-xs text-slate-400 mt-3 leading-relaxed">
+          <i class="fa-solid fa-circle-info text-sky-400 mr-1" aria-hidden="true"></i>
+          Since the line opened, the market has shaved <strong class="text-white">2 points</strong> off Michigan — the Wolverines fell from an 8.5-point favorite down to 6.5, with the total also ticking down a point to 43.5. Michigan remains a solid favorite, but money has leaned slightly toward Minnesota keeping this within a one-score-plus game heading into kickoff.
+        </p>
       </div>
     </div>
 
