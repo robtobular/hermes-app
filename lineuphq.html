@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LineupHQ — Multi-League Fantasy Command Center</title>
+  <title>LineupHQ — Vegas-Backed Fantasy Football Command Center</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Open+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Open+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
@@ -25,19 +25,19 @@
     }
   </style>
 </head>
-<body class="min-h-screen pb-16">
+<body class="min-h-screen pb-20">
 
   <!-- Header Banner -->
   <header class="bg-gradient-to-r from-slate-950 via-indigo-950 to-slate-950 border-b border-indigo-500/20 text-white py-6 px-4 md:px-8 shadow-2xl relative overflow-hidden">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 relative z-10">
       <div class="flex items-center gap-4">
-        <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-blue-600 to-indigo-500 flex items-center justify-center font-brand font-black text-2xl text-white shadow-lg border border-indigo-400/30">
-          <i class="fa-solid fa-trophy text-amber-300"></i>
+        <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-amber-500 via-indigo-600 to-blue-500 flex items-center justify-center font-brand font-black text-2xl text-white shadow-lg border border-amber-400/40">
+          <i class="fa-solid fa-dice text-amber-300"></i>
         </div>
         <div>
           <div class="flex items-center gap-2">
-            <span class="px-2.5 py-0.5 bg-indigo-500/20 text-indigo-300 text-[10px] font-mono font-bold rounded-full uppercase tracking-wider border border-indigo-500/30">Universal Fantasy Command Center</span>
-            <span class="text-xs text-slate-400 font-mono">NFL Week 5 (2026)</span>
+            <span class="px-2.5 py-0.5 bg-indigo-500/20 text-indigo-300 text-[10px] font-mono font-bold rounded-full uppercase tracking-wider border border-indigo-500/30">Vegas-Backed Consensus Intelligence</span>
+            <span class="text-xs text-slate-400 font-mono">Week 6 (2026)</span>
           </div>
           <h1 class="text-2xl md:text-3xl font-brand font-black tracking-tight text-white mt-1">LineupHQ</h1>
         </div>
@@ -46,8 +46,8 @@
       <!-- Quick Action / Status -->
       <div class="flex items-center gap-3">
         <div class="bg-slate-900/90 border border-slate-800 rounded-xl px-4 py-2 text-right">
-          <p class="text-[10px] uppercase font-mono tracking-wider text-slate-400">Synced Account</p>
-          <p class="text-sm font-bold text-white flex items-center gap-1.5"><i class="fa-solid fa-user-check text-blue-400"></i> Robtobular (5 Leagues)</p>
+          <p class="text-[10px] uppercase font-mono tracking-wider text-slate-400">Synced User</p>
+          <p class="text-sm font-bold text-white flex items-center gap-1.5"><i class="fa-solid fa-user-check text-blue-400"></i> Robtobular (5 Teams)</p>
         </div>
         <button onclick="window.location.reload()" class="p-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-bold shadow-lg shadow-indigo-600/30 transition flex items-center gap-2">
           <i class="fa-solid fa-arrows-rotate"></i>
@@ -59,1077 +59,938 @@
 
   <!-- Main Container -->
   <main class="max-w-7xl mx-auto px-4 md:px-8 pt-8">
-    
-    <!-- Top Alert Banner -->
-    <div class="mb-8 p-4 rounded-2xl bg-gradient-to-r from-amber-500/10 via-rose-500/10 to-transparent border border-amber-500/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-      <div class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center shrink-0 text-amber-400 text-lg">
-          <i class="fa-solid fa-triangle-exclamation"></i>
+
+    <!-- Hero Value Prop & Status Banner -->
+    <div class="mb-8 p-5 rounded-2xl bg-gradient-to-r from-amber-500/10 via-indigo-500/10 to-emerald-500/10 border border-indigo-500/30 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+      <div class="flex items-center gap-4">
+        <div class="w-12 h-12 rounded-xl bg-indigo-500/20 border border-indigo-500/40 flex items-center justify-center shrink-0 text-indigo-400 text-xl">
+          <i class="fa-solid fa-chart-line"></i>
         </div>
         <div>
-          <h2 class="text-sm font-bold text-amber-200">Sunday Morning Lineup Alerts Active</h2>
-          <p class="text-xs text-slate-300">Live scanning official NFL injury tags across all 5 Sleeper rosters simultaneously.</p>
+          <h2 class="text-base font-bold text-white flex items-center gap-2">
+            <span>Consensus Powered by Vegas Implied Totals &amp; Props</span>
+            <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-mono font-bold">Beat The Consensus</span>
+          </h2>
+          <p class="text-xs text-slate-300 mt-0.5">Unlike FantasyPros' stale expert opinions, LineupHQ scores players using real-time sportsbook implied team totals and game scripts.</p>
         </div>
       </div>
-      <div class="text-xs font-mono text-slate-400">
-        Status: <span class="text-emerald-400 font-bold">100% Live Sync</span>
+      <div class="flex items-center gap-2">
+        <div class="px-3 py-1.5 rounded-xl bg-slate-900 border border-slate-800 text-center">
+          <p class="text-[9px] uppercase font-mono text-slate-400">Pending Lineup Swaps</p>
+          <p class="text-base font-black text-rose-400">3 Required</p>
+        </div>
       </div>
     </div>
 
-    <!-- League Roster Grid -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-      
-    <div class="gopher-card rounded-2xl overflow-hidden border border-slate-800 bg-slate-900/80 p-5 shadow-xl">
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-slate-800 gap-3">
+    <!-- Section: Global Vegas Power Rankings (Top 15 across Rob's rosters) -->
+    <div class="mb-10 gopher-card rounded-2xl border border-slate-800 bg-slate-900/80 p-5 shadow-xl">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-slate-800 gap-2">
         <div>
-          <div class="flex items-center gap-2">
-            <span class="px-2 py-0.5 rounded bg-blue-500/20 text-blue-400 text-[10px] font-bold uppercase tracking-wider">Sleeper</span>
-            <span class="text-xs text-slate-400 font-mono">22 Teams • Dynasty</span>
-          </div>
-          <h2 class="text-xl font-black text-white mt-1 tracking-tight">Fuad</h2>
+          <span class="px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 text-[10px] font-mono font-bold uppercase tracking-wider">Prop Index</span>
+          <h2 class="text-xl font-brand font-black text-white mt-1">Week 6 Vegas Player Consensus Index</h2>
         </div>
-        <div class="flex items-center gap-3">
-          <span class="px-2.5 py-1 rounded-full text-xs font-black bg-rose-500/20 text-rose-300 border border-rose-500/40 animate-pulse">🚨 2 Action Needed</span>
-          <a href="https://sleeper.com/leagues/1390701316791095296" target="_blank" rel="noopener" class="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold transition flex items-center gap-1.5 border border-slate-700">
+        <p class="text-xs text-slate-400 font-mono">Ranked by Red Zone Equity &amp; Implied Vegas Score</p>
+      </div>
+
+      <div class="mt-4 overflow-x-auto rounded-xl border border-slate-800/80 bg-slate-950/50">
+        <table class="w-full text-left text-xs">
+          <thead class="bg-slate-900/80 text-slate-400 text-[10px] uppercase font-mono border-b border-slate-800">
+            <tr>
+              <th class="py-2.5 px-3">Rank</th>
+              <th class="py-2.5 px-3">Player / Team</th>
+              <th class="py-2.5 px-3 text-center">Vegas Implied Total</th>
+              <th class="py-2.5 px-3 text-center">PPR Proj</th>
+              <th class="py-2.5 px-3 text-right">Vegas Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+    <tr class="hover:bg-slate-800/40 border-b border-slate-800/50 transition text-xs">
+      <td class="py-2.5 px-3 font-mono font-bold text-slate-400">1</td>
+      <td class="py-2.5 px-3 font-bold text-white flex items-center gap-2">
+        <span>Jayden Daniels</span>
+        <span class="px-1.5 py-0.5 rounded bg-slate-800 text-[10px] text-slate-300 font-mono">QB - WAS</span>
+      </td>
+      <td class="py-2.5 px-3 text-center font-mono font-bold text-amber-300">25.5 pts</td>
+      <td class="py-2.5 px-3 text-center font-mono font-black text-indigo-300">22.4</td>
+      <td class="py-2.5 px-3 text-right">
+        <div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 font-mono font-bold text-[11px]">
+          <i class="fa-solid fa-fire text-amber-400 text-[9px]"></i> 99.0
+        </div>
+      </td>
+    </tr>
+    
+    <tr class="hover:bg-slate-800/40 border-b border-slate-800/50 transition text-xs">
+      <td class="py-2.5 px-3 font-mono font-bold text-slate-400">2</td>
+      <td class="py-2.5 px-3 font-bold text-white flex items-center gap-2">
+        <span>Justin Jefferson</span>
+        <span class="px-1.5 py-0.5 rounded bg-slate-800 text-[10px] text-slate-300 font-mono">WR - MIN</span>
+      </td>
+      <td class="py-2.5 px-3 text-center font-mono font-bold text-amber-300">23.0 pts</td>
+      <td class="py-2.5 px-3 text-center font-mono font-black text-indigo-300">19.8</td>
+      <td class="py-2.5 px-3 text-right">
+        <div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 font-mono font-bold text-[11px]">
+          <i class="fa-solid fa-fire text-amber-400 text-[9px]"></i> 94.1
+        </div>
+      </td>
+    </tr>
+    
+    <tr class="hover:bg-slate-800/40 border-b border-slate-800/50 transition text-xs">
+      <td class="py-2.5 px-3 font-mono font-bold text-slate-400">3</td>
+      <td class="py-2.5 px-3 font-bold text-white flex items-center gap-2">
+        <span>Josh Allen</span>
+        <span class="px-1.5 py-0.5 rounded bg-slate-800 text-[10px] text-slate-300 font-mono">QB - BUF</span>
+      </td>
+      <td class="py-2.5 px-3 text-center font-mono font-bold text-amber-300">27.0 pts</td>
+      <td class="py-2.5 px-3 text-center font-mono font-black text-indigo-300">17.4</td>
+      <td class="py-2.5 px-3 text-right">
+        <div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 font-mono font-bold text-[11px]">
+          <i class="fa-solid fa-fire text-amber-400 text-[9px]"></i> 85.8
+        </div>
+      </td>
+    </tr>
+    
+    <tr class="hover:bg-slate-800/40 border-b border-slate-800/50 transition text-xs">
+      <td class="py-2.5 px-3 font-mono font-bold text-slate-400">4</td>
+      <td class="py-2.5 px-3 font-bold text-white flex items-center gap-2">
+        <span>Patrick Mahomes</span>
+        <span class="px-1.5 py-0.5 rounded bg-slate-800 text-[10px] text-slate-300 font-mono">QB - KC</span>
+      </td>
+      <td class="py-2.5 px-3 text-center font-mono font-bold text-amber-300">26.5 pts</td>
+      <td class="py-2.5 px-3 text-center font-mono font-black text-indigo-300">17.0</td>
+      <td class="py-2.5 px-3 text-right">
+        <div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 font-mono font-bold text-[11px]">
+          <i class="fa-solid fa-fire text-amber-400 text-[9px]"></i> 84.2
+        </div>
+      </td>
+    </tr>
+    
+    <tr class="hover:bg-slate-800/40 border-b border-slate-800/50 transition text-xs">
+      <td class="py-2.5 px-3 font-mono font-bold text-slate-400">5</td>
+      <td class="py-2.5 px-3 font-bold text-white flex items-center gap-2">
+        <span>Ashton Jeanty</span>
+        <span class="px-1.5 py-0.5 rounded bg-slate-800 text-[10px] text-slate-300 font-mono">RB - LV</span>
+      </td>
+      <td class="py-2.5 px-3 text-center font-mono font-bold text-amber-300">17.0 pts</td>
+      <td class="py-2.5 px-3 text-center font-mono font-black text-indigo-300">17.2</td>
+      <td class="py-2.5 px-3 text-right">
+        <div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 font-mono font-bold text-[11px]">
+          <i class="fa-solid fa-fire text-amber-400 text-[9px]"></i> 80.3
+        </div>
+      </td>
+    </tr>
+    
+    <tr class="hover:bg-slate-800/40 border-b border-slate-800/50 transition text-xs">
+      <td class="py-2.5 px-3 font-mono font-bold text-slate-400">6</td>
+      <td class="py-2.5 px-3 font-bold text-white flex items-center gap-2">
+        <span>Trevor Lawrence</span>
+        <span class="px-1.5 py-0.5 rounded bg-slate-800 text-[10px] text-slate-300 font-mono">QB - JAX</span>
+      </td>
+      <td class="py-2.5 px-3 text-center font-mono font-bold text-amber-300">20.5 pts</td>
+      <td class="py-2.5 px-3 text-center font-mono font-black text-indigo-300">16.5</td>
+      <td class="py-2.5 px-3 text-right">
+        <div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 font-mono font-bold text-[11px]">
+          <i class="fa-solid fa-fire text-amber-400 text-[9px]"></i> 79.1
+        </div>
+      </td>
+    </tr>
+    
+    <tr class="hover:bg-slate-800/40 border-b border-slate-800/50 transition text-xs">
+      <td class="py-2.5 px-3 font-mono font-bold text-slate-400">7</td>
+      <td class="py-2.5 px-3 font-bold text-white flex items-center gap-2">
+        <span>Cooper Kupp</span>
+        <span class="px-1.5 py-0.5 rounded bg-slate-800 text-[10px] text-slate-300 font-mono">WR - SEA</span>
+      </td>
+      <td class="py-2.5 px-3 text-center font-mono font-bold text-amber-300">23.5 pts</td>
+      <td class="py-2.5 px-3 text-center font-mono font-black text-indigo-300">15.6</td>
+      <td class="py-2.5 px-3 text-right">
+        <div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 font-mono font-bold text-[11px]">
+          <i class="fa-solid fa-fire text-amber-400 text-[9px]"></i> 76.7
+        </div>
+      </td>
+    </tr>
+    
+    <tr class="hover:bg-slate-800/40 border-b border-slate-800/50 transition text-xs">
+      <td class="py-2.5 px-3 font-mono font-bold text-slate-400">8</td>
+      <td class="py-2.5 px-3 font-bold text-white flex items-center gap-2">
+        <span>CeeDee Lamb</span>
+        <span class="px-1.5 py-0.5 rounded bg-slate-800 text-[10px] text-slate-300 font-mono">WR - DAL</span>
+      </td>
+      <td class="py-2.5 px-3 text-center font-mono font-bold text-amber-300">24.0 pts</td>
+      <td class="py-2.5 px-3 text-center font-mono font-black text-indigo-300">15.5</td>
+      <td class="py-2.5 px-3 text-right">
+        <div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 font-mono font-bold text-[11px]">
+          <i class="fa-solid fa-fire text-amber-400 text-[9px]"></i> 76.4
+        </div>
+      </td>
+    </tr>
+    
+    <tr class="hover:bg-slate-800/40 border-b border-slate-800/50 transition text-xs">
+      <td class="py-2.5 px-3 font-mono font-bold text-slate-400">9</td>
+      <td class="py-2.5 px-3 font-bold text-white flex items-center gap-2">
+        <span>C.J. Stroud</span>
+        <span class="px-1.5 py-0.5 rounded bg-slate-800 text-[10px] text-slate-300 font-mono">QB - HOU</span>
+      </td>
+      <td class="py-2.5 px-3 text-center font-mono font-bold text-amber-300">24.0 pts</td>
+      <td class="py-2.5 px-3 text-center font-mono font-black text-indigo-300">15.4</td>
+      <td class="py-2.5 px-3 text-right">
+        <div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 font-mono font-bold text-[11px]">
+          <i class="fa-solid fa-fire text-amber-400 text-[9px]"></i> 76.2
+        </div>
+      </td>
+    </tr>
+    
+    <tr class="hover:bg-slate-800/40 border-b border-slate-800/50 transition text-xs">
+      <td class="py-2.5 px-3 font-mono font-bold text-slate-400">10</td>
+      <td class="py-2.5 px-3 font-bold text-white flex items-center gap-2">
+        <span>Sam Darnold</span>
+        <span class="px-1.5 py-0.5 rounded bg-slate-800 text-[10px] text-slate-300 font-mono">QB - SEA</span>
+      </td>
+      <td class="py-2.5 px-3 text-center font-mono font-bold text-amber-300">23.5 pts</td>
+      <td class="py-2.5 px-3 text-center font-mono font-black text-indigo-300">15.1</td>
+      <td class="py-2.5 px-3 text-right">
+        <div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 font-mono font-bold text-[11px]">
+          <i class="fa-solid fa-fire text-amber-400 text-[9px]"></i> 74.6
+        </div>
+      </td>
+    </tr>
+    
+    <tr class="hover:bg-slate-800/40 border-b border-slate-800/50 transition text-xs">
+      <td class="py-2.5 px-3 font-mono font-bold text-slate-400">11</td>
+      <td class="py-2.5 px-3 font-bold text-white flex items-center gap-2">
+        <span>Bucky Irving</span>
+        <span class="px-1.5 py-0.5 rounded bg-slate-800 text-[10px] text-slate-300 font-mono">RB - TB</span>
+      </td>
+      <td class="py-2.5 px-3 text-center font-mono font-bold text-amber-300">23.0 pts</td>
+      <td class="py-2.5 px-3 text-center font-mono font-black text-indigo-300">14.8</td>
+      <td class="py-2.5 px-3 text-right">
+        <div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 font-mono font-bold text-[11px]">
+          <i class="fa-solid fa-fire text-amber-400 text-[9px]"></i> 73.1
+        </div>
+      </td>
+    </tr>
+    
+    <tr class="hover:bg-slate-800/40 border-b border-slate-800/50 transition text-xs">
+      <td class="py-2.5 px-3 font-mono font-bold text-slate-400">12</td>
+      <td class="py-2.5 px-3 font-bold text-white flex items-center gap-2">
+        <span>Jalon Daniels</span>
+        <span class="px-1.5 py-0.5 rounded bg-slate-800 text-[10px] text-slate-300 font-mono">QB - TB</span>
+      </td>
+      <td class="py-2.5 px-3 text-center font-mono font-bold text-amber-300">23.0 pts</td>
+      <td class="py-2.5 px-3 text-center font-mono font-black text-indigo-300">14.8</td>
+      <td class="py-2.5 px-3 text-right">
+        <div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 font-mono font-bold text-[11px]">
+          <i class="fa-solid fa-fire text-amber-400 text-[9px]"></i> 73.1
+        </div>
+      </td>
+    </tr>
+    
+    <tr class="hover:bg-slate-800/40 border-b border-slate-800/50 transition text-xs">
+      <td class="py-2.5 px-3 font-mono font-bold text-slate-400">13</td>
+      <td class="py-2.5 px-3 font-bold text-white flex items-center gap-2">
+        <span>Jaxon Smith-Njigba</span>
+        <span class="px-1.5 py-0.5 rounded bg-slate-800 text-[10px] text-slate-300 font-mono">WR - SEA</span>
+      </td>
+      <td class="py-2.5 px-3 text-center font-mono font-bold text-amber-300">23.5 pts</td>
+      <td class="py-2.5 px-3 text-center font-mono font-black text-indigo-300">14.2</td>
+      <td class="py-2.5 px-3 text-right">
+        <div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 font-mono font-bold text-[11px]">
+          <i class="fa-solid fa-fire text-amber-400 text-[9px]"></i> 70.8
+        </div>
+      </td>
+    </tr>
+    
+    <tr class="hover:bg-slate-800/40 border-b border-slate-800/50 transition text-xs">
+      <td class="py-2.5 px-3 font-mono font-bold text-slate-400">14</td>
+      <td class="py-2.5 px-3 font-bold text-white flex items-center gap-2">
+        <span>Javonte Williams</span>
+        <span class="px-1.5 py-0.5 rounded bg-slate-800 text-[10px] text-slate-300 font-mono">RB - DAL</span>
+      </td>
+      <td class="py-2.5 px-3 text-center font-mono font-bold text-amber-300">24.0 pts</td>
+      <td class="py-2.5 px-3 text-center font-mono font-black text-indigo-300">13.5</td>
+      <td class="py-2.5 px-3 text-right">
+        <div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 font-mono font-bold text-[11px]">
+          <i class="fa-solid fa-fire text-amber-400 text-[9px]"></i> 68.1
+        </div>
+      </td>
+    </tr>
+    
+    <tr class="hover:bg-slate-800/40 border-b border-slate-800/50 transition text-xs">
+      <td class="py-2.5 px-3 font-mono font-bold text-slate-400">15</td>
+      <td class="py-2.5 px-3 font-bold text-white flex items-center gap-2">
+        <span>Rhamondre Stevenson</span>
+        <span class="px-1.5 py-0.5 rounded bg-slate-800 text-[10px] text-slate-300 font-mono">RB - NE</span>
+      </td>
+      <td class="py-2.5 px-3 text-center font-mono font-bold text-amber-300">16.5 pts</td>
+      <td class="py-2.5 px-3 text-center font-mono font-black text-indigo-300">13.1</td>
+      <td class="py-2.5 px-3 text-right">
+        <div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 font-mono font-bold text-[11px]">
+          <i class="fa-solid fa-fire text-amber-400 text-[9px]"></i> 62.9
+        </div>
+      </td>
+    </tr>
+    
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Section: Active League Roster Cards -->
+    <div>
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-xl font-brand font-black text-white flex items-center gap-2">
+          <i class="fa-solid fa-users-gear text-indigo-400"></i> Your Connected Rosters (5)
+        </h2>
+        <span class="text-xs font-mono text-slate-400">Sleeper Multi-Sync</span>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        
+    <div class="gopher-card rounded-2xl overflow-hidden border border-slate-800 bg-slate-900/80 p-5 shadow-xl flex flex-col justify-between">
+      <div>
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-3 border-b border-slate-800 gap-2">
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="px-2 py-0.5 rounded bg-blue-500/20 text-blue-400 text-[10px] font-bold uppercase tracking-wider">Sleeper Dynasty</span>
+              <span class="text-xs text-indigo-400 font-mono font-bold">Proj: 99.9 pts</span>
+            </div>
+            <h2 class="text-lg font-black text-white mt-1 tracking-tight">Fuad</h2>
+          </div>
+          <a href="https://sleeper.com/leagues/1390701316791095296" target="_blank" rel="noopener" class="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold transition flex items-center gap-1.5 border border-slate-700 w-fit">
             <span>Open in Sleeper</span>
             <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
           </a>
         </div>
-      </div>
 
-      <!-- Starters Table -->
-      <div class="mt-4">
-        <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2 flex items-center gap-1.5">
-          <i class="fa-solid fa-bolt text-amber-400"></i> Starting Lineup
-        </h3>
-        <div class="overflow-x-auto rounded-xl border border-slate-800/80 bg-slate-950/50">
-          <table class="w-full text-left text-sm">
-            <thead class="bg-slate-900/60 text-slate-400 text-[10px] uppercase font-mono border-b border-slate-800">
-              <tr>
-                <th class="py-2 px-3">Slot</th>
-                <th class="py-2 px-3">Player</th>
-                <th class="py-2 px-3 text-center">Pos / Team</th>
-                <th class="py-2 px-3 text-right">Game Status</th>
-              </tr>
-            </thead>
-            <tbody>
-              
-        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">QB</td>
-          <td class="py-2.5 px-3 font-semibold text-white">Jayden Daniels</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">QB</span> <span class="text-slate-400">WAS</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">HEALTHY</span></td>
+        <!-- Start/Sit Recommendation Banner -->
+        <div class="mt-4">
+          <h3 class="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-1.5 flex items-center gap-1.5">
+            <i class="fa-solid fa-wand-magic-sparkles text-amber-400"></i> Vegas AI Optimization
+          </h3>
+          
+        <div class="p-2.5 rounded-xl bg-slate-900/40 border border-slate-800 text-slate-400 text-xs flex items-center gap-2">
+          <i class="fa-solid fa-circle-check text-emerald-400"></i> Lineup fully optimized against Vegas totals.
+        </div>
+        
+        </div>
+
+        <!-- Starters Table -->
+        <div class="mt-4">
+          <div class="overflow-x-auto rounded-xl border border-slate-800/80 bg-slate-950/50">
+            <table class="w-full text-left text-xs">
+              <thead class="bg-slate-900/60 text-slate-400 text-[10px] uppercase font-mono border-b border-slate-800">
+                <tr>
+                  <th class="py-2 px-3">Slot</th>
+                  <th class="py-2 px-3">Starter</th>
+                  <th class="py-2 px-3 text-center">Team</th>
+                  <th class="py-2 px-3 text-center">Vegas Proj</th>
+                  <th class="py-2 px-3 text-right">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">QB</td>
+          <td class="py-2 px-3 font-semibold text-white">Jayden Daniels</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">QB</span> <span class="text-slate-400">WAS</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">22.4</td>
+          <td class="py-2 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[9px] font-bold">OK</span></td>
         </tr>
         
-        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">RB</td>
-          <td class="py-2.5 px-3 font-semibold text-white">Bucky Irving</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">RB</span> <span class="text-slate-400">TB</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">HEALTHY</span></td>
+        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">RB</td>
+          <td class="py-2 px-3 font-semibold text-white">Bucky Irving</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">RB</span> <span class="text-slate-400">TB</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">14.8</td>
+          <td class="py-2 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[9px] font-bold">OK</span></td>
         </tr>
         
-        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">RB</td>
-          <td class="py-2.5 px-3 font-semibold text-white">Rhamondre Stevenson</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">RB</span> <span class="text-slate-400">NE</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">HEALTHY</span></td>
+        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">RB</td>
+          <td class="py-2 px-3 font-semibold text-white">Rhamondre Stevenson</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">RB</span> <span class="text-slate-400">NE</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">13.1</td>
+          <td class="py-2 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[9px] font-bold">OK</span></td>
         </tr>
         
-        <tr class="bg-amber-950/15 border-b border-amber-500/30 text-amber-100 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">WR</td>
-          <td class="py-2.5 px-3 font-semibold text-white">CeeDee Lamb</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">WR</span> <span class="text-slate-400">DAL</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 text-[10px] font-bold">QUESTIONABLE</span></td>
+        <tr class="bg-amber-950/20 border-b border-amber-500/30 text-amber-100 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">WR</td>
+          <td class="py-2 px-3 font-semibold text-white">CeeDee Lamb</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">WR</span> <span class="text-slate-400">DAL</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">15.5</td>
+          <td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 text-[9px] font-bold">QUES</span></td>
         </tr>
         
-        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">WR</td>
-          <td class="py-2.5 px-3 font-semibold text-white">Tre Tucker</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">WR</span> <span class="text-slate-400">LV</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">HEALTHY</span></td>
+        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">WR</td>
+          <td class="py-2 px-3 font-semibold text-white">Tre Tucker</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">WR</span> <span class="text-slate-400">LV</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">9.8</td>
+          <td class="py-2 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[9px] font-bold">OK</span></td>
         </tr>
         
-        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">TE</td>
-          <td class="py-2.5 px-3 font-semibold text-white">Isaiah Likely</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">TE</span> <span class="text-slate-400">NYG</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">HEALTHY</span></td>
+        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">TE</td>
+          <td class="py-2 px-3 font-semibold text-white">Isaiah Likely</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">TE</span> <span class="text-slate-400">NYG</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">8.9</td>
+          <td class="py-2 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[9px] font-bold">OK</span></td>
         </tr>
         
-        <tr class="bg-amber-950/15 border-b border-amber-500/30 text-amber-100 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">FLEX</td>
-          <td class="py-2.5 px-3 font-semibold text-white">Tre' Harris</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">WR</span> <span class="text-slate-400">LAC</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 text-[10px] font-bold">QUESTIONABLE</span></td>
+        <tr class="bg-amber-950/20 border-b border-amber-500/30 text-amber-100 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">FLEX</td>
+          <td class="py-2 px-3 font-semibold text-white">Tre' Harris</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">WR</span> <span class="text-slate-400">LAC</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">6.8</td>
+          <td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 text-[9px] font-bold">QUES</span></td>
         </tr>
         
-        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">FLEX</td>
-          <td class="py-2.5 px-3 font-semibold text-white">Jaylin Noel</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">WR</span> <span class="text-slate-400">HOU</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">HEALTHY</span></td>
+        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">FLEX</td>
+          <td class="py-2 px-3 font-semibold text-white">Jaylin Noel</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">WR</span> <span class="text-slate-400">HOU</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">8.6</td>
+          <td class="py-2 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[9px] font-bold">OK</span></td>
         </tr>
         
-            </tbody>
-          </table>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
-
-      <!-- Bench Collapse -->
-      <details class="mt-4 pt-2 border-t border-slate-800/60 group">
-        <summary class="cursor-pointer text-xs font-semibold text-slate-400 hover:text-slate-200 flex items-center justify-between py-1 select-none">
-          <span class="flex items-center gap-1.5"><i class="fa-solid fa-users text-slate-400"></i> Bench Reserves (6 players)</span>
-          <span class="text-[10px] text-blue-400 group-open:rotate-180 transition transform">▼</span>
-        </summary>
-        <div class="mt-2 overflow-x-auto rounded-xl border border-slate-800/80 bg-slate-950/30">
-          <table class="w-full text-left text-xs">
-            <tbody class="divide-y divide-slate-800/40">
-              
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Bo Nix</td>
-          <td class="py-1.5 px-3 text-center font-mono">QB - DEN</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Kaytron Allen</td>
-          <td class="py-1.5 px-3 text-center font-mono">RB - MIA</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-rose-900/40 text-rose-300 text-[10px] font-bold">Out</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Sam Darnold</td>
-          <td class="py-1.5 px-3 text-center font-mono">QB - SEA</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">DJ Moore</td>
-          <td class="py-1.5 px-3 text-center font-mono">WR - BUF</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-rose-900/40 text-rose-300 text-[10px] font-bold">Questionable</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Breece Hall</td>
-          <td class="py-1.5 px-3 text-center font-mono">RB - NYJ</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-rose-900/40 text-rose-300 text-[10px] font-bold">Out</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Sean Tucker</td>
-          <td class="py-1.5 px-3 text-center font-mono">RB - TB</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-            </tbody>
-          </table>
-        </div>
-      </details>
     </div>
     
-    <div class="gopher-card rounded-2xl overflow-hidden border border-slate-800 bg-slate-900/80 p-5 shadow-xl">
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-slate-800 gap-3">
-        <div>
-          <div class="flex items-center gap-2">
-            <span class="px-2 py-0.5 rounded bg-blue-500/20 text-blue-400 text-[10px] font-bold uppercase tracking-wider">Sleeper</span>
-            <span class="text-xs text-slate-400 font-mono">12 Teams • Dynasty</span>
+    <div class="gopher-card rounded-2xl overflow-hidden border border-slate-800 bg-slate-900/80 p-5 shadow-xl flex flex-col justify-between">
+      <div>
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-3 border-b border-slate-800 gap-2">
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="px-2 py-0.5 rounded bg-blue-500/20 text-blue-400 text-[10px] font-bold uppercase tracking-wider">Sleeper Dynasty</span>
+              <span class="text-xs text-indigo-400 font-mono font-bold">Proj: 81.9 pts</span>
+            </div>
+            <h2 class="text-lg font-black text-white mt-1 tracking-tight">Domination League</h2>
           </div>
-          <h2 class="text-xl font-black text-white mt-1 tracking-tight">Domination League</h2>
-        </div>
-        <div class="flex items-center gap-3">
-          <span class="px-2.5 py-1 rounded-full text-xs font-black bg-rose-500/20 text-rose-300 border border-rose-500/40 animate-pulse">🚨 2 Action Needed</span>
-          <a href="https://sleeper.com/leagues/1359028271282421760" target="_blank" rel="noopener" class="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold transition flex items-center gap-1.5 border border-slate-700">
+          <a href="https://sleeper.com/leagues/1359028271282421760" target="_blank" rel="noopener" class="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold transition flex items-center gap-1.5 border border-slate-700 w-fit">
             <span>Open in Sleeper</span>
             <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
           </a>
         </div>
-      </div>
 
-      <!-- Starters Table -->
-      <div class="mt-4">
-        <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2 flex items-center gap-1.5">
-          <i class="fa-solid fa-bolt text-amber-400"></i> Starting Lineup
-        </h3>
-        <div class="overflow-x-auto rounded-xl border border-slate-800/80 bg-slate-950/50">
-          <table class="w-full text-left text-sm">
-            <thead class="bg-slate-900/60 text-slate-400 text-[10px] uppercase font-mono border-b border-slate-800">
-              <tr>
-                <th class="py-2 px-3">Slot</th>
-                <th class="py-2 px-3">Player</th>
-                <th class="py-2 px-3 text-center">Pos / Team</th>
-                <th class="py-2 px-3 text-right">Game Status</th>
-              </tr>
-            </thead>
-            <tbody>
-              
-        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">QB</td>
-          <td class="py-2.5 px-3 font-semibold text-white">Trevor Lawrence</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">QB</span> <span class="text-slate-400">JAX</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">HEALTHY</span></td>
+        <!-- Start/Sit Recommendation Banner -->
+        <div class="mt-4">
+          <h3 class="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-1.5 flex items-center gap-1.5">
+            <i class="fa-solid fa-wand-magic-sparkles text-amber-400"></i> Vegas AI Optimization
+          </h3>
+          
+            <div class="p-3 rounded-xl bg-gradient-to-r from-rose-950/40 to-emerald-950/30 border border-emerald-500/30 mb-2 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+              <div class="flex items-center gap-2">
+                <span class="w-6 h-6 rounded-lg bg-rose-500/20 border border-rose-500/40 flex items-center justify-center text-rose-400 text-xs">✕</span>
+                <div class="text-xs">
+                  <span class="text-slate-400">Bench:</span> <strong class="text-rose-300">David Montgomery</strong> <span class="text-[10px] text-rose-400 font-bold">(Out)</span>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 text-xs">
+                <span class="text-slate-400">➔ Start:</span>
+                <span class="font-bold text-emerald-300">DJ Giddens</span>
+                <span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-mono text-[10px] font-bold">+8.9 pts</span>
+              </div>
+            </div>
+            
+            <div class="p-3 rounded-xl bg-gradient-to-r from-rose-950/40 to-emerald-950/30 border border-emerald-500/30 mb-2 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+              <div class="flex items-center gap-2">
+                <span class="w-6 h-6 rounded-lg bg-rose-500/20 border border-rose-500/40 flex items-center justify-center text-rose-400 text-xs">✕</span>
+                <div class="text-xs">
+                  <span class="text-slate-400">Bench:</span> <strong class="text-rose-300">Will Shipley</strong> <span class="text-[10px] text-rose-400 font-bold">(Out)</span>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 text-xs">
+                <span class="text-slate-400">➔ Start:</span>
+                <span class="font-bold text-emerald-300">DJ Giddens</span>
+                <span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-mono text-[10px] font-bold">+8.9 pts</span>
+              </div>
+            </div>
+            
+        </div>
+
+        <!-- Starters Table -->
+        <div class="mt-4">
+          <div class="overflow-x-auto rounded-xl border border-slate-800/80 bg-slate-950/50">
+            <table class="w-full text-left text-xs">
+              <thead class="bg-slate-900/60 text-slate-400 text-[10px] uppercase font-mono border-b border-slate-800">
+                <tr>
+                  <th class="py-2 px-3">Slot</th>
+                  <th class="py-2 px-3">Starter</th>
+                  <th class="py-2 px-3 text-center">Team</th>
+                  <th class="py-2 px-3 text-center">Vegas Proj</th>
+                  <th class="py-2 px-3 text-right">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">QB</td>
+          <td class="py-2 px-3 font-semibold text-white">Trevor Lawrence</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">QB</span> <span class="text-slate-400">JAX</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">16.5</td>
+          <td class="py-2 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[9px] font-bold">OK</span></td>
         </tr>
         
-        <tr class="bg-rose-950/20 border-b border-rose-500/30 text-rose-200 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">RB</td>
-          <td class="py-2.5 px-3 font-semibold text-white">David Montgomery</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">RB</span> <span class="text-slate-400">HOU</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-rose-500/30 text-rose-400 text-[10px] font-black tracking-wide animate-pulse">OUT</span></td>
+        <tr class="bg-rose-950/25 border-b border-rose-500/40 text-rose-200 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">RB</td>
+          <td class="py-2 px-3 font-semibold text-white">David Montgomery</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">RB</span> <span class="text-slate-400">HOU</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">0.0</td>
+          <td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded bg-rose-500/30 text-rose-300 text-[9px] font-black animate-pulse">OUT</span></td>
         </tr>
         
-        <tr class="bg-rose-950/20 border-b border-rose-500/30 text-rose-200 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">RB</td>
-          <td class="py-2.5 px-3 font-semibold text-white">Will Shipley</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">RB</span> <span class="text-slate-400">PHI</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-rose-500/30 text-rose-400 text-[10px] font-black tracking-wide animate-pulse">OUT</span></td>
+        <tr class="bg-rose-950/25 border-b border-rose-500/40 text-rose-200 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">RB</td>
+          <td class="py-2 px-3 font-semibold text-white">Will Shipley</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">RB</span> <span class="text-slate-400">PHI</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">0.0</td>
+          <td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded bg-rose-500/30 text-rose-300 text-[9px] font-black animate-pulse">OUT</span></td>
         </tr>
         
-        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">WR</td>
-          <td class="py-2.5 px-3 font-semibold text-white">Cooper Kupp</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">WR</span> <span class="text-slate-400">SEA</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">HEALTHY</span></td>
+        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">WR</td>
+          <td class="py-2 px-3 font-semibold text-white">Cooper Kupp</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">WR</span> <span class="text-slate-400">SEA</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">15.6</td>
+          <td class="py-2 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[9px] font-bold">OK</span></td>
         </tr>
         
-        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">WR</td>
-          <td class="py-2.5 px-3 font-semibold text-white">Rashod Bateman</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">WR</span> <span class="text-slate-400">BAL</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">HEALTHY</span></td>
+        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">WR</td>
+          <td class="py-2 px-3 font-semibold text-white">Rashod Bateman</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">WR</span> <span class="text-slate-400">BAL</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">8.2</td>
+          <td class="py-2 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[9px] font-bold">OK</span></td>
         </tr>
         
-        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">WR</td>
-          <td class="py-2.5 px-3 font-semibold text-white">Germie Bernard</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">WR</span> <span class="text-slate-400">PIT</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">HEALTHY</span></td>
+        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">WR</td>
+          <td class="py-2 px-3 font-semibold text-white">Germie Bernard</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">WR</span> <span class="text-slate-400">PIT</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">8.4</td>
+          <td class="py-2 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[9px] font-bold">OK</span></td>
         </tr>
         
-        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">TE</td>
-          <td class="py-2.5 px-3 font-semibold text-white">Cade Otton</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">TE</span> <span class="text-slate-400">TB</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">HEALTHY</span></td>
+        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">TE</td>
+          <td class="py-2 px-3 font-semibold text-white">Cade Otton</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">TE</span> <span class="text-slate-400">TB</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">9.4</td>
+          <td class="py-2 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[9px] font-bold">OK</span></td>
         </tr>
         
-        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">FLEX</td>
-          <td class="py-2.5 px-3 font-semibold text-white">Brenton Strange</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">TE</span> <span class="text-slate-400">JAX</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">HEALTHY</span></td>
+        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">FLEX</td>
+          <td class="py-2 px-3 font-semibold text-white">Brenton Strange</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">TE</span> <span class="text-slate-400">JAX</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">5.9</td>
+          <td class="py-2 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[9px] font-bold">OK</span></td>
         </tr>
         
-        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">FLEX</td>
-          <td class="py-2.5 px-3 font-semibold text-white">Kyle Williams</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">WR</span> <span class="text-slate-400">NE</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">HEALTHY</span></td>
+        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">FLEX</td>
+          <td class="py-2 px-3 font-semibold text-white">Kyle Williams</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">WR</span> <span class="text-slate-400">NE</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">5.9</td>
+          <td class="py-2 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[9px] font-bold">OK</span></td>
         </tr>
         
-        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">SUPER_FLEX</td>
-          <td class="py-2.5 px-3 font-semibold text-white">Tyson Bagent</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">QB</span> <span class="text-slate-400">CHI</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">HEALTHY</span></td>
+        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">SUPER_FLEX</td>
+          <td class="py-2 px-3 font-semibold text-white">Tyson Bagent</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">QB</span> <span class="text-slate-400">CHI</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">12.0</td>
+          <td class="py-2 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[9px] font-bold">OK</span></td>
         </tr>
         
-            </tbody>
-          </table>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
-
-      <!-- Bench Collapse -->
-      <details class="mt-4 pt-2 border-t border-slate-800/60 group">
-        <summary class="cursor-pointer text-xs font-semibold text-slate-400 hover:text-slate-200 flex items-center justify-between py-1 select-none">
-          <span class="flex items-center gap-1.5"><i class="fa-solid fa-users text-slate-400"></i> Bench Reserves (20 players)</span>
-          <span class="text-[10px] text-blue-400 group-open:rotate-180 transition transform">▼</span>
-        </summary>
-        <div class="mt-2 overflow-x-auto rounded-xl border border-slate-800/80 bg-slate-950/30">
-          <table class="w-full text-left text-xs">
-            <tbody class="divide-y divide-slate-800/40">
-              
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Chris Brooks</td>
-          <td class="py-1.5 px-3 text-center font-mono">RB - GB</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-rose-900/40 text-rose-300 text-[10px] font-bold">IR</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Caleb Williams</td>
-          <td class="py-1.5 px-3 text-center font-mono">QB - CHI</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-rose-900/40 text-rose-300 text-[10px] font-bold">Out</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">J.J. McCarthy</td>
-          <td class="py-1.5 px-3 text-center font-mono">QB - NYG</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Isaiah Davis</td>
-          <td class="py-1.5 px-3 text-center font-mono">RB - NYJ</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Jonathon Brooks</td>
-          <td class="py-1.5 px-3 text-center font-mono">RB - CAR</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-rose-900/40 text-rose-300 text-[10px] font-bold">IR</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">DJ Giddens</td>
-          <td class="py-1.5 px-3 text-center font-mono">RB - IND</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Terrance Ferguson</td>
-          <td class="py-1.5 px-3 text-center font-mono">TE - LAR</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-rose-900/40 text-rose-300 text-[10px] font-bold">IR</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Mason Taylor</td>
-          <td class="py-1.5 px-3 text-center font-mono">TE - NYJ</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Chimere Dike</td>
-          <td class="py-1.5 px-3 text-center font-mono">WR - TEN</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Zachariah Branch</td>
-          <td class="py-1.5 px-3 text-center font-mono">WR - ATL</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Jonah Coleman</td>
-          <td class="py-1.5 px-3 text-center font-mono">RB - DEN</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-rose-900/40 text-rose-300 text-[10px] font-bold">IR</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Saquon Barkley</td>
-          <td class="py-1.5 px-3 text-center font-mono">RB - PHI</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-rose-900/40 text-rose-300 text-[10px] font-bold">Out</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Baker Mayfield</td>
-          <td class="py-1.5 px-3 text-center font-mono">QB - TB</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-rose-900/40 text-rose-300 text-[10px] font-bold">Out</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Christian Kirk</td>
-          <td class="py-1.5 px-3 text-center font-mono">WR - SF</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-rose-900/40 text-rose-300 text-[10px] font-bold">IR</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">DeVonta Smith</td>
-          <td class="py-1.5 px-3 text-center font-mono">WR - PHI</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-rose-900/40 text-rose-300 text-[10px] font-bold">Out</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Breece Hall</td>
-          <td class="py-1.5 px-3 text-center font-mono">RB - NYJ</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-rose-900/40 text-rose-300 text-[10px] font-bold">Out</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Isiah Pacheco</td>
-          <td class="py-1.5 px-3 text-center font-mono">RB - DET</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-rose-900/40 text-rose-300 text-[10px] font-bold">IR</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Tank Bigsby</td>
-          <td class="py-1.5 px-3 text-center font-mono">RB - PHI</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-rose-900/40 text-rose-300 text-[10px] font-bold">IR</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Jordan Addison</td>
-          <td class="py-1.5 px-3 text-center font-mono">WR - MIN</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-rose-900/40 text-rose-300 text-[10px] font-bold">Out</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Kendre Miller</td>
-          <td class="py-1.5 px-3 text-center font-mono">RB - NO</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-            </tbody>
-          </table>
-        </div>
-      </details>
     </div>
     
-    <div class="gopher-card rounded-2xl overflow-hidden border border-slate-800 bg-slate-900/80 p-5 shadow-xl">
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-slate-800 gap-3">
-        <div>
-          <div class="flex items-center gap-2">
-            <span class="px-2 py-0.5 rounded bg-blue-500/20 text-blue-400 text-[10px] font-bold uppercase tracking-wider">Sleeper</span>
-            <span class="text-xs text-slate-400 font-mono">12 Teams • Dynasty</span>
+    <div class="gopher-card rounded-2xl overflow-hidden border border-slate-800 bg-slate-900/80 p-5 shadow-xl flex flex-col justify-between">
+      <div>
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-3 border-b border-slate-800 gap-2">
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="px-2 py-0.5 rounded bg-blue-500/20 text-blue-400 text-[10px] font-bold uppercase tracking-wider">Sleeper Dynasty</span>
+              <span class="text-xs text-indigo-400 font-mono font-bold">Proj: 136.8 pts</span>
+            </div>
+            <h2 class="text-lg font-black text-white mt-1 tracking-tight">Burnsville Empire Cup</h2>
           </div>
-          <h2 class="text-xl font-black text-white mt-1 tracking-tight">Burnsville Empire Cup</h2>
-        </div>
-        <div class="flex items-center gap-3">
-          <span class="px-2 py-1 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">✓ Roster Ready</span>
-          <a href="https://sleeper.com/leagues/1312920802827468800" target="_blank" rel="noopener" class="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold transition flex items-center gap-1.5 border border-slate-700">
+          <a href="https://sleeper.com/leagues/1312920802827468800" target="_blank" rel="noopener" class="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold transition flex items-center gap-1.5 border border-slate-700 w-fit">
             <span>Open in Sleeper</span>
             <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
           </a>
         </div>
-      </div>
 
-      <!-- Starters Table -->
-      <div class="mt-4">
-        <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2 flex items-center gap-1.5">
-          <i class="fa-solid fa-bolt text-amber-400"></i> Starting Lineup
-        </h3>
-        <div class="overflow-x-auto rounded-xl border border-slate-800/80 bg-slate-950/50">
-          <table class="w-full text-left text-sm">
-            <thead class="bg-slate-900/60 text-slate-400 text-[10px] uppercase font-mono border-b border-slate-800">
-              <tr>
-                <th class="py-2 px-3">Slot</th>
-                <th class="py-2 px-3">Player</th>
-                <th class="py-2 px-3 text-center">Pos / Team</th>
-                <th class="py-2 px-3 text-right">Game Status</th>
-              </tr>
-            </thead>
-            <tbody>
-              
-        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">QB</td>
-          <td class="py-2.5 px-3 font-semibold text-white">Trevor Lawrence</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">QB</span> <span class="text-slate-400">JAX</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">HEALTHY</span></td>
+        <!-- Start/Sit Recommendation Banner -->
+        <div class="mt-4">
+          <h3 class="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-1.5 flex items-center gap-1.5">
+            <i class="fa-solid fa-wand-magic-sparkles text-amber-400"></i> Vegas AI Optimization
+          </h3>
+          
+        <div class="p-2.5 rounded-xl bg-slate-900/40 border border-slate-800 text-slate-400 text-xs flex items-center gap-2">
+          <i class="fa-solid fa-circle-check text-emerald-400"></i> Lineup fully optimized against Vegas totals.
+        </div>
+        
+        </div>
+
+        <!-- Starters Table -->
+        <div class="mt-4">
+          <div class="overflow-x-auto rounded-xl border border-slate-800/80 bg-slate-950/50">
+            <table class="w-full text-left text-xs">
+              <thead class="bg-slate-900/60 text-slate-400 text-[10px] uppercase font-mono border-b border-slate-800">
+                <tr>
+                  <th class="py-2 px-3">Slot</th>
+                  <th class="py-2 px-3">Starter</th>
+                  <th class="py-2 px-3 text-center">Team</th>
+                  <th class="py-2 px-3 text-center">Vegas Proj</th>
+                  <th class="py-2 px-3 text-right">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">QB</td>
+          <td class="py-2 px-3 font-semibold text-white">Trevor Lawrence</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">QB</span> <span class="text-slate-400">JAX</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">16.5</td>
+          <td class="py-2 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[9px] font-bold">OK</span></td>
         </tr>
         
-        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">RB</td>
-          <td class="py-2.5 px-3 font-semibold text-white">Ashton Jeanty</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">RB</span> <span class="text-slate-400">LV</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">HEALTHY</span></td>
+        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">RB</td>
+          <td class="py-2 px-3 font-semibold text-white">Ashton Jeanty</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">RB</span> <span class="text-slate-400">LV</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">17.2</td>
+          <td class="py-2 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[9px] font-bold">OK</span></td>
         </tr>
         
-        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">RB</td>
-          <td class="py-2.5 px-3 font-semibold text-white">Javonte Williams</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">RB</span> <span class="text-slate-400">DAL</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">HEALTHY</span></td>
+        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">RB</td>
+          <td class="py-2 px-3 font-semibold text-white">Javonte Williams</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">RB</span> <span class="text-slate-400">DAL</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">13.5</td>
+          <td class="py-2 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[9px] font-bold">OK</span></td>
         </tr>
         
-        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">WR</td>
-          <td class="py-2.5 px-3 font-semibold text-white">Justin Jefferson</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">WR</span> <span class="text-slate-400">MIN</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">HEALTHY</span></td>
+        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">WR</td>
+          <td class="py-2 px-3 font-semibold text-white">Justin Jefferson</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">WR</span> <span class="text-slate-400">MIN</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">19.8</td>
+          <td class="py-2 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[9px] font-bold">OK</span></td>
         </tr>
         
-        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">WR</td>
-          <td class="py-2.5 px-3 font-semibold text-white">Josh Downs</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">WR</span> <span class="text-slate-400">IND</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">HEALTHY</span></td>
+        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">WR</td>
+          <td class="py-2 px-3 font-semibold text-white">Josh Downs</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">WR</span> <span class="text-slate-400">IND</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">12.4</td>
+          <td class="py-2 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[9px] font-bold">OK</span></td>
         </tr>
         
-        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">WR</td>
-          <td class="py-2.5 px-3 font-semibold text-white">Luther Burden</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">WR</span> <span class="text-slate-400">CHI</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">HEALTHY</span></td>
+        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">WR</td>
+          <td class="py-2 px-3 font-semibold text-white">Luther Burden</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">WR</span> <span class="text-slate-400">CHI</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">11.8</td>
+          <td class="py-2 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[9px] font-bold">OK</span></td>
         </tr>
         
-        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">TE</td>
-          <td class="py-2.5 px-3 font-semibold text-white">Jake Ferguson</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">TE</span> <span class="text-slate-400">DAL</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">HEALTHY</span></td>
+        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">TE</td>
+          <td class="py-2 px-3 font-semibold text-white">Jake Ferguson</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">TE</span> <span class="text-slate-400">DAL</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">10.9</td>
+          <td class="py-2 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[9px] font-bold">OK</span></td>
         </tr>
         
-        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">FLEX</td>
-          <td class="py-2.5 px-3 font-semibold text-white">Jaxon Smith-Njigba</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">WR</span> <span class="text-slate-400">SEA</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">HEALTHY</span></td>
+        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">FLEX</td>
+          <td class="py-2 px-3 font-semibold text-white">Jaxon Smith-Njigba</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">WR</span> <span class="text-slate-400">SEA</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">14.2</td>
+          <td class="py-2 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[9px] font-bold">OK</span></td>
         </tr>
         
-        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">SUPER_FLEX</td>
-          <td class="py-2.5 px-3 font-semibold text-white">Tyson Bagent</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">QB</span> <span class="text-slate-400">CHI</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">HEALTHY</span></td>
+        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">SUPER_FLEX</td>
+          <td class="py-2 px-3 font-semibold text-white">Tyson Bagent</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">QB</span> <span class="text-slate-400">CHI</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">12.0</td>
+          <td class="py-2 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[9px] font-bold">OK</span></td>
         </tr>
         
-        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">K</td>
-          <td class="py-2.5 px-3 font-semibold text-white">Will Reichard</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">K</span> <span class="text-slate-400">MIN</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">HEALTHY</span></td>
+        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">K</td>
+          <td class="py-2 px-3 font-semibold text-white">Will Reichard</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">K</span> <span class="text-slate-400">MIN</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">8.5</td>
+          <td class="py-2 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[9px] font-bold">OK</span></td>
         </tr>
         
-            </tbody>
-          </table>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
-
-      <!-- Bench Collapse -->
-      <details class="mt-4 pt-2 border-t border-slate-800/60 group">
-        <summary class="cursor-pointer text-xs font-semibold text-slate-400 hover:text-slate-200 flex items-center justify-between py-1 select-none">
-          <span class="flex items-center gap-1.5"><i class="fa-solid fa-users text-slate-400"></i> Bench Reserves (17 players)</span>
-          <span class="text-[10px] text-blue-400 group-open:rotate-180 transition transform">▼</span>
-        </summary>
-        <div class="mt-2 overflow-x-auto rounded-xl border border-slate-800/80 bg-slate-950/30">
-          <table class="w-full text-left text-xs">
-            <tbody class="divide-y divide-slate-800/40">
-              
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Ray Davis</td>
-          <td class="py-1.5 px-3 text-center font-mono">RB - BUF</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Jonathon Brooks</td>
-          <td class="py-1.5 px-3 text-center font-mono">RB - CAR</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-rose-900/40 text-rose-300 text-[10px] font-bold">IR</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Bucky Irving</td>
-          <td class="py-1.5 px-3 text-center font-mono">RB - TB</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Blake Corum</td>
-          <td class="py-1.5 px-3 text-center font-mono">RB - LAR</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Marvin Harrison</td>
-          <td class="py-1.5 px-3 text-center font-mono">WR - HOU</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-rose-900/40 text-rose-300 text-[10px] font-bold">Out</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Ryan Flournoy</td>
-          <td class="py-1.5 px-3 text-center font-mono">WR - DAL</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Devin Neal</td>
-          <td class="py-1.5 px-3 text-center font-mono">RB - None</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Terrance Ferguson</td>
-          <td class="py-1.5 px-3 text-center font-mono">TE - LAR</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-rose-900/40 text-rose-300 text-[10px] font-bold">IR</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Elijah Arroyo</td>
-          <td class="py-1.5 px-3 text-center font-mono">TE - SEA</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Kyle Monangai</td>
-          <td class="py-1.5 px-3 text-center font-mono">RB - CHI</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-rose-900/40 text-rose-300 text-[10px] font-bold">Out</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Dohnte Meyers</td>
-          <td class="py-1.5 px-3 text-center font-mono">WR - CIN</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Germie Bernard</td>
-          <td class="py-1.5 px-3 text-center font-mono">WR - PIT</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Jordyn Tyson</td>
-          <td class="py-1.5 px-3 text-center font-mono">WR - NO</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-rose-900/40 text-rose-300 text-[10px] font-bold">IR</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Eli Raridon</td>
-          <td class="py-1.5 px-3 text-center font-mono">TE - NE</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Patrick Mahomes</td>
-          <td class="py-1.5 px-3 text-center font-mono">QB - KC</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Malik Willis</td>
-          <td class="py-1.5 px-3 text-center font-mono">QB - MIA</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Sean Tucker</td>
-          <td class="py-1.5 px-3 text-center font-mono">RB - TB</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-            </tbody>
-          </table>
-        </div>
-      </details>
     </div>
     
-    <div class="gopher-card rounded-2xl overflow-hidden border border-slate-800 bg-slate-900/80 p-5 shadow-xl">
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-slate-800 gap-3">
-        <div>
-          <div class="flex items-center gap-2">
-            <span class="px-2 py-0.5 rounded bg-blue-500/20 text-blue-400 text-[10px] font-bold uppercase tracking-wider">Sleeper</span>
-            <span class="text-xs text-slate-400 font-mono">16 Teams • Dynasty</span>
+    <div class="gopher-card rounded-2xl overflow-hidden border border-slate-800 bg-slate-900/80 p-5 shadow-xl flex flex-col justify-between">
+      <div>
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-3 border-b border-slate-800 gap-2">
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="px-2 py-0.5 rounded bg-blue-500/20 text-blue-400 text-[10px] font-bold uppercase tracking-wider">Sleeper Dynasty</span>
+              <span class="text-xs text-indigo-400 font-mono font-bold">Proj: 77.2 pts</span>
+            </div>
+            <h2 class="text-lg font-black text-white mt-1 tracking-tight">Ultimate Relegation League</h2>
           </div>
-          <h2 class="text-xl font-black text-white mt-1 tracking-tight">Ultimate Relegation League</h2>
-        </div>
-        <div class="flex items-center gap-3">
-          <span class="px-2.5 py-1 rounded-full text-xs font-black bg-rose-500/20 text-rose-300 border border-rose-500/40 animate-pulse">🚨 1 Action Needed</span>
-          <a href="https://sleeper.com/leagues/1312914152410333184" target="_blank" rel="noopener" class="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold transition flex items-center gap-1.5 border border-slate-700">
+          <a href="https://sleeper.com/leagues/1312914152410333184" target="_blank" rel="noopener" class="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold transition flex items-center gap-1.5 border border-slate-700 w-fit">
             <span>Open in Sleeper</span>
             <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
           </a>
         </div>
-      </div>
 
-      <!-- Starters Table -->
-      <div class="mt-4">
-        <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2 flex items-center gap-1.5">
-          <i class="fa-solid fa-bolt text-amber-400"></i> Starting Lineup
-        </h3>
-        <div class="overflow-x-auto rounded-xl border border-slate-800/80 bg-slate-950/50">
-          <table class="w-full text-left text-sm">
-            <thead class="bg-slate-900/60 text-slate-400 text-[10px] uppercase font-mono border-b border-slate-800">
-              <tr>
-                <th class="py-2 px-3">Slot</th>
-                <th class="py-2 px-3">Player</th>
-                <th class="py-2 px-3 text-center">Pos / Team</th>
-                <th class="py-2 px-3 text-right">Game Status</th>
-              </tr>
-            </thead>
-            <tbody>
-              
-        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">QB</td>
-          <td class="py-2.5 px-3 font-semibold text-white">Drake Maye</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">QB</span> <span class="text-slate-400">NE</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">HEALTHY</span></td>
+        <!-- Start/Sit Recommendation Banner -->
+        <div class="mt-4">
+          <h3 class="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-1.5 flex items-center gap-1.5">
+            <i class="fa-solid fa-wand-magic-sparkles text-amber-400"></i> Vegas AI Optimization
+          </h3>
+          
+            <div class="p-3 rounded-xl bg-gradient-to-r from-rose-950/40 to-emerald-950/30 border border-emerald-500/30 mb-2 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+              <div class="flex items-center gap-2">
+                <span class="w-6 h-6 rounded-lg bg-rose-500/20 border border-rose-500/40 flex items-center justify-center text-rose-400 text-xs">✕</span>
+                <div class="text-xs">
+                  <span class="text-slate-400">Bench:</span> <strong class="text-rose-300">TreVeyon Henderson</strong> <span class="text-[10px] text-rose-400 font-bold">(Out)</span>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 text-xs">
+                <span class="text-slate-400">➔ Start:</span>
+                <span class="font-bold text-emerald-300">Kenneth Walker</span>
+                <span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-mono text-[10px] font-bold">+10.7 pts</span>
+              </div>
+            </div>
+            
+        </div>
+
+        <!-- Starters Table -->
+        <div class="mt-4">
+          <div class="overflow-x-auto rounded-xl border border-slate-800/80 bg-slate-950/50">
+            <table class="w-full text-left text-xs">
+              <thead class="bg-slate-900/60 text-slate-400 text-[10px] uppercase font-mono border-b border-slate-800">
+                <tr>
+                  <th class="py-2 px-3">Slot</th>
+                  <th class="py-2 px-3">Starter</th>
+                  <th class="py-2 px-3 text-center">Team</th>
+                  <th class="py-2 px-3 text-center">Vegas Proj</th>
+                  <th class="py-2 px-3 text-right">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">QB</td>
+          <td class="py-2 px-3 font-semibold text-white">Drake Maye</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">QB</span> <span class="text-slate-400">NE</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">10.6</td>
+          <td class="py-2 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[9px] font-bold">OK</span></td>
         </tr>
         
-        <tr class="bg-rose-950/20 border-b border-rose-500/30 text-rose-200 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">RB</td>
-          <td class="py-2.5 px-3 font-semibold text-white">TreVeyon Henderson</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">RB</span> <span class="text-slate-400">NE</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-rose-500/30 text-rose-400 text-[10px] font-black tracking-wide animate-pulse">OUT</span></td>
+        <tr class="bg-rose-950/25 border-b border-rose-500/40 text-rose-200 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">RB</td>
+          <td class="py-2 px-3 font-semibold text-white">TreVeyon Henderson</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">RB</span> <span class="text-slate-400">NE</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">0.0</td>
+          <td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded bg-rose-500/30 text-rose-300 text-[9px] font-black animate-pulse">OUT</span></td>
         </tr>
         
-        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">RB</td>
-          <td class="py-2.5 px-3 font-semibold text-white">Bucky Irving</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">RB</span> <span class="text-slate-400">TB</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">HEALTHY</span></td>
+        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">RB</td>
+          <td class="py-2 px-3 font-semibold text-white">Bucky Irving</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">RB</span> <span class="text-slate-400">TB</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">14.8</td>
+          <td class="py-2 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[9px] font-bold">OK</span></td>
         </tr>
         
-        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">WR</td>
-          <td class="py-2.5 px-3 font-semibold text-white">Zay Flowers</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">WR</span> <span class="text-slate-400">BAL</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">HEALTHY</span></td>
+        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">WR</td>
+          <td class="py-2 px-3 font-semibold text-white">Zay Flowers</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">WR</span> <span class="text-slate-400">BAL</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">9.8</td>
+          <td class="py-2 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[9px] font-bold">OK</span></td>
         </tr>
         
-        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">WR</td>
-          <td class="py-2.5 px-3 font-semibold text-white">Puka Nacua</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">WR</span> <span class="text-slate-400">LAR</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">HEALTHY</span></td>
+        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">WR</td>
+          <td class="py-2 px-3 font-semibold text-white">Puka Nacua</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">WR</span> <span class="text-slate-400">LAR</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">7.5</td>
+          <td class="py-2 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[9px] font-bold">OK</span></td>
         </tr>
         
-        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">TE</td>
-          <td class="py-2.5 px-3 font-semibold text-white">Isaiah Likely</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">TE</span> <span class="text-slate-400">NYG</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">HEALTHY</span></td>
+        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">TE</td>
+          <td class="py-2 px-3 font-semibold text-white">Isaiah Likely</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">TE</span> <span class="text-slate-400">NYG</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">8.9</td>
+          <td class="py-2 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[9px] font-bold">OK</span></td>
         </tr>
         
-        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">FLEX</td>
-          <td class="py-2.5 px-3 font-semibold text-white">Amon-Ra St. Brown</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">WR</span> <span class="text-slate-400">DET</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">HEALTHY</span></td>
+        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">FLEX</td>
+          <td class="py-2 px-3 font-semibold text-white">Amon-Ra St. Brown</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">WR</span> <span class="text-slate-400">DET</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">10.2</td>
+          <td class="py-2 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[9px] font-bold">OK</span></td>
         </tr>
         
-        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">SUPER_FLEX</td>
-          <td class="py-2.5 px-3 font-semibold text-white">C.J. Stroud</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">QB</span> <span class="text-slate-400">HOU</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">HEALTHY</span></td>
+        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">SUPER_FLEX</td>
+          <td class="py-2 px-3 font-semibold text-white">C.J. Stroud</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">QB</span> <span class="text-slate-400">HOU</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">15.4</td>
+          <td class="py-2 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[9px] font-bold">OK</span></td>
         </tr>
         
-            </tbody>
-          </table>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
-
-      <!-- Bench Collapse -->
-      <details class="mt-4 pt-2 border-t border-slate-800/60 group">
-        <summary class="cursor-pointer text-xs font-semibold text-slate-400 hover:text-slate-200 flex items-center justify-between py-1 select-none">
-          <span class="flex items-center gap-1.5"><i class="fa-solid fa-users text-slate-400"></i> Bench Reserves (15 players)</span>
-          <span class="text-[10px] text-blue-400 group-open:rotate-180 transition transform">▼</span>
-        </summary>
-        <div class="mt-2 overflow-x-auto rounded-xl border border-slate-800/80 bg-slate-950/30">
-          <table class="w-full text-left text-xs">
-            <tbody class="divide-y divide-slate-800/40">
-              
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Tre Tucker</td>
-          <td class="py-1.5 px-3 text-center font-mono">WR - LV</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Isaiah Davis</td>
-          <td class="py-1.5 px-3 text-center font-mono">RB - NYJ</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Jordan James</td>
-          <td class="py-1.5 px-3 text-center font-mono">RB - SF</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Terrance Ferguson</td>
-          <td class="py-1.5 px-3 text-center font-mono">TE - LAR</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-rose-900/40 text-rose-300 text-[10px] font-bold">IR</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Cade Klubnik</td>
-          <td class="py-1.5 px-3 text-center font-mono">QB - NYJ</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Taylen Green</td>
-          <td class="py-1.5 px-3 text-center font-mono">QB - CLE</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-rose-900/40 text-rose-300 text-[10px] font-bold">Out</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Marlin Klein</td>
-          <td class="py-1.5 px-3 text-center font-mono">TE - HOU</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-rose-900/40 text-rose-300 text-[10px] font-bold">Out</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Ted Hurst</td>
-          <td class="py-1.5 px-3 text-center font-mono">WR - TB</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Oscar Delp</td>
-          <td class="py-1.5 px-3 text-center font-mono">TE - NO</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Denzel Boston</td>
-          <td class="py-1.5 px-3 text-center font-mono">WR - CLE</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Stefon Diggs</td>
-          <td class="py-1.5 px-3 text-center font-mono">WR - WAS</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-rose-900/40 text-rose-300 text-[10px] font-bold">Out</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Jake Ferguson</td>
-          <td class="py-1.5 px-3 text-center font-mono">TE - DAL</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Kenneth Walker</td>
-          <td class="py-1.5 px-3 text-center font-mono">RB - KC</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Deuce Vaughn</td>
-          <td class="py-1.5 px-3 text-center font-mono">RB - HOU</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Sean Tucker</td>
-          <td class="py-1.5 px-3 text-center font-mono">RB - TB</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-            </tbody>
-          </table>
-        </div>
-      </details>
     </div>
     
-    <div class="gopher-card rounded-2xl overflow-hidden border border-slate-800 bg-slate-900/80 p-5 shadow-xl">
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-slate-800 gap-3">
-        <div>
-          <div class="flex items-center gap-2">
-            <span class="px-2 py-0.5 rounded bg-blue-500/20 text-blue-400 text-[10px] font-bold uppercase tracking-wider">Sleeper</span>
-            <span class="text-xs text-slate-400 font-mono">12 Teams • Dynasty</span>
+    <div class="gopher-card rounded-2xl overflow-hidden border border-slate-800 bg-slate-900/80 p-5 shadow-xl flex flex-col justify-between">
+      <div>
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-3 border-b border-slate-800 gap-2">
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="px-2 py-0.5 rounded bg-blue-500/20 text-blue-400 text-[10px] font-bold uppercase tracking-wider">Sleeper Dynasty</span>
+              <span class="text-xs text-indigo-400 font-mono font-bold">Proj: 99.5 pts</span>
+            </div>
+            <h2 class="text-lg font-black text-white mt-1 tracking-tight">Burnsville Fantasy Challenge</h2>
           </div>
-          <h2 class="text-xl font-black text-white mt-1 tracking-tight">Burnsville Fantasy Challenge</h2>
-        </div>
-        <div class="flex items-center gap-3">
-          <span class="px-2.5 py-1 rounded-full text-xs font-black bg-rose-500/20 text-rose-300 border border-rose-500/40 animate-pulse">🚨 1 Action Needed</span>
-          <a href="https://sleeper.com/leagues/1312088486618095616" target="_blank" rel="noopener" class="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold transition flex items-center gap-1.5 border border-slate-700">
+          <a href="https://sleeper.com/leagues/1312088486618095616" target="_blank" rel="noopener" class="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold transition flex items-center gap-1.5 border border-slate-700 w-fit">
             <span>Open in Sleeper</span>
             <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
           </a>
         </div>
-      </div>
 
-      <!-- Starters Table -->
-      <div class="mt-4">
-        <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2 flex items-center gap-1.5">
-          <i class="fa-solid fa-bolt text-amber-400"></i> Starting Lineup
-        </h3>
-        <div class="overflow-x-auto rounded-xl border border-slate-800/80 bg-slate-950/50">
-          <table class="w-full text-left text-sm">
-            <thead class="bg-slate-900/60 text-slate-400 text-[10px] uppercase font-mono border-b border-slate-800">
-              <tr>
-                <th class="py-2 px-3">Slot</th>
-                <th class="py-2 px-3">Player</th>
-                <th class="py-2 px-3 text-center">Pos / Team</th>
-                <th class="py-2 px-3 text-right">Game Status</th>
-              </tr>
-            </thead>
-            <tbody>
-              
-        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">QB</td>
-          <td class="py-2.5 px-3 font-semibold text-white">Jalon Daniels</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">QB</span> <span class="text-slate-400">TB</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">HEALTHY</span></td>
+        <!-- Start/Sit Recommendation Banner -->
+        <div class="mt-4">
+          <h3 class="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-1.5 flex items-center gap-1.5">
+            <i class="fa-solid fa-wand-magic-sparkles text-amber-400"></i> Vegas AI Optimization
+          </h3>
+          
+        <div class="p-2.5 rounded-xl bg-slate-900/40 border border-slate-800 text-slate-400 text-xs flex items-center gap-2">
+          <i class="fa-solid fa-circle-check text-emerald-400"></i> Lineup fully optimized against Vegas totals.
+        </div>
+        
+        </div>
+
+        <!-- Starters Table -->
+        <div class="mt-4">
+          <div class="overflow-x-auto rounded-xl border border-slate-800/80 bg-slate-950/50">
+            <table class="w-full text-left text-xs">
+              <thead class="bg-slate-900/60 text-slate-400 text-[10px] uppercase font-mono border-b border-slate-800">
+                <tr>
+                  <th class="py-2 px-3">Slot</th>
+                  <th class="py-2 px-3">Starter</th>
+                  <th class="py-2 px-3 text-center">Team</th>
+                  <th class="py-2 px-3 text-center">Vegas Proj</th>
+                  <th class="py-2 px-3 text-right">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">QB</td>
+          <td class="py-2 px-3 font-semibold text-white">Jalon Daniels</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">QB</span> <span class="text-slate-400">TB</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">14.8</td>
+          <td class="py-2 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[9px] font-bold">OK</span></td>
         </tr>
         
-        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">RB</td>
-          <td class="py-2.5 px-3 font-semibold text-white">Jeremiyah Love</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">RB</span> <span class="text-slate-400">ARI</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">HEALTHY</span></td>
+        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">RB</td>
+          <td class="py-2 px-3 font-semibold text-white">Jeremiyah Love</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">RB</span> <span class="text-slate-400">ARI</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">9.1</td>
+          <td class="py-2 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[9px] font-bold">OK</span></td>
         </tr>
         
-        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">RB</td>
-          <td class="py-2.5 px-3 font-semibold text-white">Kyren Williams</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">RB</span> <span class="text-slate-400">LAR</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">HEALTHY</span></td>
+        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">RB</td>
+          <td class="py-2 px-3 font-semibold text-white">Kyren Williams</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">RB</span> <span class="text-slate-400">LAR</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">8.5</td>
+          <td class="py-2 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[9px] font-bold">OK</span></td>
         </tr>
         
-        <tr class="bg-amber-950/15 border-b border-amber-500/30 text-amber-100 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">WR</td>
-          <td class="py-2.5 px-3 font-semibold text-white">CeeDee Lamb</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">WR</span> <span class="text-slate-400">DAL</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 text-[10px] font-bold">QUESTIONABLE</span></td>
+        <tr class="bg-amber-950/20 border-b border-amber-500/30 text-amber-100 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">WR</td>
+          <td class="py-2 px-3 font-semibold text-white">CeeDee Lamb</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">WR</span> <span class="text-slate-400">DAL</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">15.5</td>
+          <td class="py-2 px-3 text-right"><span class="px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 text-[9px] font-bold">QUES</span></td>
         </tr>
         
-        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">WR</td>
-          <td class="py-2.5 px-3 font-semibold text-white">Zay Flowers</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">WR</span> <span class="text-slate-400">BAL</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">HEALTHY</span></td>
+        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">WR</td>
+          <td class="py-2 px-3 font-semibold text-white">Zay Flowers</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">WR</span> <span class="text-slate-400">BAL</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">9.8</td>
+          <td class="py-2 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[9px] font-bold">OK</span></td>
         </tr>
         
-        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">WR</td>
-          <td class="py-2.5 px-3 font-semibold text-white">Davante Adams</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">WR</span> <span class="text-slate-400">LAR</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">HEALTHY</span></td>
+        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">WR</td>
+          <td class="py-2 px-3 font-semibold text-white">Davante Adams</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">WR</span> <span class="text-slate-400">LAR</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">7.5</td>
+          <td class="py-2 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[9px] font-bold">OK</span></td>
         </tr>
         
-        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">TE</td>
-          <td class="py-2.5 px-3 font-semibold text-white">Sam LaPorta</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">TE</span> <span class="text-slate-400">DET</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">HEALTHY</span></td>
+        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">TE</td>
+          <td class="py-2 px-3 font-semibold text-white">Sam LaPorta</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">TE</span> <span class="text-slate-400">DET</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">8.1</td>
+          <td class="py-2 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[9px] font-bold">OK</span></td>
         </tr>
         
-        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">FLEX</td>
-          <td class="py-2.5 px-3 font-semibold text-white">Tee Higgins</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">WR</span> <span class="text-slate-400">CIN</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">HEALTHY</span></td>
+        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">FLEX</td>
+          <td class="py-2 px-3 font-semibold text-white">Tee Higgins</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">WR</span> <span class="text-slate-400">CIN</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">8.8</td>
+          <td class="py-2 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[9px] font-bold">OK</span></td>
         </tr>
         
-        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition">
-          <td class="py-2.5 px-3 font-mono font-bold text-xs text-slate-400">SUPER_FLEX</td>
-          <td class="py-2.5 px-3 font-semibold text-white">Josh Allen</td>
-          <td class="py-2.5 px-3 text-center text-xs font-mono text-slate-300"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">QB</span> <span class="text-slate-400">BUF</span></td>
-          <td class="py-2.5 px-3 text-right"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">HEALTHY</span></td>
+        <tr class="hover:bg-slate-800/40 border-b border-slate-800/60 transition text-xs">
+          <td class="py-2 px-3 font-mono font-bold text-[11px] text-slate-400">SUPER_FLEX</td>
+          <td class="py-2 px-3 font-semibold text-white">Josh Allen</td>
+          <td class="py-2 px-3 text-center font-mono text-[11px] text-slate-300"><span class="px-1 py-0.5 rounded bg-slate-800">QB</span> <span class="text-slate-400">BUF</span></td>
+          <td class="py-2 px-3 text-center font-mono font-bold text-indigo-300">17.4</td>
+          <td class="py-2 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[9px] font-bold">OK</span></td>
         </tr>
         
-            </tbody>
-          </table>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
-
-      <!-- Bench Collapse -->
-      <details class="mt-4 pt-2 border-t border-slate-800/60 group">
-        <summary class="cursor-pointer text-xs font-semibold text-slate-400 hover:text-slate-200 flex items-center justify-between py-1 select-none">
-          <span class="flex items-center gap-1.5"><i class="fa-solid fa-users text-slate-400"></i> Bench Reserves (18 players)</span>
-          <span class="text-[10px] text-blue-400 group-open:rotate-180 transition transform">▼</span>
-        </summary>
-        <div class="mt-2 overflow-x-auto rounded-xl border border-slate-800/80 bg-slate-950/30">
-          <table class="w-full text-left text-xs">
-            <tbody class="divide-y divide-slate-800/40">
-              
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Jonathon Brooks</td>
-          <td class="py-1.5 px-3 text-center font-mono">RB - CAR</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-rose-900/40 text-rose-300 text-[10px] font-bold">IR</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Bucky Irving</td>
-          <td class="py-1.5 px-3 text-center font-mono">RB - TB</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Blake Corum</td>
-          <td class="py-1.5 px-3 text-center font-mono">RB - LAR</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Malik Washington</td>
-          <td class="py-1.5 px-3 text-center font-mono">WR - MIA</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Terrance Ferguson</td>
-          <td class="py-1.5 px-3 text-center font-mono">TE - LAR</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-rose-900/40 text-rose-300 text-[10px] font-bold">IR</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Kyle Monangai</td>
-          <td class="py-1.5 px-3 text-center font-mono">RB - CHI</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-rose-900/40 text-rose-300 text-[10px] font-bold">Out</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Carson Beck</td>
-          <td class="py-1.5 px-3 text-center font-mono">QB - ARI</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-rose-900/40 text-rose-300 text-[10px] font-bold">Out</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Marlin Klein</td>
-          <td class="py-1.5 px-3 text-center font-mono">TE - HOU</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-rose-900/40 text-rose-300 text-[10px] font-bold">Out</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Oscar Delp</td>
-          <td class="py-1.5 px-3 text-center font-mono">TE - NO</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Zachariah Branch</td>
-          <td class="py-1.5 px-3 text-center font-mono">WR - ATL</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Denzel Boston</td>
-          <td class="py-1.5 px-3 text-center font-mono">WR - CLE</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Kaytron Allen</td>
-          <td class="py-1.5 px-3 text-center font-mono">RB - MIA</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-rose-900/40 text-rose-300 text-[10px] font-bold">Out</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">De'Zhaun Stribling</td>
-          <td class="py-1.5 px-3 text-center font-mono">WR - SF</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-rose-900/40 text-rose-300 text-[10px] font-bold">IR</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Patrick Mahomes</td>
-          <td class="py-1.5 px-3 text-center font-mono">QB - KC</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Christian Kirk</td>
-          <td class="py-1.5 px-3 text-center font-mono">WR - SF</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-rose-900/40 text-rose-300 text-[10px] font-bold">IR</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Tony Pollard</td>
-          <td class="py-1.5 px-3 text-center font-mono">RB - TEN</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Jake Ferguson</td>
-          <td class="py-1.5 px-3 text-center font-mono">TE - DAL</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-        <tr class="hover:bg-slate-800/30 border-b border-slate-800/40 text-slate-300 text-xs">
-          <td class="py-1.5 px-3 font-medium text-slate-200">Isaiah Likely</td>
-          <td class="py-1.5 px-3 text-center font-mono">TE - NYG</td>
-          <td class="py-1.5 px-3 text-right"><span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[10px]">Active</span></td>
-        </tr>
-        
-            </tbody>
-          </table>
-        </div>
-      </details>
     </div>
     
+      </div>
     </div>
 
   </main>
