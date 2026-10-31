@@ -331,26 +331,83 @@
       </div>
     </details>
 
-    <!-- Betting Odds Bar -->
-    <div class="gopher-card rounded-2xl p-4 md:p-5">
-      <div class="flex items-center gap-2 mb-3">
-        <i class="fa-solid fa-money-bill-trend-up text-emerald-400" aria-hidden="true"></i>
-        <h2 class="font-bold text-sm text-white">Consensus Betting Odds</h2>
-        <span class="text-[10px] text-slate-500 ml-auto" id="odds-updated">Not yet verified (2026-10-29)</span>
+    <!-- Betting Odds & Line Movement Bar -->
+    <div class="gopher-card rounded-2xl p-4 md:p-5 space-y-4">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-b border-slate-800 pb-3">
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-money-bill-trend-up text-emerald-400" aria-hidden="true"></i>
+          <h2 class="font-bold text-sm md:text-base text-white">Consensus Betting Odds & Line Movement</h2>
+        </div>
+        <span class="text-[10px] text-slate-400" id="odds-updated">Updated Sat Oct 31, 2026 • 8:00 AM CT (DraftKings via ESPN)</span>
       </div>
-      <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-center">
-        <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-3">
-          <p class="text-[10px] uppercase tracking-wider text-slate-400 mb-1">Spread</p>
-          <p class="text-base sm:text-lg font-black text-[#FFCC33] break-words" id="odds-spread">TBD</p>
+
+      <!-- Live Gameday Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-center">
+        <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-3.5 flex flex-col justify-between">
+          <p class="text-[10px] uppercase tracking-wider text-slate-400 font-semibold mb-1">Spread (Gameday)</p>
+          <p class="text-base sm:text-lg font-black text-[#FFCC33] break-words" id="odds-spread">MINN +20.5 (-108) / IU -20.5 (-112)</p>
+          <div class="mt-2 inline-flex items-center justify-center gap-1 text-[11px] font-bold text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-full border border-emerald-500/20">
+            <i class="fa-solid fa-arrow-trend-up text-[10px]"></i> +2.0 pts toward MIN (open: +22.5)
+          </div>
         </div>
-        <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-3">
-          <p class="text-[10px] uppercase tracking-wider text-slate-400 mb-1">Over / Under</p>
-          <p class="text-base sm:text-lg font-black text-[#FFCC33] break-words" id="odds-total">TBD</p>
+        <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-3.5 flex flex-col justify-between">
+          <p class="text-[10px] uppercase tracking-wider text-slate-400 font-semibold mb-1">Over / Under (Total)</p>
+          <p class="text-base sm:text-lg font-black text-[#FFCC33] break-words" id="odds-total">40.5 (o -120 / u +100)</p>
+          <div class="mt-2 inline-flex items-center justify-center gap-1 text-[11px] font-bold text-sky-400 bg-sky-500/10 px-2 py-0.5 rounded-full border border-sky-500/20">
+            <i class="fa-solid fa-arrow-trend-down text-[10px]"></i> -5.0 pts toward Under (open: 45.5)
+          </div>
         </div>
-        <div class="col-span-2 sm:col-span-1 bg-slate-900/80 border border-slate-800 rounded-xl p-3">
-          <p class="text-[10px] uppercase tracking-wider text-slate-400 mb-1">Moneyline</p>
-          <p class="text-sm font-black text-[#FFCC33] break-words leading-snug" id="odds-moneyline">TBD</p>
+        <div class="col-span-1 sm:col-span-1 bg-slate-900/80 border border-slate-800 rounded-xl p-3.5 flex flex-col justify-between">
+          <p class="text-[10px] uppercase tracking-wider text-slate-400 font-semibold mb-1">Moneyline</p>
+          <p class="text-sm sm:text-base font-black text-[#FFCC33] break-words leading-snug" id="odds-moneyline">MINN +850 / IU -1450</p>
+          <div class="mt-2 inline-flex items-center justify-center gap-1 text-[11px] font-bold text-amber-300 bg-amber-500/10 px-2 py-0.5 rounded-full border border-amber-500/20">
+            <i class="fa-solid fa-compress text-[10px]"></i> MINN shortened (+1100 &rarr; +850)
+          </div>
         </div>
+      </div>
+
+      <!-- Line Movement Comparison Table -->
+      <div class="overflow-x-auto rounded-xl border border-slate-800 bg-slate-900/60 mt-3">
+        <table class="w-full text-left text-xs min-w-[500px]">
+          <thead>
+            <tr class="border-b border-slate-800 text-[10px] uppercase tracking-wider text-slate-400 bg-slate-900/80">
+              <th class="py-2.5 px-3 font-semibold">Market</th>
+              <th class="py-2.5 px-3 font-semibold">Thursday Open (Oct 29)</th>
+              <th class="py-2.5 px-3 font-semibold text-white">Saturday Gameday (Live)</th>
+              <th class="py-2.5 px-3 font-semibold text-amber-300">Line Movement / Shift</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-800/60 font-medium">
+            <tr>
+              <td class="py-2.5 px-3 text-white font-bold">Spread</td>
+              <td class="py-2.5 px-3 text-slate-400">MINN +22.5 (-110) / IU -22.5 (-110)</td>
+              <td class="py-2.5 px-3 text-[#FFCC33] font-bold">MINN +20.5 (-108) / IU -20.5 (-112)</td>
+              <td class="py-2.5 px-3 text-emerald-400 font-semibold"><span class="font-bold">+2.0 pts</span> toward Minnesota (spread tightened)</td>
+            </tr>
+            <tr>
+              <td class="py-2.5 px-3 text-white font-bold">Over / Under</td>
+              <td class="py-2.5 px-3 text-slate-400">45.5 (-110)</td>
+              <td class="py-2.5 px-3 text-[#FFCC33] font-bold">40.5 (o -120 / u +100)</td>
+              <td class="py-2.5 px-3 text-sky-400 font-semibold"><span class="font-bold">-5.0 pts</span> toward Under (heavy defensive steam)</td>
+            </tr>
+            <tr>
+              <td class="py-2.5 px-3 text-white font-bold">Moneyline</td>
+              <td class="py-2.5 px-3 text-slate-400">MINN +1100 / IU -2100</td>
+              <td class="py-2.5 px-3 text-[#FFCC33] font-bold">MINN +850 / IU -1450</td>
+              <td class="py-2.5 px-3 text-amber-300 font-semibold">MINN shortened +1100 &rarr; +850 (IU eased -2100 &rarr; -1450)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Market Insights Callout -->
+      <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-3 text-xs text-slate-300 space-y-1.5">
+        <div class="flex items-center gap-2 text-amber-300 font-bold text-xs uppercase tracking-wider">
+          <i class="fa-solid fa-chart-line"></i> Market Takeaways & Betting Insights
+        </div>
+        <p><span class="font-semibold text-white">1. Spread Compressed 2 Full Points:</span> Early and steady action backed the Gophers catching over three scores on the road, compressing the number from Indiana -22.5 down to -20.5 (MINN +22.5 &rarr; +20.5).</p>
+        <p><span class="font-semibold text-white">2. Heavy Under Steam (-5.0 pts):</span> The total saw aggressive downward movement, dropping 5 full points from 45.5 down to 40.5, projecting a defensive battle with Minnesota relying on Darius Taylor and clock control against Indiana's high-efficiency offense.</p>
+        <p><span class="font-semibold text-white">3. Moneyline Re-pricing:</span> Minnesota's implied win probability improved from 8.3% (+1100) to 10.5% (+850), while #4 Indiana eased from 95.5% (-2100) to 93.5% (-1450).</p>
       </div>
     </div>
 
