@@ -34,142 +34,103 @@
 <body class="min-h-screen pb-16">
 
   <!-- Header Banner -->
-  <header class="bg-gradient-to-r from-[#500010] via-[#7A0019] to-[#500010] border-b-4 border-[#FFCC33] text-white py-6 px-4 md:py-8 md:px-6 shadow-2xl relative overflow-hidden">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 relative z-10">
+  <header class="bg-gradient-to-r from-[#500010] via-[#7A0019] to-[#500010] border-b-2 border-[#FFCC33] text-white py-3 px-3 md:py-6 md:px-6 shadow-xl relative overflow-hidden">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-3 relative z-10">
       
-      <div class="flex items-center gap-4 md:gap-5">
+      <div class="flex items-center gap-2.5 md:gap-4">
         <!-- Official UMN Block M Logo -->
-        <div class="w-16 h-12 md:w-20 md:h-16 flex-shrink-0">
-          <svg viewBox="0 0 234 129" class="w-full h-full drop-shadow-lg">
+        <div class="w-10 h-7 md:w-16 md:h-12 flex-shrink-0">
+          <svg viewBox="0 0 234 129" class="w-full h-full drop-shadow-md">
             <path fill="#FFCC33" d="M229.24 116.92c.67.27 1.25.64 1.74 1.12.49.48.87 1.01 1.15 1.59.37.75.55 1.56.55 2.41 0 .97-.25 1.89-.73 2.76-.49.88-1.16 1.55-2.03 2.04-.86.49-1.77.73-2.72.73-.94 0-1.85-.24-2.71-.73-.87-.49-1.54-1.17-2.03-2.04-.49-.87-.73-1.79-.73-2.76 0-.82.16-1.57.47-2.25.31-.67.71-1.25 1.18-1.71.48-.46 1-.82 1.56-1.07.74-.33 1.49-.49 2.26-.49.7 0 1.38.13 2.04.4zm3.87 2.42c-.29-.66-.71-1.27-1.26-1.83-.55-.56-1.22-1.03-2.02-1.4-.8-.38-1.68-.56-2.64-.56-.99 0-1.93.21-2.82.64-.65.31-1.24.74-1.8 1.28-.54.54-.99 1.21-1.34 2-.35.8-.53 1.65-.53 2.57 0 1.13.29 2.22.86 3.24.58 1.02 1.37 1.82 2.4 2.4 1.02.57 2.1.86 3.23.86 1 0 1.95-.21 2.84-.65.68-.33 1.31-.79 1.87-1.37.57-.58 1-.1.26 1.32-2.06.31-.79.47-1.6.47-2.42 0-.92-.19-1.82-.58-2.69zm-6.13 3.62c.41 0 .72.06.94.17.21.11.37.26.46.46.09.19.15.5.18.94.03.61.07.97.13 1.08h1.53c-.06-.2-.1-.51-.11-.95-.01-.43-.04-.74-.08-.92-.06-.28-.16-.52-.29-.71-.13-.19-.3-.34-.5-.45-.2-.11-.46-.2-.79-.27.37-.05.64-.11.79-.18.29-.14.52-.36.7-.63.18-.28.26-.6.26-.96 0-.37-.08-.7-.25-.97-.16-.28-.38-.5-.63-.67-.26-.17-.59-.29-1-.37-.29-.05-.71-.08-1.28-.08h-2.58v7.17h1.6v-2.64h.91zm.85-3.31c.25.07.44.2.57.37.14.18.21.39.21.63 0 .23-.06.44-.18.62-.12.19-.3.33-.54.42-.24.09-.49.14-.76.14h-1.06v-2.28h1.06c.21 0 .45.04.7.11z"/>
             <polygon fill="#FFCC33" stroke="#500010" stroke-width="2" points="202.495 95.736 164.633 32.796 175.063 32.796 175.063 0 112.04 0 112.04 32.796 122.469 32.796 108 56.841 93.537 32.796 103.965 32.796 103.965 0 40.942 0 40.942 32.796 51.369 32.796 13.507 95.736 0 95.736 0 128.531 64.277 128.531 64.277 95.736 52.73 95.736 72.455 62.947 80.102 75.662 72.769 75.662 72.769 108.457 143.234 108.457 143.234 75.662 135.904 75.662 143.55 62.947 163.273 95.736 151.726 95.736 151.726 128.531 215.999 128.531 215.999 95.736 202.495 95.736"/>
           </svg>
         </div>
         <div>
-          <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-bold bg-[#FFCC33]/20 text-[#FFCC33] border border-[#FFCC33]/40 mb-1 tracking-wider uppercase">
-            <i class="fa-solid fa-basketball"></i> Regular Season Opener
-          </span>
-          <h1 class="text-2xl md:text-3xl font-neutra tracking-tight uppercase leading-none text-white drop-shadow">
-            GOPHERS HOOPS GAMEDAY
+          <h1 class="text-lg md:text-2xl font-neutra tracking-tight uppercase leading-none text-white drop-shadow">
+            GOPHERS HOOPS
           </h1>
-          <p class="text-xs md:text-sm text-amber-200/90 font-medium tracking-wide mt-1">
-            <i class="fa-solid fa-location-dot"></i> Williams Arena • The Barn • Raised Floor
+          <p class="text-[10px] md:text-xs text-amber-200/90 font-medium tracking-wide mt-0.5">
+            <i class="fa-solid fa-location-dot"></i> The Barn • Raised Floor
           </p>
         </div>
       </div>
 
       <!-- Quick Game Status Badge -->
-      <div class="flex items-center gap-4 bg-black/40 border border-[#FFCC33]/30 px-5 py-3 rounded-2xl">
-        <div class="text-center">
-          <div class="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Tip-Off</div>
-          <div class="text-lg md:text-xl font-neutra text-white">8:00 PM CT</div>
+      <div class="flex items-center gap-2.5 bg-black/40 border border-[#FFCC33]/30 px-3 py-1.5 md:px-4 md:py-2 rounded-xl text-right">
+        <div>
+          <div class="text-[9px] text-slate-400 font-bold uppercase tracking-wider">Tip-Off</div>
+          <div class="text-xs md:text-sm font-neutra text-white">8:00 PM</div>
         </div>
-        <div class="h-8 w-px bg-white/20"></div>
-        <div class="text-center">
-          <div class="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Broadcast</div>
-          <div class="text-base md:text-lg font-bold text-[#FFCC33]">B1G+</div>
+        <div class="h-6 w-px bg-white/20"></div>
+        <div>
+          <div class="text-[9px] text-slate-400 font-bold uppercase tracking-wider">TV</div>
+          <div class="text-xs md:text-sm font-bold text-[#FFCC33]">B1G+</div>
         </div>
       </div>
 
     </div>
   </header>
 
-  <main class="max-w-7xl mx-auto px-4 md:px-6 pt-6 space-y-6">
+  <main class="max-w-7xl mx-auto px-2.5 md:px-6 pt-3 space-y-3">
 
-    <!-- Matchup Hero Card -->
-    <div class="gopher-card rounded-2xl p-5 md:p-6 shadow-xl relative overflow-hidden">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+    <!-- Matchup Hero Card (Ultra-Compact on Mobile) -->
+    <div class="gopher-card rounded-xl p-3 md:p-5 shadow-lg relative overflow-hidden">
+      <div class="flex items-center justify-between gap-2">
         
         <!-- Minnesota Side -->
-        <div class="flex items-center gap-4 md:justify-start">
-          <div class="w-16 h-16 rounded-2xl bg-[#7A0019] border-2 border-[#FFCC33] flex items-center justify-center p-2 shadow-lg flex-shrink-0">
-            <svg viewBox="0 0 234 129" class="w-12 h-10">
+        <div class="flex items-center gap-2">
+          <div class="w-10 h-10 rounded-xl bg-[#7A0019] border border-[#FFCC33] flex items-center justify-center p-1 shadow flex-shrink-0">
+            <svg viewBox="0 0 234 129" class="w-8 h-6">
               <polygon fill="#FFCC33" stroke="#500010" stroke-width="2" points="202.495 95.736 164.633 32.796 175.063 32.796 175.063 0 112.04 0 112.04 32.796 122.469 32.796 108 56.841 93.537 32.796 103.965 32.796 103.965 0 40.942 0 40.942 32.796 51.369 32.796 13.507 95.736 0 95.736 0 128.531 64.277 128.531 64.277 95.736 52.73 95.736 72.455 62.947 80.102 75.662 72.769 75.662 72.769 108.457 143.234 108.457 143.234 75.662 135.904 75.662 143.55 62.947 163.273 95.736 151.726 95.736 151.726 128.531 215.999 128.531 215.999 95.736 202.495 95.736"/>
             </svg>
           </div>
           <div>
-            <div class="text-xs text-amber-400 font-bold uppercase tracking-wider">Home • 0-0</div>
-            <div class="text-xl md:text-2xl font-neutra text-white">MINNESOTA</div>
-            <div class="text-xs text-slate-400">Golden Gophers • Big Ten</div>
+            <div class="text-[9px] text-amber-400 font-bold uppercase">Home</div>
+            <div class="text-sm md:text-xl font-neutra text-white leading-tight">MINNESOTA</div>
           </div>
         </div>
 
-        <!-- Center Odds / Scoreboard Preview -->
-        <div class="flex flex-col items-center justify-center py-2 px-4 bg-slate-900/60 rounded-xl border border-white/5 text-center">
-          <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">DraftKings Consensus Line</div>
-          <div class="text-2xl font-neutra text-[#FFCC33] tracking-wide">MINNESOTA -26.5</div>
-          <div class="text-xs text-slate-400 mt-1">Over/Under: <span class="text-white font-bold">149.5</span></div>
+        <!-- Center Line -->
+        <div class="text-center px-2 py-1 bg-slate-900/80 rounded-lg border border-white/5">
+          <div class="text-[9px] text-slate-400 font-bold uppercase">DraftKings Line</div>
+          <div class="text-xs md:text-sm font-neutra text-[#FFCC33]">MINN -26.5</div>
+          <div class="text-[9px] text-slate-400">O/U 149.5</div>
         </div>
 
         <!-- North Dakota Side -->
-        <div class="flex items-center gap-4 md:justify-end">
-          <div class="text-left md:text-right order-2 md:order-1">
-            <div class="text-xs text-emerald-400 font-bold uppercase tracking-wider">Away • 0-0</div>
-            <div class="text-xl md:text-2xl font-neutra text-white">NORTH DAKOTA</div>
-            <div class="text-xs text-slate-400">Fighting Hawks • Summit League</div>
+        <div class="flex items-center gap-2 text-right">
+          <div>
+            <div class="text-[9px] text-emerald-400 font-bold uppercase">Away</div>
+            <div class="text-sm md:text-xl font-neutra text-white leading-tight">N. DAKOTA</div>
           </div>
-          <div class="w-16 h-16 rounded-2xl bg-emerald-950 border-2 border-emerald-500/50 flex items-center justify-center p-2 shadow-lg flex-shrink-0 order-1 md:order-2">
-            <i class="fa-solid fa-feather-pointed text-2xl text-emerald-400"></i>
+          <div class="w-10 h-10 rounded-xl bg-emerald-950 border border-emerald-500/50 flex items-center justify-center p-1 shadow flex-shrink-0">
+            <i class="fa-solid fa-feather-pointed text-base text-emerald-400"></i>
           </div>
         </div>
 
       </div>
     </div>
 
-    <!-- Origin & Transfer Badge Legend -->
-    <div class="flex flex-wrap items-center justify-between gap-3 bg-slate-900/50 p-3.5 rounded-2xl border border-white/5 text-xs">
-      <div class="flex items-center gap-2 text-slate-300 font-semibold">
-        <i class="fa-solid fa-tags text-[#FFCC33]"></i> Roster Badges:
-      </div>
-      <div class="flex flex-wrap items-center gap-2">
-        <span class="px-2.5 py-1 rounded-lg bg-[#7A0019]/60 text-amber-300 font-bold border border-[#FFCC33]/40 inline-flex items-center gap-1">
-          <i class="fa-solid fa-tree"></i> Minnesota Native (High School)
-        </span>
-        <span class="px-2.5 py-1 rounded-lg bg-blue-500/20 text-blue-300 font-bold border border-blue-500/40 inline-flex items-center gap-1">
-          <i class="fa-solid fa-right-left"></i> Transfer Portal (Previous School)
-        </span>
-      </div>
-    </div>
-
-    <!-- Team Switcher Tabs -->
-    <div class="flex items-center justify-center gap-3 pt-2">
-      <button id="tab-gophers" onclick="switchTeam('gophers')" class="px-6 py-2.5 rounded-xl font-neutra text-sm uppercase tracking-wider transition-all duration-200 bg-[#7A0019] text-[#FFCC33] border-2 border-[#FFCC33] shadow-lg">
-        <i class="fa-solid fa-m mr-1.5"></i> Minnesota Roster (15)
+    <!-- Team Switcher Tabs (Compact) -->
+    <div class="grid grid-cols-2 gap-2 pt-1">
+      <button id="tab-gophers" onclick="switchTeam('gophers')" class="py-2 rounded-xl font-neutra text-xs uppercase tracking-wider transition-all duration-200 bg-[#7A0019] text-[#FFCC33] border-2 border-[#FFCC33] shadow text-center">
+        <i class="fa-solid fa-m mr-1"></i> Gophers (15)
       </button>
-      <button id="tab-opp" onclick="switchTeam('opp')" class="px-6 py-2.5 rounded-xl font-neutra text-sm uppercase tracking-wider transition-all duration-200 bg-slate-800 text-slate-300 border border-slate-700 hover:border-slate-500">
-        <i class="fa-solid fa-shield mr-1.5"></i> North Dakota (16)
+      <button id="tab-opp" onclick="switchTeam('opp')" class="py-2 rounded-xl font-neutra text-xs uppercase tracking-wider transition-all duration-200 bg-slate-800 text-slate-300 border border-slate-700 text-center">
+        <i class="fa-solid fa-shield mr-1"></i> N. Dakota (16)
       </button>
     </div>
 
-    <!-- Search / Filter Bar -->
+    <!-- Search / Filter Bar (Compact) -->
     <div class="relative">
-      <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 text-sm"></i>
-      <input type="text" id="player-search" oninput="filterRoster()" placeholder="Search player by name, number (#1), High School (Cherry, Wayzata), or Transfer (UNC, Davidson)..." class="w-full bg-slate-900/80 border border-slate-700/80 rounded-xl pl-11 pr-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-[#FFCC33] focus:ring-1 focus:ring-[#FFCC33]">
+      <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-xs"></i>
+      <input type="text" id="player-search" oninput="filterRoster()" placeholder="Search #, name, high school, or transfer..." class="w-full bg-slate-900/90 border border-slate-700/80 rounded-xl pl-9 pr-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-[#FFCC33]">
     </div>
 
-    <!-- Roster Grid -->
-    <div class="gopher-card rounded-2xl overflow-hidden shadow-2xl">
-      <div class="overflow-x-auto">
-        <table class="w-full text-left border-collapse">
-          <thead>
-            <tr class="bg-slate-900/90 border-b border-slate-800 text-[11px] font-bold text-slate-400 uppercase tracking-wider">
-              <th class="py-3 px-4 w-16 text-center">#</th>
-              <th class="py-3 px-4">Player & Badges</th>
-              <th class="py-3 px-4 w-16 text-center">Pos</th>
-              <th class="py-3 px-4 w-16 text-center">Ht</th>
-              <th class="py-3 px-4 w-16 text-center">Wt</th>
-              <th class="py-3 px-4 w-16 text-center">Yr</th>
-              <th class="py-3 px-4">Hometown / High School</th>
-            </tr>
-          </thead>
-          <tbody id="roster-tbody" class="divide-y divide-slate-800/60 text-sm">
-            <!-- Injected via JavaScript -->
-          </tbody>
-        </table>
-      </div>
+    <!-- Mobile Roster View: Dynamic Compact List on Mobile, Clean Table on Desktop -->
+    <div id="roster-container" class="space-y-2">
+      <!-- Injected via JavaScript -->
     </div>
-
-  </main>
 
   <!-- Data Script -->
   <script>
@@ -195,7 +156,7 @@
     function filterRoster() {
       const query = document.getElementById('player-search').value.toLowerCase().trim();
       const list = activeTeam === 'gophers' ? gophersData : undData;
-      const tbody = document.getElementById('roster-tbody');
+      const container = document.getElementById('roster-container');
 
       const filtered = list.filter(p => {
         if (!query) return true;
@@ -204,55 +165,57 @@
       });
 
       if (filtered.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="7" class="py-8 text-center text-slate-500">No players found matching "${query}"</td></tr>`;
+        container.innerHTML = `<div class="gopher-card rounded-xl p-6 text-center text-slate-500 text-xs">No players found matching "${query}"</div>`;
         return;
       }
 
-      tbody.innerHTML = filtered.map(p => {
+      container.innerHTML = filtered.map(p => {
         let badgesHtml = '';
         if (p.is_mn) {
-          badgesHtml += `<span class="px-2 py-0.5 rounded-md bg-[#7A0019]/60 text-amber-300 text-[10px] font-bold border border-[#FFCC33]/40 inline-flex items-center gap-1 shadow-sm"><i class="fa-solid fa-tree"></i> Minnesota Native</span> `;
+          badgesHtml += `<span class="px-1.5 py-0.5 rounded bg-[#7A0019]/60 text-amber-300 text-[9px] font-bold border border-[#FFCC33]/40 inline-flex items-center gap-0.5"><i class="fa-solid fa-tree"></i> MN Native</span> `;
         }
         if (p.transfer_from) {
-          badgesHtml += `<span class="px-2 py-0.5 rounded-md bg-blue-500/20 text-blue-300 text-[10px] font-bold border border-blue-500/40 inline-flex items-center gap-1 shadow-sm"><i class="fa-solid fa-right-left"></i> Transfer (${p.transfer_from})</span> `;
+          badgesHtml += `<span class="px-1.5 py-0.5 rounded bg-blue-500/20 text-blue-300 text-[9px] font-bold border border-blue-500/40 inline-flex items-center gap-0.5"><i class="fa-solid fa-right-left"></i> ${p.transfer_from}</span> `;
         }
 
-        let originDetail = p.hometown;
+        let originLine = p.hometown;
         if (p.hs) {
-          originDetail += ` <div class="text-xs font-semibold text-amber-400/90 mt-0.5"><i class="fa-solid fa-graduation-cap text-[10px] mr-1"></i>${p.hs}</div>`;
+          originLine += ` • <span class="text-amber-400 font-semibold">${p.hs}</span>`;
         }
 
         let avatarHtml = '';
         if (p.headshot && p.headshot !== 'None' && !p.headshot.includes('nothumb')) {
-          avatarHtml = `<img src="${p.headshot}" alt="${p.name}" class="w-10 h-10 rounded-full object-cover bg-slate-800 border border-slate-700 flex-shrink-0" onerror="this.outerHTML='<div class=\'w-10 h-10 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center font-neutra text-xs text-[#FFCC33] flex-shrink-0\'>#${p.jersey}</div>'">`;
+          avatarHtml = `<img src="${p.headshot}" alt="${p.name}" class="w-9 h-9 rounded-full object-cover bg-slate-800 border border-slate-700 flex-shrink-0" onerror="this.outerHTML='<div class=\'w-9 h-9 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center font-neutra text-xs text-[#FFCC33] flex-shrink-0\'>#${p.jersey}</div>'">`;
         } else {
-          avatarHtml = `<div class="w-10 h-10 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center font-neutra text-xs text-[#FFCC33] flex-shrink-0">#${p.jersey}</div>`;
+          avatarHtml = `<div class="w-9 h-9 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center font-neutra text-xs text-[#FFCC33] flex-shrink-0">#${p.jersey}</div>`;
         }
 
         return `
-          <tr class="hover:bg-slate-800/40 transition-colors">
-            <td class="py-3 px-4 text-center font-neutra text-base text-[#FFCC33]">${p.jersey}</td>
-            <td class="py-3 px-4">
-              <div class="flex items-center gap-3">
-                ${avatarHtml}
-                <div>
-                  <div class="font-bold text-white flex flex-wrap items-center gap-1.5">
-                    ${p.name}
-                  </div>
-                  <div class="flex flex-wrap gap-1 mt-1">
-                    ${badgesHtml}
-                  </div>
+          <div class="gopher-card rounded-xl p-2.5 flex items-center justify-between gap-2.5 hover:border-slate-600 transition-colors">
+            
+            <!-- Left: Jersey + Photo + Name/Badges -->
+            <div class="flex items-center gap-2.5 min-w-0">
+              <div class="font-neutra text-sm text-[#FFCC33] w-5 text-center flex-shrink-0">${p.jersey}</div>
+              ${avatarHtml}
+              <div class="min-w-0">
+                <div class="font-bold text-white text-xs md:text-sm truncate leading-snug">
+                  ${p.name}
+                  <span class="text-[10px] font-bold text-slate-400 ml-1">(${p.pos})</span>
                 </div>
+                <div class="text-[10px] text-slate-400 truncate mt-0.5">
+                  ${originLine}
+                </div>
+                ${badgesHtml ? `<div class="flex flex-wrap gap-1 mt-1">${badgesHtml}</div>` : ''}
               </div>
-            </td>
-            <td class="py-3 px-4 text-center font-bold text-slate-300">${p.pos}</td>
-            <td class="py-3 px-4 text-center text-slate-300">${p.ht}</td>
-            <td class="py-3 px-4 text-center text-slate-300">${p.wt}</td>
-            <td class="py-3 px-4 text-center text-xs font-semibold text-slate-400">${p.yr}</td>
-            <td class="py-3 px-4 text-slate-300 text-xs">
-              ${originDetail}
-            </td>
-          </tr>
+            </div>
+
+            <!-- Right: Height / Weight / Year Stats Pill -->
+            <div class="text-right flex-shrink-0 pl-1 border-l border-white/5">
+              <div class="text-xs font-bold text-slate-200">${p.ht}</div>
+              <div class="text-[10px] text-slate-400">${p.wt} • ${p.yr}</div>
+            </div>
+
+          </div>
         `;
       }).join('');
     }
