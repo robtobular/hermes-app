@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gameday Program — Minnesota Men's Basketball vs North Dakota</title>
+  <title>Gameday Program — Minnesota Men's Basketball vs St. Thomas Tommies</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,8 +27,6 @@
     }
     .gopher-gold { color: #FFCC33; }
     .gopher-maroon { color: #7A0019; }
-    .bg-maroon { background-color: #7A0019; }
-    .bg-gold { background-color: #FFCC33; }
   </style>
 </head>
 <body class="min-h-screen pb-16">
@@ -50,7 +48,7 @@
             GOPHERS HOOPS
           </h1>
           <p class="text-[10px] md:text-xs text-amber-200/90 font-medium tracking-wide mt-0.5">
-            <i class="fa-solid fa-location-dot"></i> The Barn • Raised Floor
+            <i class="fa-solid fa-location-dot"></i> The Barn by Blue Cross and Blue Shield of Minnesota • Raised Floor
           </p>
         </div>
       </div>
@@ -58,13 +56,13 @@
       <!-- Quick Game Status Badge -->
       <div class="flex items-center gap-2.5 bg-black/40 border border-[#FFCC33]/30 px-3 py-1.5 md:px-4 md:py-2 rounded-xl text-right">
         <div>
-          <div class="text-[9px] text-slate-400 font-bold uppercase tracking-wider">Tip-Off</div>
-          <div class="text-xs md:text-sm font-neutra text-white">8:00 PM</div>
+          <div class="text-[9px] text-slate-400 font-bold uppercase tracking-wider">Friday, Nov 6</div>
+          <div class="text-xs md:text-sm font-neutra text-white">7:00 PM CT</div>
         </div>
         <div class="h-6 w-px bg-white/20"></div>
         <div>
           <div class="text-[9px] text-slate-400 font-bold uppercase tracking-wider">TV</div>
-          <div class="text-xs md:text-sm font-bold text-[#FFCC33]">B1G+</div>
+          <div class="text-xs md:text-sm font-bold text-[#FFCC33]">Peacock</div>
         </div>
       </div>
 
@@ -73,7 +71,7 @@
 
   <main class="max-w-7xl mx-auto px-2.5 md:px-6 pt-3 space-y-3">
 
-    <!-- Matchup Hero Card (Ultra-Compact on Mobile) -->
+    <!-- Matchup Hero Card -->
     <div class="gopher-card rounded-xl p-3 md:p-5 shadow-lg relative overflow-hidden">
       <div class="flex items-center justify-between gap-2">
         
@@ -85,26 +83,26 @@
             </svg>
           </div>
           <div>
-            <div class="text-[9px] text-amber-400 font-bold uppercase">Home</div>
+            <div class="text-[9px] text-amber-400 font-bold uppercase">Home • 1-0</div>
             <div class="text-sm md:text-xl font-neutra text-white leading-tight">MINNESOTA</div>
           </div>
         </div>
 
         <!-- Center Line -->
         <div class="text-center px-2 py-1 bg-slate-900/80 rounded-lg border border-white/5">
-          <div class="text-[9px] text-slate-400 font-bold uppercase">DraftKings Line</div>
-          <div class="text-xs md:text-sm font-neutra text-[#FFCC33]">MINN -26.5</div>
+          <div class="text-[9px] text-slate-400 font-bold uppercase">Consensus Line</div>
+          <div class="text-xs md:text-sm font-neutra text-[#FFCC33]">MINN -14.5</div>
           <div class="text-[9px] text-slate-400">O/U 149.5</div>
         </div>
 
-        <!-- North Dakota Side -->
+        <!-- Opponent Side -->
         <div class="flex items-center gap-2 text-right">
           <div>
-            <div class="text-[9px] text-emerald-400 font-bold uppercase">Away</div>
-            <div class="text-sm md:text-xl font-neutra text-white leading-tight">N. DAKOTA</div>
+            <div class="text-[9px] text-sky-400 font-bold uppercase">Away • 0-0</div>
+            <div class="text-sm md:text-xl font-neutra text-white leading-tight uppercase">St Thomas</div>
           </div>
-          <div class="w-10 h-10 rounded-xl bg-emerald-950 border border-emerald-500/50 flex items-center justify-center p-1 shadow flex-shrink-0">
-            <i class="fa-solid fa-feather-pointed text-base text-emerald-400"></i>
+          <div class="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center p-1 shadow flex-shrink-0">
+            <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/default.png" alt="St. Thomas Tommies" class="w-7 h-7 object-contain" onerror="this.src='https://a.espncdn.com/combiner/i?img=/i/teamlogos/default.png'">
           </div>
         </div>
 
@@ -117,7 +115,7 @@
         <i class="fa-solid fa-m mr-1"></i> Gophers (15)
       </button>
       <button id="tab-opp" onclick="switchTeam('opp')" class="py-2 rounded-xl font-neutra text-xs uppercase tracking-wider transition-all duration-200 bg-slate-800 text-slate-300 border border-slate-700 text-center">
-        <i class="fa-solid fa-shield mr-1"></i> N. Dakota (16)
+        <i class="fa-solid fa-shield mr-1"></i> St Thomas (15)
       </button>
     </div>
 
@@ -127,15 +125,17 @@
       <input type="text" id="player-search" oninput="filterRoster()" placeholder="Search #, name, high school, or transfer..." class="w-full bg-slate-900/90 border border-slate-700/80 rounded-xl pl-9 pr-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-[#FFCC33]">
     </div>
 
-    <!-- Mobile Roster View: Dynamic Compact List on Mobile, Clean Table on Desktop -->
+    <!-- Mobile Roster View: Dynamic Compact List on Mobile -->
     <div id="roster-container" class="space-y-2">
       <!-- Injected via JavaScript -->
     </div>
 
+  </main>
+
   <!-- Data Script -->
   <script>
-    const gophersData = [{"name": "Kyan Evans", "jersey": "0", "pos": "G", "ht": "6' 2\"", "wt": "175 lbs", "yr": "Senior", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5093253.png", "is_mn": false, "hs": "Staley High School (MO)", "transfer_from": "North Carolina"}, {"name": "Isaac Asuma", "jersey": "1", "pos": "G", "ht": "6' 3\"", "wt": "205 lbs", "yr": "Junior", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5144165.png", "is_mn": true, "hs": "Cherry High School", "transfer_from": null}, {"name": "Grayson Grove", "jersey": "2", "pos": "F", "ht": "6' 9\"", "wt": "220 lbs", "yr": "Junior", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5239570.png", "is_mn": true, "hs": "Alexandria High School", "transfer_from": null}, {"name": "Bobby Durkin", "jersey": "3", "pos": "F", "ht": "6' 7\"", "wt": "220 lbs", "yr": "Senior", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5174568.png", "is_mn": false, "hs": "Glenbard West High School (IL)", "transfer_from": "Davidson"}, {"name": "Malick Kordel", "jersey": "4", "pos": "C", "ht": "7' 2\"", "wt": "275 lbs", "yr": "Senior", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5311988.png", "is_mn": false, "hs": "Germany", "transfer_from": "Michigan"}, {"name": "Jaylen Crocker-Johnson", "jersey": "5", "pos": "F", "ht": "6' 8\"", "wt": "240 lbs", "yr": "Senior", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/4894462.png", "is_mn": false, "hs": "Warren High School (TX)", "transfer_from": "Little Rock"}, {"name": "Cedric Tomes", "jersey": "6", "pos": "G", "ht": "6' 1\"", "wt": "170 lbs", "yr": "Freshman", "hometown": "-", "headshot": "https://a.espncdn.com/combiner/i?img=/i/headshots/nothumb.png", "is_mn": true, "hs": "East Ridge High School", "transfer_from": null}, {"name": "Malachi Palmer", "jersey": "7", "pos": "G", "ht": "6' 6\"", "wt": "220 lbs", "yr": "Senior", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5239554.png", "is_mn": false, "hs": "Mt. Zion Prep (MD)", "transfer_from": "Villanova"}, {"name": "Max Lorenson", "jersey": "8", "pos": "G", "ht": "6' 2\"", "wt": "175 lbs", "yr": "Sophomore", "hometown": "-", "headshot": "https://a.espncdn.com/combiner/i?img=/i/headshots/nothumb.png", "is_mn": true, "hs": "Eden Prairie High School", "transfer_from": null}, {"name": "Kai Shinholster", "jersey": "9", "pos": "G", "ht": "6' 5\"", "wt": "175 lbs", "yr": "Sophomore", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5254164.png", "is_mn": false, "hs": "William Penn Charter (PA)", "transfer_from": null}, {"name": "Nolan Groves", "jersey": "10", "pos": "G", "ht": "6' 5\"", "wt": "205 lbs", "yr": "Sophomore", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5311929.png", "is_mn": true, "hs": "Orono High School", "transfer_from": "Texas Tech"}, {"name": "Winters Grady", "jersey": "15", "pos": "G", "ht": "6' 6\"", "wt": "210 lbs", "yr": "Sophomore", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5174808.png", "is_mn": false, "hs": "Prolific Prep (CA) / Lake Oswego (OR)", "transfer_from": "Michigan"}, {"name": "Blake Nixon Jr.", "jersey": "21", "pos": "G", "ht": "6' 3\"", "wt": "170 lbs", "yr": "Freshman", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5456490.png", "is_mn": true, "hs": "Academy of Holy Angels", "transfer_from": null}, {"name": "Nolen Anderson", "jersey": "31", "pos": "F", "ht": "6' 8\"", "wt": "205 lbs", "yr": "Freshman", "hometown": "-", "headshot": "https://a.espncdn.com/combiner/i?img=/i/headshots/nothumb.png", "is_mn": true, "hs": "Wayzata High School", "transfer_from": null}, {"name": "Chadrack Mpoyi", "jersey": "55", "pos": "C", "ht": "6' 11\"", "wt": "245 lbs", "yr": "Freshman", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5456491.png", "is_mn": false, "hs": "Crean Lutheran (CA)", "transfer_from": null}];
-    const undData = [{"name": "Rob Diaz III", "jersey": "0", "pos": "G", "ht": "6' 1\"", "wt": "190 lbs", "yr": "Senior", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5312976.png", "is_mn": false, "hs": null, "transfer_from": null}, {"name": "Melvin Bell Jr.", "jersey": "1", "pos": "G", "ht": "6' 4\"", "wt": "195 lbs", "yr": "Sophomore", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5101782.png", "is_mn": false, "hs": null, "transfer_from": null}, {"name": "Riley Massey", "jersey": "2", "pos": "G", "ht": "6' 3\"", "wt": "185 lbs", "yr": "Sophomore", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5314779.png", "is_mn": false, "hs": null, "transfer_from": null}, {"name": "Kaden Tate", "jersey": "3", "pos": "F", "ht": "6' 6\"", "wt": "220 lbs", "yr": "Junior", "hometown": "-", "headshot": "https://a.espncdn.com/combiner/i?img=/i/headshots/nothumb.png", "is_mn": false, "hs": null, "transfer_from": null}, {"name": "Max Iversen", "jersey": "4", "pos": "G", "ht": "6' 3\"", "wt": "175 lbs", "yr": "Freshman", "hometown": "-", "headshot": "https://a.espncdn.com/combiner/i?img=/i/headshots/nothumb.png", "is_mn": false, "hs": null, "transfer_from": null}, {"name": "Andy Stefonowicz", "jersey": "5", "pos": "G", "ht": "6' 2\"", "wt": "170 lbs", "yr": "Junior", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5241640.png", "is_mn": false, "hs": null, "transfer_from": null}, {"name": "Carson Smith", "jersey": "7", "pos": "G", "ht": "6' 6\"", "wt": "205 lbs", "yr": "Junior", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5241641.png", "is_mn": false, "hs": null, "transfer_from": null}, {"name": "Jack Robison", "jersey": "11", "pos": "G", "ht": "6' 6\"", "wt": "200 lbs", "yr": "Junior", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5110430.png", "is_mn": false, "hs": null, "transfer_from": null}, {"name": "Chance Schoenfeld", "jersey": "12", "pos": "F", "ht": "6' 8\"", "wt": "200 lbs", "yr": "Freshman", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5461687.png", "is_mn": false, "hs": null, "transfer_from": null}, {"name": "Amir Danforth", "jersey": "13", "pos": "G", "ht": "6' 0\"", "wt": "175 lbs", "yr": "Freshman", "hometown": "-", "headshot": "https://a.espncdn.com/combiner/i?img=/i/headshots/nothumb.png", "is_mn": false, "hs": null, "transfer_from": null}, {"name": "Jaziah Harper", "jersey": "14", "pos": "G", "ht": "6' 7\"", "wt": "200 lbs", "yr": "Sophomore", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5311973.png", "is_mn": false, "hs": null, "transfer_from": null}, {"name": "Oliver Junker", "jersey": "22", "pos": "F", "ht": "6' 8\"", "wt": "220 lbs", "yr": "Freshman", "hometown": "-", "headshot": "https://a.espncdn.com/combiner/i?img=/i/headshots/nothumb.png", "is_mn": false, "hs": null, "transfer_from": null}, {"name": "Karl Poom", "jersey": "23", "pos": "F", "ht": "6' 8\"", "wt": "230 lbs", "yr": "Junior", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5248277.png", "is_mn": false, "hs": null, "transfer_from": null}, {"name": "Santiago Paz Vazquez", "jersey": "30", "pos": "G", "ht": "6' 7\"", "wt": "200 lbs", "yr": "Senior", "hometown": "-", "headshot": "https://a.espncdn.com/combiner/i?img=/i/headshots/nothumb.png", "is_mn": false, "hs": null, "transfer_from": null}, {"name": "Colin Stack", "jersey": "35", "pos": "F", "ht": "7' 0\"", "wt": "225 lbs", "yr": "Freshman", "hometown": "-", "headshot": "https://a.espncdn.com/combiner/i?img=/i/headshots/nothumb.png", "is_mn": false, "hs": null, "transfer_from": null}, {"name": "Andrew Nagy", "jersey": "44", "pos": "F", "ht": "6' 9\"", "wt": "230 lbs", "yr": "Junior", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5241910.png", "is_mn": false, "hs": null, "transfer_from": null}];
+    const gophersData = [{"name": "Kyan Evans", "jersey": "0", "pos": "G", "ht": "6' 2\"", "wt": "175 lbs", "yr": "Senior", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5093253.png", "is_mn": false, "hs": "Staley High School (MO)", "transfer_from": "North Carolina"}, {"name": "Isaac Asuma", "jersey": "1", "pos": "G", "ht": "6' 3\"", "wt": "205 lbs", "yr": "Junior", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5144165.png", "is_mn": true, "hs": "Cherry High School", "transfer_from": null}, {"name": "Grayson Grove", "jersey": "2", "pos": "F", "ht": "6' 9\"", "wt": "220 lbs", "yr": "Junior", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5239570.png", "is_mn": true, "hs": "Alexandria High School", "transfer_from": null}, {"name": "Bobby Durkin", "jersey": "3", "pos": "F", "ht": "6' 7\"", "wt": "220 lbs", "yr": "Senior", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5174568.png", "is_mn": false, "hs": "Glenbard West High School (IL)", "transfer_from": "Davidson"}, {"name": "Malick Kordel", "jersey": "4", "pos": "C", "ht": "7' 2\"", "wt": "275 lbs", "yr": "Senior", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5311988.png", "is_mn": false, "hs": "Germany", "transfer_from": "Michigan"}, {"name": "Jaylen Crocker-Johnson", "jersey": "5", "pos": "F", "ht": "6' 8\"", "wt": "240 lbs", "yr": "Senior", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/4894462.png", "is_mn": false, "hs": "Warren High School (TX)", "transfer_from": "Little Rock"}, {"name": "Cedric Tomes", "jersey": "6", "pos": "G", "ht": "6' 1\"", "wt": "170 lbs", "yr": "Freshman", "hometown": "-", "headshot": null, "is_mn": true, "hs": "East Ridge High School", "transfer_from": null}, {"name": "Malachi Palmer", "jersey": "7", "pos": "G", "ht": "6' 6\"", "wt": "220 lbs", "yr": "Senior", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5239554.png", "is_mn": false, "hs": "Mt. Zion Prep (MD)", "transfer_from": "Villanova"}, {"name": "Max Lorenson", "jersey": "8", "pos": "G", "ht": "6' 2\"", "wt": "175 lbs", "yr": "Sophomore", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5311996.png", "is_mn": true, "hs": "Eden Prairie High School", "transfer_from": null}, {"name": "Kai Shinholster", "jersey": "9", "pos": "G", "ht": "6' 5\"", "wt": "175 lbs", "yr": "Sophomore", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5254164.png", "is_mn": false, "hs": "William Penn Charter (PA)", "transfer_from": null}, {"name": "Nolan Groves", "jersey": "10", "pos": "G", "ht": "6' 5\"", "wt": "205 lbs", "yr": "Sophomore", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5311929.png", "is_mn": true, "hs": "Orono High School", "transfer_from": "Texas Tech"}, {"name": "Winters Grady", "jersey": "15", "pos": "G", "ht": "6' 6\"", "wt": "210 lbs", "yr": "Sophomore", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5174808.png", "is_mn": false, "hs": "Prolific Prep (CA) / Lake Oswego (OR)", "transfer_from": "Michigan"}, {"name": "Blake Nixon Jr.", "jersey": "21", "pos": "G", "ht": "6' 3\"", "wt": "170 lbs", "yr": "Freshman", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5456490.png", "is_mn": true, "hs": "Academy of Holy Angels", "transfer_from": null}, {"name": "Nolen Anderson", "jersey": "31", "pos": "F", "ht": "6' 8\"", "wt": "205 lbs", "yr": "Freshman", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5310820.png", "is_mn": true, "hs": "Wayzata High School", "transfer_from": null}, {"name": "Chadrack Mpoyi", "jersey": "55", "pos": "C", "ht": "6' 11\"", "wt": "245 lbs", "yr": "Freshman", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5456491.png", "is_mn": false, "hs": "Crean Lutheran (CA)", "transfer_from": null}];
+    const oppData = [{"name": "Brogan Madson", "jersey": "0", "pos": "G", "ht": "6' 1\"", "wt": "190 lbs", "yr": "Sophomore", "hometown": "-", "headshot": null, "is_mn": false, "hs": null, "transfer_from": null}, {"name": "Hayden Tibbits", "jersey": "1", "pos": "G", "ht": "5' 11\"", "wt": "160 lbs", "yr": "Junior", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5177052.png", "is_mn": false, "hs": null, "transfer_from": null}, {"name": "Austin Herro", "jersey": "2", "pos": "G", "ht": "6' 3\"", "wt": "180 lbs", "yr": "Junior", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/4685653.png", "is_mn": false, "hs": null, "transfer_from": null}, {"name": "JoJo Mitchell III", "jersey": "3", "pos": "G", "ht": "6' 2\"", "wt": "185 lbs", "yr": "Freshman", "hometown": "-", "headshot": null, "is_mn": false, "hs": null, "transfer_from": null}, {"name": "Kendall Blue", "jersey": "4", "pos": "G", "ht": "6' 6\"", "wt": "200 lbs", "yr": "Senior", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5109018.png", "is_mn": false, "hs": null, "transfer_from": null}, {"name": "Tim Franks", "jersey": "5", "pos": "G", "ht": "6' 5\"", "wt": "190 lbs", "yr": "Sophomore", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5241413.png", "is_mn": false, "hs": null, "transfer_from": null}, {"name": "Tommy Humphries Jr.", "jersey": "10", "pos": "G", "ht": "6' 5\"", "wt": "205 lbs", "yr": "Junior", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5176134.png", "is_mn": false, "hs": null, "transfer_from": null}, {"name": "Julius Wade", "jersey": "11", "pos": "G", "ht": "6' 6\"", "wt": "170 lbs", "yr": "Sophomore", "hometown": "-", "headshot": null, "is_mn": false, "hs": null, "transfer_from": null}, {"name": "Luka Momcilovic", "jersey": "13", "pos": "F", "ht": "6' 8\"", "wt": "220 lbs", "yr": "Freshman", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5314672.png", "is_mn": false, "hs": null, "transfer_from": null}, {"name": "Adam Tauer", "jersey": "15", "pos": "G", "ht": "6' 3\"", "wt": "185 lbs", "yr": "Junior", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5177053.png", "is_mn": false, "hs": null, "transfer_from": null}, {"name": "Caden Wilkins", "jersey": "21", "pos": "F", "ht": "6' 7\"", "wt": "230 lbs", "yr": "Sophomore", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5241637.png", "is_mn": false, "hs": null, "transfer_from": null}, {"name": "Jonovan Wilkinson", "jersey": "22", "pos": "G", "ht": "6' 2\"", "wt": "200 lbs", "yr": "Junior", "hometown": "-", "headshot": null, "is_mn": false, "hs": null, "transfer_from": null}, {"name": "Kyle Counts", "jersey": "24", "pos": "F", "ht": "6' 7\"", "wt": "210 lbs", "yr": "Sophomore", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5241412.png", "is_mn": false, "hs": null, "transfer_from": null}, {"name": "Carter Bjerke", "jersey": "32", "pos": "F", "ht": "6' 9\"", "wt": "255 lbs", "yr": "Senior", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5109020.png", "is_mn": false, "hs": null, "transfer_from": null}, {"name": "Jeremy Lorenz", "jersey": "33", "pos": "F", "ht": "6' 8\"", "wt": "230 lbs", "yr": "Junior", "hometown": "-", "headshot": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5176418.png", "is_mn": false, "hs": null, "transfer_from": null}];
     let activeTeam = 'gophers';
 
     function switchTeam(team) {
@@ -144,18 +144,18 @@
       const oBtn = document.getElementById('tab-opp');
 
       if (team === 'gophers') {
-        gBtn.className = "px-6 py-2.5 rounded-xl font-neutra text-sm uppercase tracking-wider transition-all duration-200 bg-[#7A0019] text-[#FFCC33] border-2 border-[#FFCC33] shadow-lg";
-        oBtn.className = "px-6 py-2.5 rounded-xl font-neutra text-sm uppercase tracking-wider transition-all duration-200 bg-slate-800 text-slate-300 border border-slate-700 hover:border-slate-500";
+        gBtn.className = "py-2 rounded-xl font-neutra text-xs uppercase tracking-wider transition-all duration-200 bg-[#7A0019] text-[#FFCC33] border-2 border-[#FFCC33] shadow text-center";
+        oBtn.className = "py-2 rounded-xl font-neutra text-xs uppercase tracking-wider transition-all duration-200 bg-slate-800 text-slate-300 border border-slate-700 text-center";
       } else {
-        oBtn.className = "px-6 py-2.5 rounded-xl font-neutra text-sm uppercase tracking-wider transition-all duration-200 bg-emerald-900 text-white border-2 border-emerald-400 shadow-lg";
-        gBtn.className = "px-6 py-2.5 rounded-xl font-neutra text-sm uppercase tracking-wider transition-all duration-200 bg-slate-800 text-slate-300 border border-slate-700 hover:border-slate-500";
+        oBtn.className = "py-2 rounded-xl font-neutra text-xs uppercase tracking-wider transition-all duration-200 bg-sky-900 text-white border-2 border-sky-400 shadow text-center";
+        gBtn.className = "py-2 rounded-xl font-neutra text-xs uppercase tracking-wider transition-all duration-200 bg-slate-800 text-slate-300 border border-slate-700 text-center";
       }
       filterRoster();
     }
 
     function filterRoster() {
       const query = document.getElementById('player-search').value.toLowerCase().trim();
-      const list = activeTeam === 'gophers' ? gophersData : undData;
+      const list = activeTeam === 'gophers' ? gophersData : oppData;
       const container = document.getElementById('roster-container');
 
       const filtered = list.filter(p => {
