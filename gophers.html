@@ -331,27 +331,99 @@
       </div>
     </details>
 
-    <!-- Betting Odds Bar -->
-    <div class="gopher-card rounded-2xl p-4 md:p-5">
-      <div class="flex items-center gap-2 mb-3">
-        <i class="fa-solid fa-money-bill-trend-up text-emerald-400" aria-hidden="true"></i>
-        <h2 class="font-bold text-sm text-white">Consensus Betting Odds</h2>
-        <span class="text-[10px] text-slate-500 ml-auto" id="odds-updated">Not yet verified (2026-11-19)</span>
+        <!-- Betting Odds & Line Movement Section -->
+    <div class="gopher-card rounded-2xl p-4 md:p-6 space-y-5">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800 pb-3">
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-money-bill-trend-up text-emerald-400 text-lg" aria-hidden="true"></i>
+          <h2 class="font-bold text-base text-white">Consensus Betting Odds & Line Movement</h2>
+        </div>
+        <span class="text-[11px] text-slate-400 flex items-center gap-1.5" id="odds-updated">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          Saturday Gameday • Nov 21, 2026 (Live DraftKings / ESPN)
+        </span>
       </div>
-      <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-center">
-        <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-3">
-          <p class="text-[10px] uppercase tracking-wider text-slate-400 mb-1">Spread</p>
-          <p class="text-base sm:text-lg font-black text-[#FFCC33] break-words" id="odds-spread">TBD</p>
+
+      <!-- Live Gameday Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-center">
+        <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-3.5 flex flex-col justify-between">
+          <p class="text-[11px] uppercase tracking-wider text-slate-400 font-semibold mb-1">Spread (Live)</p>
+          <p class="text-lg md:text-xl font-black text-[#FFCC33] break-words" id="odds-spread">MINN +2.5 (-112)</p>
+          <p class="text-[11px] text-slate-400 mt-0.5">NU -2.5 (-108)</p>
+          <div class="mt-2">
+            <span class="inline-flex items-center gap-1 text-[10px] font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded-full">
+              <i class="fa-solid fa-arrow-trend-up text-[9px]"></i> +0.5 pt to MIN (Off #3)
+            </span>
+          </div>
         </div>
-        <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-3">
-          <p class="text-[10px] uppercase tracking-wider text-slate-400 mb-1">Over / Under</p>
-          <p class="text-base sm:text-lg font-black text-[#FFCC33] break-words" id="odds-total">TBD</p>
+        <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-3.5 flex flex-col justify-between">
+          <p class="text-[11px] uppercase tracking-wider text-slate-400 font-semibold mb-1">Over / Under (Live)</p>
+          <p class="text-lg md:text-xl font-black text-[#FFCC33] break-words" id="odds-total">41.5</p>
+          <p class="text-[11px] text-slate-400 mt-0.5">o -110 / u -110</p>
+          <div class="mt-2">
+            <span class="inline-flex items-center gap-1 text-[10px] font-bold text-rose-400 bg-rose-500/10 border border-rose-500/20 px-2 py-0.5 rounded-full">
+              <i class="fa-solid fa-arrow-trend-down text-[9px]"></i> -2.0 pts to Under
+            </span>
+          </div>
         </div>
-        <div class="col-span-2 sm:col-span-1 bg-slate-900/80 border border-slate-800 rounded-xl p-3">
-          <p class="text-[10px] uppercase tracking-wider text-slate-400 mb-1">Moneyline</p>
-          <p class="text-sm font-black text-[#FFCC33] break-words leading-snug" id="odds-moneyline">TBD</p>
+        <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-3.5 flex flex-col justify-between">
+          <p class="text-[11px] uppercase tracking-wider text-slate-400 font-semibold mb-1">Moneyline (Live)</p>
+          <p class="text-base md:text-lg font-black text-[#FFCC33] break-words leading-snug" id="odds-moneyline">MINN +110 / NU -130</p>
+          <p class="text-[11px] text-slate-400 mt-0.5">Implied: 47.6% MIN / 56.5% NU</p>
+          <div class="mt-2">
+            <span class="inline-flex items-center gap-1 text-[10px] font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded-full">
+              <i class="fa-solid fa-arrow-trend-up text-[9px]"></i> MIN shortened +124 → +110
+            </span>
+          </div>
         </div>
       </div>
+
+      <!-- Line Movement Table -->
+      <div class="overflow-x-auto rounded-xl border border-slate-800 bg-slate-950/50">
+        <table class="w-full text-left text-xs">
+          <thead class="bg-slate-900 text-slate-300 font-semibold uppercase text-[10px] tracking-wider border-b border-slate-800">
+            <tr>
+              <th class="py-2.5 px-3 md:px-4">Market</th>
+              <th class="py-2.5 px-3 md:px-4">Thursday Open (Nov 19)</th>
+              <th class="py-2.5 px-3 md:px-4">Saturday Gameday (Live)</th>
+              <th class="py-2.5 px-3 md:px-4">Line Movement / Shift</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-800/60 font-medium">
+            <tr class="hover:bg-slate-900/40 transition">
+              <td class="py-2.5 px-3 md:px-4 text-white font-bold">Spread</td>
+              <td class="py-2.5 px-3 md:px-4 text-slate-300">NU -3 (-115) / MINN +3 (-105)</td>
+              <td class="py-2.5 px-3 md:px-4 text-[#FFCC33] font-bold">NU -2.5 (-108) / MINN +2.5 (-112)</td>
+              <td class="py-2.5 px-3 md:px-4 text-emerald-400 font-semibold"><i class="fa-solid fa-arrow-trend-up mr-1 text-[10px]"></i>+0.5 pt toward Minnesota <span class="text-slate-400 font-normal">(off key #3)</span></td>
+            </tr>
+            <tr class="hover:bg-slate-900/40 transition">
+              <td class="py-2.5 px-3 md:px-4 text-white font-bold">Total (O/U)</td>
+              <td class="py-2.5 px-3 md:px-4 text-slate-300">43.5 (-115)</td>
+              <td class="py-2.5 px-3 md:px-4 text-[#FFCC33] font-bold">41.5 (o -110 / u -110)</td>
+              <td class="py-2.5 px-3 md:px-4 text-rose-400 font-semibold"><i class="fa-solid fa-arrow-trend-down mr-1 text-[10px]"></i>-2.0 pts toward Under <span class="text-slate-400 font-normal">(sharp defensive steam)</span></td>
+            </tr>
+            <tr class="hover:bg-slate-900/40 transition">
+              <td class="py-2.5 px-3 md:px-4 text-white font-bold">Moneyline</td>
+              <td class="py-2.5 px-3 md:px-4 text-slate-300">NU -148 / MINN +124</td>
+              <td class="py-2.5 px-3 md:px-4 text-[#FFCC33] font-bold">NU -130 / MINN +110</td>
+              <td class="py-2.5 px-3 md:px-4 text-emerald-400 font-semibold"><i class="fa-solid fa-arrow-trend-up mr-1 text-[10px]"></i>MIN tightened +124 → +110 <span class="text-slate-400 font-normal">(NU eased -148 → -130)</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Tactical Betting Insights -->
+      <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-3.5 text-xs space-y-1.5 text-slate-300">
+        <p class="font-bold text-white flex items-center gap-1.5 text-xs uppercase tracking-wide">
+          <i class="fa-solid fa-chart-line text-amber-400"></i> Market Takeaways & Betting Dynamics
+        </p>
+        <ul class="list-disc list-inside space-y-1 text-slate-300 pt-1 leading-relaxed">
+          <li><strong class="text-white">Pushing Off Key #3:</strong> Early betting support has consistently backed Minnesota at Huntington Bank Stadium, driving the line through the crucial field-goal number from NU -3.0 down to NU -2.5 (MINN +3.0 → +2.5), with books shading juice to Minnesota (-112).</li>
+          <li><strong class="text-white">Sharp Steam on the Under (-2.0 pts):</strong> The game total fell 2 full points from 43.5 down to 41.5. Bettors are anticipating a physical, grind-it-out Big Ten duel with Darius Taylor and Minnesota's rushing attack controlling the clock.</li>
+          <li><strong class="text-white">Moneyline Value Shift:</strong> Minnesota’s implied straight-up win probability climbed from 44.6% (+124) to 47.6% (+110), while Northwestern eased from 59.7% (-148) down to 56.5% (-130).</li>
+        </ul>
+      </div>
+    </div>
     </div>
 
 
