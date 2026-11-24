@@ -7,144 +7,198 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Inter', sans-serif; background-color: #090d16; color: #f8fafc; }
-    .font-heading { font-family: 'Plus Jakarta Sans', sans-serif; }
-    .card-gradient { background: radial-gradient(120% 120% at 50% 10%, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.8) 100%); border: 1px solid rgba(255, 255, 255, 0.08); }
-    .hero-glow { background: radial-gradient(circle at 50% 20%, rgba(59, 130, 246, 0.15) 0%, transparent 60%); }
-    .text-gradient { background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 50%, #94a3b8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #f8fafc;
+      color: #0f172a;
+      -webkit-font-smoothing: antialiased;
+    }
+    .font-heading {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .card-shadow {
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    }
+    .card-shadow-hover:hover {
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+      transform: translateY(-2px);
+    }
   </style>
 </head>
-<body class="min-h-screen hero-glow selection:bg-blue-500/30">
+<body class="min-h-screen bg-slate-50 text-slate-900 selection:bg-blue-100 selection:text-blue-900">
 
-  <!-- Navigation -->
-  <nav class="max-w-6xl mx-auto px-4 py-6 flex items-center justify-between border-b border-white/5">
-    <div class="flex items-center gap-3">
-      <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-500 flex items-center justify-center font-heading font-black text-white text-xl shadow-lg shadow-blue-500/20">
-        R
+  <!-- Clean Top Navigation -->
+  <nav class="bg-white border-b border-slate-200 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-lg bg-blue-600 flex items-center justify-center font-heading font-black text-white text-lg shadow-sm">
+          R
+        </div>
+        <div>
+          <span class="font-heading font-bold text-base md:text-lg text-slate-900 tracking-tight">ROB SOLUTIONS</span>
+          <span class="hidden sm:inline-block text-xs font-semibold text-slate-500 ml-2 px-2 py-0.5 rounded bg-slate-100 border border-slate-200">B2B Sales Architecture</span>
+        </div>
       </div>
       <div>
-        <span class="font-heading font-bold text-lg text-white tracking-tight">ROB SOLUTIONS</span>
-        <span class="hidden sm:inline-block text-xs text-slate-400 font-medium ml-2 px-2 py-0.5 rounded bg-slate-800 border border-slate-700">Commercial B2B Advisory</span>
+        <a href="#audit" class="inline-flex items-center justify-center px-4 py-2 rounded-lg text-xs md:text-sm font-semibold bg-blue-600 hover:bg-blue-700 text-white transition-colors shadow-sm">
+          Request GTM Audit
+        </a>
       </div>
-    </div>
-    <div>
-      <a href="#audit" class="px-4 py-2 rounded-xl text-xs md:text-sm font-bold bg-white text-slate-900 hover:bg-slate-200 transition-all shadow-md">
-        Book Strategy Audit
-      </a>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <header class="max-w-4xl mx-auto px-4 pt-16 pb-12 text-center">
-    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20 mb-6">
-      <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
-      Fractional Sales Leadership & Commercial GTM Architecture
-    </div>
-    <h1 class="text-4xl sm:text-5xl md:text-6xl font-heading font-extrabold tracking-tight leading-tight text-white">
-      Scale Your B2B Revenue <br class="hidden sm:block">
-      <span class="text-gradient">Without the $250k VP Overhead.</span>
-    </h1>
-    <p class="text-base sm:text-lg text-slate-400 max-w-2xl mx-auto mt-6 leading-relaxed">
-      Practical enterprise sales architecture for growing B2B and SaaS founders. Turn complex enterprise sales cycles into repeatable, scalable revenue machines.
-    </p>
+  <!-- Hero Section (High Contrast, Clean White/Light Slate) -->
+  <header class="bg-white border-b border-slate-200 py-16 sm:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+      
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200 mb-6">
+        <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+        Fractional Sales Leadership & Commercial GTM Advisory
+      </div>
 
-    <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-      <a href="#audit" class="w-full sm:w-auto px-8 py-3.5 rounded-xl font-heading font-bold text-sm bg-blue-600 hover:bg-blue-500 text-white transition-all shadow-lg shadow-blue-600/30 flex items-center justify-center gap-2">
-        Request an Executive GTM Audit <i class="fa-solid fa-arrow-right text-xs"></i>
-      </a>
-      <a href="#playbook" class="w-full sm:w-auto px-6 py-3.5 rounded-xl font-heading font-semibold text-sm bg-slate-800/80 hover:bg-slate-800 text-slate-300 border border-slate-700 transition-all">
-        Explore Advisory Models
-      </a>
+      <h1 class="text-3xl sm:text-5xl md:text-6xl font-heading font-extrabold text-slate-900 tracking-tight leading-tight">
+        Scale Your B2B Sales <br class="hidden sm:inline">
+        <span class="text-blue-600">Without the $250k VP Overhead.</span>
+      </h1>
+
+      <p class="text-base sm:text-xl text-slate-600 max-w-2xl mx-auto mt-6 leading-relaxed">
+        Battle-tested sales architecture for growing B2B and SaaS founders. Turn inconsistent outbound into predictable, high-ticket recurring revenue.
+      </p>
+
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
+        <a href="#audit" class="w-full sm:w-auto px-8 py-3.5 rounded-lg font-heading font-bold text-sm bg-blue-600 hover:bg-blue-700 text-white transition-all shadow-md flex items-center justify-center gap-2">
+          Request an Executive Audit <i class="fa-solid fa-arrow-right text-xs"></i>
+        </a>
+        <a href="#services" class="w-full sm:w-auto px-6 py-3.5 rounded-lg font-heading font-semibold text-sm bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-300 transition-all">
+          Explore Advisory Services
+        </a>
+      </div>
+
+      <!-- Social Proof Metrics Strip -->
+      <div class="mt-12 pt-8 border-t border-slate-100 grid grid-cols-2 sm:grid-cols-3 gap-6 text-left max-w-2xl mx-auto">
+        <div>
+          <div class="text-2xl font-heading font-black text-slate-900">$100k+ ACV</div>
+          <div class="text-xs font-medium text-slate-500 mt-0.5">Enterprise Deal Mastery</div>
+        </div>
+        <div>
+          <div class="text-2xl font-heading font-black text-blue-600">SLED & K-12</div>
+          <div class="text-xs font-medium text-slate-500 mt-0.5">Public Sector Procurement</div>
+        </div>
+        <div class="col-span-2 sm:col-span-1">
+          <div class="text-2xl font-heading font-black text-slate-900">Zero Fluff</div>
+          <div class="text-xs font-medium text-slate-500 mt-0.5">Direct Founder-to-Leader</div>
+        </div>
+      </div>
+
     </div>
   </header>
 
-  <!-- Pillars Section -->
-  <section id="playbook" class="max-w-6xl mx-auto px-4 py-12">
+  <!-- Core Services Section -->
+  <section id="services" class="max-w-6xl mx-auto px-4 sm:px-6 py-16">
     <div class="text-center mb-12">
-      <h2 class="text-xs font-bold text-blue-400 uppercase tracking-widest">How We Partner</h2>
-      <p class="text-2xl sm:text-3xl font-heading font-bold text-white mt-1">High-Impact Growth Without Headcount</p>
+      <h2 class="text-xs font-bold text-blue-600 uppercase tracking-widest">How We Work Together</h2>
+      <p class="text-2xl sm:text-3xl font-heading font-bold text-slate-900 mt-1">High-Impact Growth Without Added Headcount</p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      
-      <!-- Pillar 1 -->
-      <div class="card-gradient rounded-2xl p-6 sm:p-8 relative overflow-hidden flex flex-col justify-between">
+
+      <!-- Card 1 -->
+      <div class="bg-white rounded-xl p-6 sm:p-8 border border-slate-200 card-shadow transition-all card-shadow-hover flex flex-col justify-between">
         <div>
-          <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center text-xl mb-6">
+          <div class="w-12 h-12 rounded-lg bg-blue-50 border border-blue-100 text-blue-600 flex items-center justify-center text-xl mb-6">
             <i class="fa-solid fa-compass"></i>
           </div>
-          <h3 class="font-heading font-bold text-xl text-white">Enterprise GTM & Pipeline Design</h3>
-          <p class="text-slate-400 text-sm mt-3 leading-relaxed">
-            Stop relying on sporadic referrals. We build proven enterprise outbound playbooks, qualify high-ticket accounts, and design discovery-to-close stages that shorten sales cycles.
+          <h3 class="font-heading font-bold text-xl text-slate-900">Enterprise GTM & Pipeline Design</h3>
+          <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+            Stop relying on word-of-mouth. We build multi-touch enterprise outbound cadences, qualify high-value accounts, and structure discovery calls that shorten closing cycles.
           </p>
         </div>
-        <div class="mt-6 pt-4 border-t border-white/5 text-xs text-blue-400 font-semibold flex items-center gap-1.5">
-          <i class="fa-solid fa-check"></i> Enterprise Sales Playbooks
+        <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-semibold text-blue-600 flex items-center gap-1.5">
+          <i class="fa-solid fa-circle-check"></i> Predictable Outbound Cadences
         </div>
       </div>
 
-      <!-- Pillar 2 -->
-      <div class="card-gradient rounded-2xl p-6 sm:p-8 relative overflow-hidden flex flex-col justify-between border-blue-500/30 shadow-xl shadow-blue-900/10">
+      <!-- Card 2 (Featured) -->
+      <div class="bg-white rounded-xl p-6 sm:p-8 border-2 border-blue-600 card-shadow transition-all card-shadow-hover flex flex-col justify-between relative shadow-blue-50">
         <div>
-          <div class="inline-block px-2.5 py-0.5 rounded text-[10px] font-bold bg-blue-500 text-white uppercase tracking-wider mb-4">Most Popular</div>
-          <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-xl mb-6">
+          <div class="inline-block px-2.5 py-0.5 rounded text-[10px] font-bold bg-blue-600 text-white uppercase tracking-wider mb-4">Core Specialty</div>
+          <div class="w-12 h-12 rounded-lg bg-blue-50 border border-blue-100 text-blue-600 flex items-center justify-center text-xl mb-6">
             <i class="fa-solid fa-graduation-cap"></i>
           </div>
-          <h3 class="font-heading font-bold text-xl text-white">SLED & Public Sector Navigation</h3>
-          <p class="text-slate-400 text-sm mt-3 leading-relaxed">
-            School districts, municipalities, and park boards buy differently than private tech. We map district procurement gates, RFP scoring matrices, and board approval strategies.
+          <h3 class="font-heading font-bold text-xl text-slate-900">SLED & Public Sector Navigation</h3>
+          <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+            School districts, municipalities, and community boards buy on rigid budget cycles. We map superintendent gates, RFP scoring rubrics, and board approval playbooks.
           </p>
         </div>
-        <div class="mt-6 pt-4 border-t border-white/5 text-xs text-indigo-400 font-semibold flex items-center gap-1.5">
-          <i class="fa-solid fa-check"></i> SLED Procurement Mastery
+        <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-semibold text-blue-600 flex items-center gap-1.5">
+          <i class="fa-solid fa-circle-check"></i> Board & RFP Procurement Mastery
         </div>
       </div>
 
-      <!-- Pillar 3 -->
-      <div class="card-gradient rounded-2xl p-6 sm:p-8 relative overflow-hidden flex flex-col justify-between">
+      <!-- Card 3 -->
+      <div class="bg-white rounded-xl p-6 sm:p-8 border border-slate-200 card-shadow transition-all card-shadow-hover flex flex-col justify-between">
         <div>
-          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl mb-6">
-            <i class="fa-solid fa-bolt"></i>
+          <div class="w-12 h-12 rounded-lg bg-slate-100 border border-slate-200 text-slate-700 flex items-center justify-center text-xl mb-6">
+            <i class="fa-solid fa-robot"></i>
           </div>
-          <h3 class="font-heading font-bold text-xl text-white">AI-Powered Outbound Engines</h3>
-          <p class="text-slate-400 text-sm mt-3 leading-relaxed">
-            Automate 90% of lead enrichment, municipal public agenda scraping, and personalized cold outreach so your sales reps only spend time on qualified high-intent conversations.
+          <h3 class="font-heading font-bold text-xl text-slate-900">Autonomous Prospecting Engines</h3>
+          <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+            Leverage AI agents and scrapers to monitor public municipal minutes, building permits, and target account triggers so you only talk to prospects ready to buy.
           </p>
         </div>
-        <div class="mt-6 pt-4 border-t border-white/5 text-xs text-emerald-400 font-semibold flex items-center gap-1.5">
-          <i class="fa-solid fa-check"></i> Autonomous Lead Pipelines
+        <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-semibold text-slate-600 flex items-center gap-1.5">
+          <i class="fa-solid fa-circle-check"></i> High-Intent Lead Automation
         </div>
       </div>
 
     </div>
   </section>
 
-  <!-- CTA Box -->
-  <section id="audit" class="max-w-3xl mx-auto px-4 py-12">
-    <div class="card-gradient rounded-3xl p-8 md:p-10 text-center border-white/10 shadow-2xl relative overflow-hidden">
-      <h3 class="text-2xl sm:text-3xl font-heading font-bold text-white">Ready to Modernize Your Sales Engine?</h3>
-      <p class="text-slate-400 text-sm sm:text-base mt-3 max-w-xl mx-auto">
-        Book a confidential, 30-minute executive sales pipeline audit. We'll identify the 3 highest-leverage bottlenecks in your current GTM motion.
+  <!-- Clear Audit Form Section -->
+  <section id="audit" class="bg-white border-t border-b border-slate-200 py-16">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6 text-center">
+      
+      <div class="w-12 h-12 rounded-xl bg-blue-50 border border-blue-200 text-blue-600 flex items-center justify-center text-xl mx-auto mb-4">
+        <i class="fa-solid fa-handshake"></i>
+      </div>
+
+      <h3 class="text-2xl sm:text-3xl font-heading font-bold text-slate-900">Request a Confidential Sales Audit</h3>
+      <p class="text-slate-600 text-sm sm:text-base mt-2 max-w-lg mx-auto">
+        A direct 30-minute founder-to-leader conversation. We’ll review your pipeline, sales deck, or SLED strategy and highlight your 3 biggest conversion bottlenecks.
       </p>
 
-      <form class="mt-8 space-y-3 max-w-md mx-auto" onsubmit="event.preventDefault(); alert('Audit request received! Rob will follow up directly.');">
-        <input type="text" placeholder="Your Name & Title" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-blue-500">
-        <input type="email" placeholder="Work Email" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-blue-500">
-        <input type="text" placeholder="Company Website / URL" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-blue-500">
-        <button type="submit" class="w-full py-3.5 rounded-xl font-heading font-bold text-sm bg-blue-600 hover:bg-blue-500 text-white transition-all shadow-lg shadow-blue-600/30">
-          Request Confidential GTM Audit
+      <form class="mt-8 space-y-4 text-left max-w-md mx-auto" onsubmit="event.preventDefault(); alert('Audit request received! Rob will follow up directly.');">
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Your Name & Title</label>
+          <input type="text" placeholder="e.g. Alex Miller, Founder & CEO" required class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-2.5 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white">
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Work Email</label>
+          <input type="email" placeholder="alex@company.com" required class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-2.5 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white">
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Company Website</label>
+          <input type="text" placeholder="company.com" required class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-2.5 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white">
+        </div>
+        <button type="submit" class="w-full py-3.5 rounded-lg font-heading font-bold text-sm bg-blue-600 hover:bg-blue-700 text-white transition-all shadow-md">
+          Schedule Executive Audit
         </button>
       </form>
-      <div class="text-[11px] text-slate-500 mt-4">Strict NDA confidentiality • Zero hard pitches</div>
+
+      <div class="text-xs text-slate-500 mt-4 flex items-center justify-center gap-4">
+        <span><i class="fa-solid fa-lock text-slate-400 mr-1"></i> Strict NDA Confidentiality</span>
+        <span><i class="fa-solid fa-ban text-slate-400 mr-1"></i> Zero Sales Pressure</span>
+      </div>
+
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="max-w-6xl mx-auto px-4 py-8 border-t border-white/5 text-center text-xs text-slate-500">
-    © 2026 Rob Solutions (RobSolutions.com). All rights reserved. High-Impact Commercial B2B Strategy.
+  <!-- Clean Minimal Footer -->
+  <footer class="max-w-6xl mx-auto px-4 py-8 text-center text-xs text-slate-500">
+    <p>© 2026 Rob Solutions (RobSolutions.com). Practical commercial B2B growth and GTM advisory.</p>
   </footer>
 
 </body>
