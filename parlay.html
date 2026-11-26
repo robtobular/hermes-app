@@ -15,92 +15,84 @@
     .thanksgiving-card { background: linear-gradient(180deg, rgba(41, 37, 36, 0.7) 0%, rgba(28, 25, 23, 0.8) 100%); border: 1px solid rgba(245, 158, 11, 0.15); }
   </style>
 </head>
-<body class="min-h-screen pb-16">
+<body class="min-h-screen pb-12">
 
-  <!-- Header Banner -->
-  <header class="bg-gradient-to-r from-[#451a03] via-[#78350f] to-[#451a03] border-b-2 border-amber-500 py-6 px-4 md:py-8 md:px-6 shadow-2xl relative overflow-hidden text-center">
-    <div class="max-w-4xl mx-auto relative z-10">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30 mb-3">
-        🦃 Official Menu • Curated by Executive Chef Flavin
+  <!-- Header Banner (Ultra-Compact Mobile) -->
+  <header class="bg-gradient-to-r from-[#451a03] via-[#78350f] to-[#451a03] border-b border-amber-500/40 py-3 px-3 shadow-lg text-center">
+    <div class="max-w-xl mx-auto">
+      <div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[9px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30 mb-1">
+        🦃 Chef Flavin's 8-Course Tasting Menu
       </div>
-      <h1 class="text-3xl md:text-5xl font-heading font-black tracking-tight text-white uppercase drop-shadow">
+      <h1 class="text-xl sm:text-3xl font-heading font-black tracking-tight text-white uppercase drop-shadow">
         THE THANKSGIVING PARLAY
       </h1>
-      <p class="text-xs md:text-sm text-amber-200/90 font-medium tracking-wide mt-1 italic font-serif">
-        Curated & Prepared by Chef Flavin • An 8-Course College Football Culinary Journey
-      </p>
-      <div class="flex items-center justify-center gap-4 mt-4 text-sm md:text-base font-semibold text-amber-200">
-        <span><i class="fa-solid fa-utensils text-amber-400"></i> 8 Courses</span>
+      <div class="flex items-center justify-center gap-3 mt-1 text-xs font-semibold text-amber-200">
+        <span>8 Courses</span>
         <span>•</span>
-        <span class="text-amber-300 font-extrabold text-lg"><i class="fa-solid fa-receipt text-amber-400"></i> +2093 Payout</span>
+        <span class="text-amber-300 font-extrabold text-sm"><i class="fa-solid fa-receipt text-amber-400"></i> +2093 Payout</span>
       </div>
     </div>
   </header>
 
-  <main class="max-w-3xl mx-auto px-4 pt-6 space-y-4">
+  <main class="max-w-xl mx-auto px-2.5 pt-3 space-y-2.5">
 
-    <!-- Summary Status -->
-    <div class="thanksgiving-card rounded-2xl p-4 md:p-5 flex items-center justify-between gap-4">
+    <!-- Summary Status (Compact) -->
+    <div class="thanksgiving-card rounded-xl p-3 flex items-center justify-between gap-3">
       <div>
-        <div class="text-xs text-amber-400 font-bold uppercase tracking-wider">Chef Flavin's Kitchen Progress</div>
-        <div class="text-xl md:text-2xl font-heading font-bold text-white mt-0.5">
+        <div class="text-[9px] text-amber-400 font-bold uppercase tracking-wider">Chef Flavin's Kitchen Progress</div>
+        <div class="text-base sm:text-xl font-heading font-bold text-white mt-0.5">
           0 of 8 Courses Served
         </div>
       </div>
       <div class="text-right">
-        <div class="text-xs text-slate-400">Live Kitchen Scoreboard</div>
-        <div class="text-xs text-emerald-400 font-semibold mt-0.5">● Auto-Updating Tracker</div>
+        <div class="text-[10px] text-slate-400">Live Kitchen Scoreboard</div>
+        <div class="text-[10px] text-emerald-400 font-semibold">● Auto-Updating</div>
       </div>
     </div>
 
-    <!-- Sommelier Drink Pairings Card -->
-    <div class="thanksgiving-card rounded-2xl p-4 md:p-5 border-amber-500/30">
-      <div class="text-xs font-bold text-amber-400 uppercase tracking-wider mb-2 flex items-center gap-1.5">
+    <!-- Sommelier Drink Pairings Card (Compact 3-Pill Grid) -->
+    <div class="thanksgiving-card rounded-xl p-2.5 border-amber-500/30">
+      <div class="text-[9px] font-bold text-amber-400 uppercase tracking-wider mb-1.5 flex items-center gap-1">
         <i class="fa-solid fa-wine-bottle"></i> Sommelier Beverage Pairings
       </div>
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs">
-        <div class="bg-black/40 p-2.5 rounded-xl border border-white/5">
-          <div class="font-bold text-amber-300 flex items-center gap-1"><i class="fa-solid fa-wine-glass"></i> Thursday Course:</div>
-          <div class="text-slate-300 mt-0.5">Fine Wines (all varieties)</div>
+      <div class="grid grid-cols-3 gap-1.5 text-[10px]">
+        <div class="bg-black/50 p-1.5 rounded-lg border border-white/5 text-center">
+          <div class="font-bold text-amber-300">Thu</div>
+          <div class="text-slate-300 text-[9px] truncate">Wines</div>
         </div>
-        <div class="bg-black/40 p-2.5 rounded-xl border border-white/5">
-          <div class="font-bold text-amber-300 flex items-center gap-1"><i class="fa-solid fa-beer-mug-empty"></i> Friday Course:</div>
-          <div class="text-slate-300 mt-0.5">Seasonal & Craft Beers</div>
+        <div class="bg-black/50 p-1.5 rounded-lg border border-white/5 text-center">
+          <div class="font-bold text-amber-300">Fri</div>
+          <div class="text-slate-300 text-[9px] truncate">Craft Beers</div>
         </div>
-        <div class="bg-black/40 p-2.5 rounded-xl border border-white/5">
-          <div class="font-bold text-amber-300 flex items-center gap-1"><i class="fa-solid fa-martini-glass-citrus"></i> Saturday Course:</div>
-          <div class="text-slate-300 mt-0.5">Crisp Lagers & Handcrafted Cocktails</div>
+        <div class="bg-black/50 p-1.5 rounded-lg border border-white/5 text-center">
+          <div class="font-bold text-amber-300">Sat</div>
+          <div class="text-slate-300 text-[9px] truncate">Lagers/Cocktails</div>
         </div>
       </div>
     </div>
 
-    <!-- Odds Note -->
-    <div class="bg-black/40 border border-white/10 rounded-xl p-3 text-xs text-slate-300 flex items-center justify-between">
-      <span><i class="fa-solid fa-pepper-hot text-amber-400 mr-1.5"></i> Spicy Entrées: <strong>Kentucky (+116)</strong> & <strong>Oklahoma (+106)</strong> juice the total menu payout to <strong>+2093</strong>!</span>
-    </div>
-
-    <!-- The 8 Legs -->
-    <div class="space-y-3">
+    <!-- The 8 Legs (Compact) -->
+    <div class="space-y-2">
       
-        <div class="bg-slate-900/80 rounded-2xl p-4 md:p-5 border border-white/5 hover:border-amber-500/30 transition-all shadow-lg">
-          <div class="flex items-center justify-between gap-2 border-b border-white/5 pb-2.5 mb-3">
-            <div class="flex items-center gap-2">
-              <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-amber-500/15 text-amber-300 border border-amber-500/30 flex items-center gap-1">
-                <i class="fa-solid fa-utensils text-[9px]"></i> Amuse-bouche
+        <div class="bg-slate-900/90 rounded-xl p-3 border border-white/5 shadow-sm">
+          <div class="flex items-center justify-between gap-1.5 border-b border-white/5 pb-1.5 mb-2">
+            <div class="flex items-center gap-1.5 min-w-0">
+              <span class="px-2 py-0.5 rounded text-[9px] font-bold uppercase tracking-wider bg-amber-500/15 text-amber-300 border border-amber-500/30 whitespace-nowrap">
+                Amuse-bouche
               </span>
-              <span class="text-xs text-slate-400 font-medium">Thursday • 7:00 PM CT</span>
+              <span class="text-[10px] text-slate-400 font-medium truncate">Thu • 7:00 PM CT</span>
             </div>
-            <div class="text-xs font-bold text-[#FFCC33] bg-black/40 px-2 py-0.5 rounded border border-white/5">ESPN</div>
+            <div class="text-[10px] font-bold text-[#FFCC33] bg-black/50 px-1.5 py-0.5 rounded border border-white/5 flex-shrink-0">ESPN</div>
           </div>
 
-          <div class="flex items-center justify-between gap-4">
-            <div>
-              <div class="text-xs text-slate-400">TCU @ Texas Tech</div>
-              <div class="text-base md:text-lg font-bold text-white mt-0.5 flex items-center gap-2">
-                COURSE PICK: <span class="text-amber-400 font-extrabold">Texas Tech</span>
-                <span class="text-xs font-semibold text-slate-400">(-800)</span>
+          <div class="flex items-center justify-between gap-2">
+            <div class="min-w-0">
+              <div class="text-[11px] text-slate-400 truncate">TCU @ Texas Tech</div>
+              <div class="text-sm font-bold text-white leading-tight mt-0.5 flex items-center gap-1.5 truncate">
+                <span class="text-amber-400 font-extrabold truncate">Texas Tech</span>
+                <span class="text-[11px] font-semibold text-slate-400 flex-shrink-0">(-800)</span>
               </div>
-              <div class="text-xs text-slate-400 mt-1">Texas Tech 0 - TCU 0</div>
+              <div class="text-[10px] text-slate-400 mt-0.5">Texas Tech 0 - TCU 0</div>
             </div>
             <div class="flex-shrink-0 text-right">
               <span class="px-2.5 py-1 rounded-lg text-xs font-bold bg-slate-800 text-slate-400 border border-slate-700">UPCOMING ⏳</span>
@@ -108,25 +100,25 @@
           </div>
         </div>
         
-        <div class="bg-slate-900/80 rounded-2xl p-4 md:p-5 border border-white/5 hover:border-amber-500/30 transition-all shadow-lg">
-          <div class="flex items-center justify-between gap-2 border-b border-white/5 pb-2.5 mb-3">
-            <div class="flex items-center gap-2">
-              <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-amber-500/15 text-amber-300 border border-amber-500/30 flex items-center gap-1">
-                <i class="fa-solid fa-utensils text-[9px]"></i> Heavy Appetizer I
+        <div class="bg-slate-900/90 rounded-xl p-3 border border-white/5 shadow-sm">
+          <div class="flex items-center justify-between gap-1.5 border-b border-white/5 pb-1.5 mb-2">
+            <div class="flex items-center gap-1.5 min-w-0">
+              <span class="px-2 py-0.5 rounded text-[9px] font-bold uppercase tracking-wider bg-amber-500/15 text-amber-300 border border-amber-500/30 whitespace-nowrap">
+                Heavy Appetizer I
               </span>
-              <span class="text-xs text-slate-400 font-medium">Friday • 11:00 AM CT</span>
+              <span class="text-[10px] text-slate-400 font-medium truncate">Fri • 11:00 AM CT</span>
             </div>
-            <div class="text-xs font-bold text-[#FFCC33] bg-black/40 px-2 py-0.5 rounded border border-white/5">CBS</div>
+            <div class="text-[10px] font-bold text-[#FFCC33] bg-black/50 px-1.5 py-0.5 rounded border border-white/5 flex-shrink-0">CBS</div>
           </div>
 
-          <div class="flex items-center justify-between gap-4">
-            <div>
-              <div class="text-xs text-slate-400">Nebraska @ Iowa</div>
-              <div class="text-base md:text-lg font-bold text-white mt-0.5 flex items-center gap-2">
-                COURSE PICK: <span class="text-amber-400 font-extrabold">Iowa</span>
-                <span class="text-xs font-semibold text-slate-400">(-200)</span>
+          <div class="flex items-center justify-between gap-2">
+            <div class="min-w-0">
+              <div class="text-[11px] text-slate-400 truncate">Nebraska @ Iowa</div>
+              <div class="text-sm font-bold text-white leading-tight mt-0.5 flex items-center gap-1.5 truncate">
+                <span class="text-amber-400 font-extrabold truncate">Iowa</span>
+                <span class="text-[11px] font-semibold text-slate-400 flex-shrink-0">(-200)</span>
               </div>
-              <div class="text-xs text-slate-400 mt-1">Iowa 0 - Nebraska 0</div>
+              <div class="text-[10px] text-slate-400 mt-0.5">Iowa 0 - Nebraska 0</div>
             </div>
             <div class="flex-shrink-0 text-right">
               <span class="px-2.5 py-1 rounded-lg text-xs font-bold bg-slate-800 text-slate-400 border border-slate-700">UPCOMING ⏳</span>
@@ -134,25 +126,25 @@
           </div>
         </div>
         
-        <div class="bg-slate-900/80 rounded-2xl p-4 md:p-5 border border-white/5 hover:border-amber-500/30 transition-all shadow-lg">
-          <div class="flex items-center justify-between gap-2 border-b border-white/5 pb-2.5 mb-3">
-            <div class="flex items-center gap-2">
-              <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-amber-500/15 text-amber-300 border border-amber-500/30 flex items-center gap-1">
-                <i class="fa-solid fa-utensils text-[9px]"></i> Heavy Appetizer II
+        <div class="bg-slate-900/90 rounded-xl p-3 border border-white/5 shadow-sm">
+          <div class="flex items-center justify-between gap-1.5 border-b border-white/5 pb-1.5 mb-2">
+            <div class="flex items-center gap-1.5 min-w-0">
+              <span class="px-2 py-0.5 rounded text-[9px] font-bold uppercase tracking-wider bg-amber-500/15 text-amber-300 border border-amber-500/30 whitespace-nowrap">
+                Heavy Appetizer II
               </span>
-              <span class="text-xs text-slate-400 font-medium">Friday • 2:30 PM CT</span>
+              <span class="text-[10px] text-slate-400 font-medium truncate">Fri • 2:30 PM CT</span>
             </div>
-            <div class="text-xs font-bold text-[#FFCC33] bg-black/40 px-2 py-0.5 rounded border border-white/5">ABC</div>
+            <div class="text-[10px] font-bold text-[#FFCC33] bg-black/50 px-1.5 py-0.5 rounded border border-white/5 flex-shrink-0">ABC</div>
           </div>
 
-          <div class="flex items-center justify-between gap-4">
-            <div>
-              <div class="text-xs text-slate-400">Florida @ Florida State</div>
-              <div class="text-base md:text-lg font-bold text-white mt-0.5 flex items-center gap-2">
-                COURSE PICK: <span class="text-amber-400 font-extrabold">Florida</span>
-                <span class="text-xs font-semibold text-slate-400">(-225)</span>
+          <div class="flex items-center justify-between gap-2">
+            <div class="min-w-0">
+              <div class="text-[11px] text-slate-400 truncate">Florida @ Florida State</div>
+              <div class="text-sm font-bold text-white leading-tight mt-0.5 flex items-center gap-1.5 truncate">
+                <span class="text-amber-400 font-extrabold truncate">Florida</span>
+                <span class="text-[11px] font-semibold text-slate-400 flex-shrink-0">(-225)</span>
               </div>
-              <div class="text-xs text-slate-400 mt-1">Florida St 0 - Florida 0</div>
+              <div class="text-[10px] text-slate-400 mt-0.5">Florida St 0 - Florida 0</div>
             </div>
             <div class="flex-shrink-0 text-right">
               <span class="px-2.5 py-1 rounded-lg text-xs font-bold bg-slate-800 text-slate-400 border border-slate-700">UPCOMING ⏳</span>
@@ -160,25 +152,25 @@
           </div>
         </div>
         
-        <div class="bg-slate-900/80 rounded-2xl p-4 md:p-5 border border-white/5 hover:border-amber-500/30 transition-all shadow-lg">
-          <div class="flex items-center justify-between gap-2 border-b border-white/5 pb-2.5 mb-3">
-            <div class="flex items-center gap-2">
-              <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-amber-500/15 text-amber-300 border border-amber-500/30 flex items-center gap-1">
-                <i class="fa-solid fa-utensils text-[9px]"></i> Heavy Appetizer III
+        <div class="bg-slate-900/90 rounded-xl p-3 border border-white/5 shadow-sm">
+          <div class="flex items-center justify-between gap-1.5 border-b border-white/5 pb-1.5 mb-2">
+            <div class="flex items-center gap-1.5 min-w-0">
+              <span class="px-2 py-0.5 rounded text-[9px] font-bold uppercase tracking-wider bg-amber-500/15 text-amber-300 border border-amber-500/30 whitespace-nowrap">
+                Heavy Appetizer III
               </span>
-              <span class="text-xs text-slate-400 font-medium">Friday • 6:30 PM CT</span>
+              <span class="text-[10px] text-slate-400 font-medium truncate">Fri • 6:30 PM CT</span>
             </div>
-            <div class="text-xs font-bold text-[#FFCC33] bg-black/40 px-2 py-0.5 rounded border border-white/5">ABC</div>
+            <div class="text-[10px] font-bold text-[#FFCC33] bg-black/50 px-1.5 py-0.5 rounded border border-white/5 flex-shrink-0">ABC</div>
           </div>
 
-          <div class="flex items-center justify-between gap-4">
-            <div>
-              <div class="text-xs text-slate-400">Texas @ Texas A&M</div>
-              <div class="text-base md:text-lg font-bold text-white mt-0.5 flex items-center gap-2">
-                COURSE PICK: <span class="text-amber-400 font-extrabold">Texas</span>
-                <span class="text-xs font-semibold text-slate-400">(-490)</span>
+          <div class="flex items-center justify-between gap-2">
+            <div class="min-w-0">
+              <div class="text-[11px] text-slate-400 truncate">Texas @ Texas A&M</div>
+              <div class="text-sm font-bold text-white leading-tight mt-0.5 flex items-center gap-1.5 truncate">
+                <span class="text-amber-400 font-extrabold truncate">Texas</span>
+                <span class="text-[11px] font-semibold text-slate-400 flex-shrink-0">(-490)</span>
               </div>
-              <div class="text-xs text-slate-400 mt-1">Texas A&M 0 - Texas 0</div>
+              <div class="text-[10px] text-slate-400 mt-0.5">Texas A&M 0 - Texas 0</div>
             </div>
             <div class="flex-shrink-0 text-right">
               <span class="px-2.5 py-1 rounded-lg text-xs font-bold bg-slate-800 text-slate-400 border border-slate-700">UPCOMING ⏳</span>
@@ -186,25 +178,25 @@
           </div>
         </div>
         
-        <div class="bg-slate-900/80 rounded-2xl p-4 md:p-5 border border-emerald-500/40 bg-emerald-950/20 hover:border-amber-500/30 transition-all shadow-lg">
-          <div class="flex items-center justify-between gap-2 border-b border-white/5 pb-2.5 mb-3">
-            <div class="flex items-center gap-2">
-              <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-amber-500/15 text-amber-300 border border-amber-500/30 flex items-center gap-1">
-                <i class="fa-solid fa-utensils text-[9px]"></i> Main Course I
+        <div class="bg-slate-900/90 rounded-xl p-3 border border-emerald-500/40 bg-emerald-950/20 shadow-sm">
+          <div class="flex items-center justify-between gap-1.5 border-b border-white/5 pb-1.5 mb-2">
+            <div class="flex items-center gap-1.5 min-w-0">
+              <span class="px-2 py-0.5 rounded text-[9px] font-bold uppercase tracking-wider bg-amber-500/15 text-amber-300 border border-amber-500/30 whitespace-nowrap">
+                Main Course I
               </span>
-              <span class="text-xs text-slate-400 font-medium">Saturday • 11:00 AM CT</span>
+              <span class="text-[10px] text-slate-400 font-medium truncate">Sat • 11:00 AM CT</span>
             </div>
-            <div class="text-xs font-bold text-[#FFCC33] bg-black/40 px-2 py-0.5 rounded border border-white/5">ESPN2</div>
+            <div class="text-[10px] font-bold text-[#FFCC33] bg-black/50 px-1.5 py-0.5 rounded border border-white/5 flex-shrink-0">ESPN2</div>
           </div>
 
-          <div class="flex items-center justify-between gap-4">
-            <div>
-              <div class="text-xs text-slate-400">Louisville @ Kentucky</div>
-              <div class="text-base md:text-lg font-bold text-white mt-0.5 flex items-center gap-2">
-                COURSE PICK: <span class="text-amber-400 font-extrabold">Kentucky</span>
-                <span class="text-xs font-semibold text-slate-400">(+116)</span>
+          <div class="flex items-center justify-between gap-2">
+            <div class="min-w-0">
+              <div class="text-[11px] text-slate-400 truncate">Louisville @ Kentucky</div>
+              <div class="text-sm font-bold text-white leading-tight mt-0.5 flex items-center gap-1.5 truncate">
+                <span class="text-amber-400 font-extrabold truncate">Kentucky</span>
+                <span class="text-[11px] font-semibold text-slate-400 flex-shrink-0">(+116)</span>
               </div>
-              <div class="text-xs text-slate-400 mt-1">Kentucky 0 - Louisville 0</div>
+              <div class="text-[10px] text-slate-400 mt-0.5">Kentucky 0 - Louisville 0</div>
             </div>
             <div class="flex-shrink-0 text-right">
               <span class="px-2.5 py-1 rounded-lg text-xs font-bold bg-slate-800 text-slate-400 border border-slate-700">UPCOMING ⏳</span>
@@ -212,25 +204,25 @@
           </div>
         </div>
         
-        <div class="bg-slate-900/80 rounded-2xl p-4 md:p-5 border border-white/5 hover:border-amber-500/30 transition-all shadow-lg">
-          <div class="flex items-center justify-between gap-2 border-b border-white/5 pb-2.5 mb-3">
-            <div class="flex items-center gap-2">
-              <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-amber-500/15 text-amber-300 border border-amber-500/30 flex items-center gap-1">
-                <i class="fa-solid fa-utensils text-[9px]"></i> Main Course II
+        <div class="bg-slate-900/90 rounded-xl p-3 border border-white/5 shadow-sm">
+          <div class="flex items-center justify-between gap-1.5 border-b border-white/5 pb-1.5 mb-2">
+            <div class="flex items-center gap-1.5 min-w-0">
+              <span class="px-2 py-0.5 rounded text-[9px] font-bold uppercase tracking-wider bg-amber-500/15 text-amber-300 border border-amber-500/30 whitespace-nowrap">
+                Main Course II
               </span>
-              <span class="text-xs text-slate-400 font-medium">Saturday • 2:30 PM CT</span>
+              <span class="text-[10px] text-slate-400 font-medium truncate">Sat • 2:30 PM CT</span>
             </div>
-            <div class="text-xs font-bold text-[#FFCC33] bg-black/40 px-2 py-0.5 rounded border border-white/5">ESPN</div>
+            <div class="text-[10px] font-bold text-[#FFCC33] bg-black/50 px-1.5 py-0.5 rounded border border-white/5 flex-shrink-0">ESPN</div>
           </div>
 
-          <div class="flex items-center justify-between gap-4">
-            <div>
-              <div class="text-xs text-slate-400">South Carolina @ Clemson</div>
-              <div class="text-base md:text-lg font-bold text-white mt-0.5 flex items-center gap-2">
-                COURSE PICK: <span class="text-amber-400 font-extrabold">South Carolina</span>
-                <span class="text-xs font-semibold text-slate-400">(-245)</span>
+          <div class="flex items-center justify-between gap-2">
+            <div class="min-w-0">
+              <div class="text-[11px] text-slate-400 truncate">South Carolina @ Clemson</div>
+              <div class="text-sm font-bold text-white leading-tight mt-0.5 flex items-center gap-1.5 truncate">
+                <span class="text-amber-400 font-extrabold truncate">South Carolina</span>
+                <span class="text-[11px] font-semibold text-slate-400 flex-shrink-0">(-245)</span>
               </div>
-              <div class="text-xs text-slate-400 mt-1">South Carolina 0 - Clemson 0</div>
+              <div class="text-[10px] text-slate-400 mt-0.5">South Carolina 0 - Clemson 0</div>
             </div>
             <div class="flex-shrink-0 text-right">
               <span class="px-2.5 py-1 rounded-lg text-xs font-bold bg-slate-800 text-slate-400 border border-slate-700">UPCOMING ⏳</span>
@@ -238,25 +230,25 @@
           </div>
         </div>
         
-        <div class="bg-slate-900/80 rounded-2xl p-4 md:p-5 border border-emerald-500/40 bg-emerald-950/20 hover:border-amber-500/30 transition-all shadow-lg">
-          <div class="flex items-center justify-between gap-2 border-b border-white/5 pb-2.5 mb-3">
-            <div class="flex items-center gap-2">
-              <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-amber-500/15 text-amber-300 border border-amber-500/30 flex items-center gap-1">
-                <i class="fa-solid fa-utensils text-[9px]"></i> Main Course III
+        <div class="bg-slate-900/90 rounded-xl p-3 border border-emerald-500/40 bg-emerald-950/20 shadow-sm">
+          <div class="flex items-center justify-between gap-1.5 border-b border-white/5 pb-1.5 mb-2">
+            <div class="flex items-center gap-1.5 min-w-0">
+              <span class="px-2 py-0.5 rounded text-[9px] font-bold uppercase tracking-wider bg-amber-500/15 text-amber-300 border border-amber-500/30 whitespace-nowrap">
+                Main Course III
               </span>
-              <span class="text-xs text-slate-400 font-medium">Saturday • 3:15 PM CT</span>
+              <span class="text-[10px] text-slate-400 font-medium truncate">Sat • 3:15 PM CT</span>
             </div>
-            <div class="text-xs font-bold text-[#FFCC33] bg-black/40 px-2 py-0.5 rounded border border-white/5">SEC Net</div>
+            <div class="text-[10px] font-bold text-[#FFCC33] bg-black/50 px-1.5 py-0.5 rounded border border-white/5 flex-shrink-0">SEC Net</div>
           </div>
 
-          <div class="flex items-center justify-between gap-4">
-            <div>
-              <div class="text-xs text-slate-400">Oklahoma @ Missouri</div>
-              <div class="text-base md:text-lg font-bold text-white mt-0.5 flex items-center gap-2">
-                COURSE PICK: <span class="text-amber-400 font-extrabold">Oklahoma</span>
-                <span class="text-xs font-semibold text-slate-400">(+106)</span>
+          <div class="flex items-center justify-between gap-2">
+            <div class="min-w-0">
+              <div class="text-[11px] text-slate-400 truncate">Oklahoma @ Missouri</div>
+              <div class="text-sm font-bold text-white leading-tight mt-0.5 flex items-center gap-1.5 truncate">
+                <span class="text-amber-400 font-extrabold truncate">Oklahoma</span>
+                <span class="text-[11px] font-semibold text-slate-400 flex-shrink-0">(+106)</span>
               </div>
-              <div class="text-xs text-slate-400 mt-1">0 - 0</div>
+              <div class="text-[10px] text-slate-400 mt-0.5">0 - 0</div>
             </div>
             <div class="flex-shrink-0 text-right">
               <span class="px-2.5 py-1 rounded-lg text-xs font-bold bg-slate-800 text-slate-400 border border-slate-700">UPCOMING ⏳</span>
@@ -264,25 +256,25 @@
           </div>
         </div>
         
-        <div class="bg-slate-900/80 rounded-2xl p-4 md:p-5 border border-white/5 hover:border-amber-500/30 transition-all shadow-lg">
-          <div class="flex items-center justify-between gap-2 border-b border-white/5 pb-2.5 mb-3">
-            <div class="flex items-center gap-2">
-              <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-amber-500/15 text-amber-300 border border-amber-500/30 flex items-center gap-1">
-                <i class="fa-solid fa-utensils text-[9px]"></i> Dessert
+        <div class="bg-slate-900/90 rounded-xl p-3 border border-white/5 shadow-sm">
+          <div class="flex items-center justify-between gap-1.5 border-b border-white/5 pb-1.5 mb-2">
+            <div class="flex items-center gap-1.5 min-w-0">
+              <span class="px-2 py-0.5 rounded text-[9px] font-bold uppercase tracking-wider bg-amber-500/15 text-amber-300 border border-amber-500/30 whitespace-nowrap">
+                Dessert
               </span>
-              <span class="text-xs text-slate-400 font-medium">Saturday • 4:30 PM CT</span>
+              <span class="text-[10px] text-slate-400 font-medium truncate">Sat • 4:30 PM CT</span>
             </div>
-            <div class="text-xs font-bold text-[#FFCC33] bg-black/40 px-2 py-0.5 rounded border border-white/5">CBS</div>
+            <div class="text-[10px] font-bold text-[#FFCC33] bg-black/50 px-1.5 py-0.5 rounded border border-white/5 flex-shrink-0">CBS</div>
           </div>
 
-          <div class="flex items-center justify-between gap-4">
-            <div>
-              <div class="text-xs text-slate-400">Washington @ Oregon</div>
-              <div class="text-base md:text-lg font-bold text-white mt-0.5 flex items-center gap-2">
-                COURSE PICK: <span class="text-amber-400 font-extrabold">Oregon</span>
-                <span class="text-xs font-semibold text-slate-400">(-520)</span>
+          <div class="flex items-center justify-between gap-2">
+            <div class="min-w-0">
+              <div class="text-[11px] text-slate-400 truncate">Washington @ Oregon</div>
+              <div class="text-sm font-bold text-white leading-tight mt-0.5 flex items-center gap-1.5 truncate">
+                <span class="text-amber-400 font-extrabold truncate">Oregon</span>
+                <span class="text-[11px] font-semibold text-slate-400 flex-shrink-0">(-520)</span>
               </div>
-              <div class="text-xs text-slate-400 mt-1">0 - 0</div>
+              <div class="text-[10px] text-slate-400 mt-0.5">0 - 0</div>
             </div>
             <div class="flex-shrink-0 text-right">
               <span class="px-2.5 py-1 rounded-lg text-xs font-bold bg-slate-800 text-slate-400 border border-slate-700">UPCOMING ⏳</span>
